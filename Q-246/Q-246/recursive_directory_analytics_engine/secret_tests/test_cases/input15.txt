@@ -1,0 +1,4 @@
+MOCK_FS {"root": [true, ["dir1", "file1.log"]], "root/dir1": [true, ["dir2", "file2.txt"]], "root/dir1/dir2": [true, ["file3.log"]], "root/file1.log": [false, 10], "root/dir1/file2.txt": [false, 20], "root/dir1/dir2/file3.log": [false, 30]}
+SIZE
+COUNT .log
+SUMMARY

@@ -1,0 +1,2 @@
+LOAD {}
+GET key def

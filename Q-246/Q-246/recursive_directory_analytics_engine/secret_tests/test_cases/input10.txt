@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["a", "b", "c"]], "root/a": [true, ["f1"]], "root/b": [true, ["f2"]], "root/c": [true, ["f3"]], "root/a/f1": [false, 1], "root/b/f2": [false, 1], "root/c/f3": [false, 1]}
+SIZE

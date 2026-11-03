@@ -1,0 +1,13 @@
+ProductID,Category,StockLevel,UnitCost
+S01,Gadgets,10,150
+S02,Apparel,50,20
+S03,Gadgets,5,300
+S04,Home,15,40
+S05,Apparel,100,10
+S06,Gadgets,2,1000
+S07,Home,30,25
+S08,Apparel,10,15
+S09,Gadgets,20,50
+S10,Home,5,200
+S11,Apparel,25,30
+S12,Gadgets,8,250

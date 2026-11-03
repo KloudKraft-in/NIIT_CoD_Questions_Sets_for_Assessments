@@ -1,0 +1,12 @@
+=== PING SWEEP WITH DF (DONT FRAGMENT) SET ===
+$ ping -M do -s 1400 10.200.50.10
+64 bytes from 10.200.50.10: icmp_seq=1 ttl=62 time=12.4 ms (Success)
+
+$ ping -M do -s 1412 10.200.50.10
+64 bytes from 10.200.50.10: icmp_seq=1 ttl=62 time=12.5 ms (Success)
+
+$ ping -M do -s 1413 10.200.50.10
+From 10.200.0.1 icmp_seq=1 Frag needed and DF set (mtu = 1420)
+
+$ ping -M do -s 1472 10.200.50.10
+From 10.200.0.1 icmp_seq=1 Frag needed and DF set (mtu = 1420)

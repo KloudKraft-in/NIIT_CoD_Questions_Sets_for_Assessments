@@ -1,0 +1,14 @@
+Attempt 1 failed: Transient Error
+Attempt 2 failed: Transient Error
+Attempt 3 failed: Transient Error
+Attempt 4 failed: Transient Error
+Attempt 5 failed: Transient Error
+Attempt 6 failed: Transient Error
+Attempt 7 failed: Transient Error
+Attempt 8 failed: Transient Error
+Attempt 9 failed: Transient Error
+Attempt 10 failed: Transient Error
+Attempt 11 failed: Transient Error
+Attempt 12 failed: Transient Error
+Attempt 13 failed: Transient Error
+Success after 14 attempts

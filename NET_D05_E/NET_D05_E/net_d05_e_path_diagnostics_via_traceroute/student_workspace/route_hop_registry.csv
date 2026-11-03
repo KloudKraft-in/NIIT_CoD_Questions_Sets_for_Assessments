@@ -1,0 +1,7 @@
+Hop,IP_Address,Reported_Domain,Ownership_Domain
+1-2,10.0.0.0/16,internal.corp,Internal Enterprise Network
+3-4,203.0.113.1 / 198.51.100.12,transit-carriera.net,Primary ISP Transit
+5-6,198.51.100.89 / 198.51.100.94,transit-carrierb.net,Upstream Tier 1 Carrier
+7,Non-Responsive,Unknown,ICMP Deprioritized Intermediate Router
+8,203.0.113.98,transit-carrierb.net,Partner Edge Peering Exchange
+9-10,192.0.2.1 / 192.0.2.145,partnerbank.com,External Banking Partner Infrastructure

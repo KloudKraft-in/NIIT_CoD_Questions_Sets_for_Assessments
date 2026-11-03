@@ -1,0 +1,1 @@
+{"events": [["dup", 1000, "a"], ["dup", 1001, "a"], ["e1", 1005, "b"], ["e2", 1006, "ignored"], ["e3", 1015, "a"]], "event_types": ["a", "b"], "window_seconds": 10, "batch_size": 2}

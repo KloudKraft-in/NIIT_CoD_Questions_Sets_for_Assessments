@@ -1,0 +1,17 @@
+{
+    "question_id": "BCA_Q19_E",
+    "problem_code": "bca_dotnet_env_configs",
+    "Logging": {
+        "LogLevel": {
+            "Default": "TODO",
+            "Microsoft": "TODO"
+        }
+    },
+    "score": 6,
+    "results": {
+        "tc1": true,
+        "tc2": true,
+        "tc3": false,
+        "tc4": false
+    }
+}

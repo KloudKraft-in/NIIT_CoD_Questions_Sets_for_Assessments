@@ -1,0 +1,8 @@
+{
+  "messages": [
+    {"role": "user", "content": "The app is slow"},
+    {"role": "assistant", "content": "Check CPU usage using top"},
+    {"role": "user", "content": "CPU is 95%"},
+    {"role": "assistant", "content": "Identify the process using top -o %CPU"}
+  ]
+}

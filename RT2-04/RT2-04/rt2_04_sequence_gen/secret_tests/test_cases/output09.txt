@@ -1,0 +1,12 @@
+[CONTEXT] Initializing Sequence
+7
+10
+13
+16
+19
+22
+25
+28
+31
+34
+[CONTEXT] Final Count: 10

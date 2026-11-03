@@ -1,0 +1,2 @@
+REGISTER s5 true
+RESOLVE s5 x5

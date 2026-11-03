@@ -1,0 +1,2 @@
+INIT 5 1
+CALL

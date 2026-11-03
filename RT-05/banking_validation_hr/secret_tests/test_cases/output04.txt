@@ -1,0 +1,1 @@
+Error (400): Invalid transaction type 'invalid_cmd'. Accepted types: deposit, withdraw, view_transaction_history

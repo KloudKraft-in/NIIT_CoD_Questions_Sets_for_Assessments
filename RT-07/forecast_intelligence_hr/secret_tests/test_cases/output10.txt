@@ -1,0 +1,2 @@
+The temperature for City_10 is 10
+The forecast for City_10 is Forecast_10

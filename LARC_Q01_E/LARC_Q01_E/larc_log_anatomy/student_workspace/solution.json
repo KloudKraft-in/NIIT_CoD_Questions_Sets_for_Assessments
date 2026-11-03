@@ -1,0 +1,13 @@
+{
+    "question_id": "LARC_Q01_E",
+    "problem_code": "larc_log_anatomy",
+    "timestamp": "TODO",
+    "level": "TODO",
+    "logger": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false
+    }
+}

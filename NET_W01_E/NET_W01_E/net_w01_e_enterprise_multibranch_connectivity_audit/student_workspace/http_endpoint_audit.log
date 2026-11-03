@@ -1,0 +1,4 @@
+[BR-01] GET https://erp.globalenterprise.com -> HTTP/2 200 OK (TTFB 45ms)
+[BR-02] GET https://erp.globalenterprise.com -> HTTP/2 200 OK (TTFB 62ms)
+[BR-07] GET https://erp.globalenterprise.com -> curl: (6) Could not resolve host: erp.globalenterprise.com
+[BR-11] GET https://erp.globalenterprise.com -> HTTP/1.1 500 Internal Server Error (X-Backend-Error: DBConnectionFailed)

@@ -1,0 +1,2 @@
+Role 1: Database Administrator (DBA) - Focus on SQL query optimization, database locks, indexing, and connection pool limits.
+Role 2: Cloud Security Engineer - Focus on IAM policies, security groups, secret key management, and compliance auditing.

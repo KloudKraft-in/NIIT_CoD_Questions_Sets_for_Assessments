@@ -1,0 +1,3 @@
+SUBSCRIBE e3 log_event
+UNSUBSCRIBE e3 log_event
+DISPATCH e3 {"m": "x"}

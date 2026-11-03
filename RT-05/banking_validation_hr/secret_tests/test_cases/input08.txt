@@ -1,0 +1,7 @@
+6
+deposit
+10
+view_transaction_history
+deposit
+20
+view_transaction_history

@@ -1,0 +1,14 @@
+# STORAGE LAB: PERFORMANCE METRICS & BOTTLENECK DIAGNOSIS
+
+# 1. Formula: Throughput (MB/s) = (IOPS * Block Size in KB) / 1024
+# Replace the TODO placeholders below with your calculations:
+
+THROUGHPUT_4KB_MBPS: TODO_CALCULATE (e.g. 58.6)
+THROUGHPUT_256KB_MBPS: TODO_CALCULATE (e.g. 500.0)
+
+# 2. Identify the limiting bottleneck:
+# Choose ONE: [IOPS-bound | Throughput-bound | Latency-bound]
+IDENTIFIED_BOTTLENECK: TODO_BOTTLENECK
+
+# 3. Provide concise technical rationale explaining why small block I/O hits IOPS limits before throughput limits:
+DIAGNOSIS_SUMMARY: TODO_SUMMARY

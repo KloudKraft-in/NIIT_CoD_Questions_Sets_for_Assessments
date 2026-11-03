@@ -1,0 +1,6 @@
+symbol,shares,purchase_price,current_price
+AAPL,10,150.0,180.0
+TSLA,5,800.0,700.0
+MSFT,8,250.0,300.0
+AMZN,2,3000.0,3200.0
+NFLX,4,600.0,400.0

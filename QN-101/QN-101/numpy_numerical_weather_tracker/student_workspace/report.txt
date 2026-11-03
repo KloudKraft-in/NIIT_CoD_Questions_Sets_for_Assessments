@@ -1,0 +1,9 @@
+Running Tests for: Weather Tracker
+
+PASS TC1 [Initialize WeatherTracker with empty arrays]
+PASS TC2 [Add temperature data]
+PASS TC3 [Calculate average temperature]
+PASS TC4 [Get days above temperature threshold]
+PASS TC5 [Get weather statistics]
+
+SCORE: 25/25 (Visible)

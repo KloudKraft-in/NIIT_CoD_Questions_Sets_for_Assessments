@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["f1.txt", "f2.txt"]], "root/f1.txt": [false, 500], "root/f2.txt": [false, 500]}
+SIZE

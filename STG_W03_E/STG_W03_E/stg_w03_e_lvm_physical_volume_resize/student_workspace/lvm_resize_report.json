@@ -1,0 +1,14 @@
+{
+    "physical_device": "/dev/sdb",
+    "volume_group": "vg_data",
+    "logical_volume": "/dev/vg_data/lv_app",
+    "mount_point": "/data",
+    "pv_resize_command": "TODO_PV_CMD (e.g. pvresize /dev/sdb)",
+    "pv_resized_capacity_gb": "TODO_GB (e.g. 100GB)",
+    "vg_free_extents_updated": "TODO_YES_NO (YES | NO)",
+    "lv_extend_command": "TODO_LV_CMD (e.g. lvextend -l +100%FREE /dev/vg_data/lv_app)",
+    "filesystem_growth_tool": "TODO_FS_TOOL (e.g. resize2fs /dev/vg_data/lv_app)",
+    "final_filesystem_capacity_gb": "TODO_GB (e.g. 100GB)",
+    "data_loss_experienced": "TODO_YES_NO (NO)",
+    "resize_status": "TODO_STATUS (SUCCESS | FAILED)"
+}

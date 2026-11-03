@@ -1,0 +1,8 @@
+{
+    "probe_path": "/health",
+    "interval_seconds": 15,
+    "timeout_seconds": 2,
+    "unhealthy_threshold": 2,
+    "healthy_threshold": 2,
+    "draining_timeout_seconds": 300
+}

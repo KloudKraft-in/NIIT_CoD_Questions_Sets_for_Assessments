@@ -1,0 +1,12 @@
+{
+    "shared_target_volume": "TODO_VOLUME (e.g. /dev/vg_app/lv_data)",
+    "conflicting_jobs": "TODO_JOBS (e.g. JOB_SNAPSHOT and JOB_ARCHIVE)",
+    "conflict_time": "TODO_TIME (e.g. 01:00 AM)",
+    "snapshot_job_cron": "TODO_CRON (e.g. 0 1 * * *)",
+    "rescheduled_archive_cron": "TODO_CRON (e.g. 0 3 * * * or 30 2 * * *)",
+    "buffer_safety_minutes": "TODO_MINUTES (e.g. 38)",
+    "locking_utility": "TODO_UTILITY (e.g. flock)",
+    "lock_file_path": "TODO_PATH (e.g. /var/lock/app_backup.lock)",
+    "concurrent_lock_test": "TODO_TEST_RESULT (PASSED | FAILED)",
+    "second_instance_exit_status": "TODO_STATUS (CLEAN_EXIT | WARNING_HANDLED)"
+}

@@ -1,0 +1,16 @@
+5
+14
+new prod_8
+new prod_1
+new prod_15
+new prod_14
+limit 5
+new prod_11
+new prod_14
+new prod_17
+limit 5
+limit 10
+limit 6
+new prod_14
+limit 6
+print prod_4

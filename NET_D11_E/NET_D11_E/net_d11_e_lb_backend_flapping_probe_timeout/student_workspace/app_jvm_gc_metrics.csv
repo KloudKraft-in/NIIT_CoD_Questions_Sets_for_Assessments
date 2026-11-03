@@ -1,0 +1,5 @@
+Timestamp,GC_Type,Pause_Duration_MS,App_Status
+12:10:10,G1-Young-GC,45,Serving Traffic
+12:10:25,G1-Full-GC,2150,Normal Periodic JVM Cleanup
+12:11:05,G1-Young-GC,40,Serving Traffic
+12:11:55,G1-Full-GC,2210,Normal Periodic JVM Cleanup

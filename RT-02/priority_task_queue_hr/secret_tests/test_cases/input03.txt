@@ -1,0 +1,9 @@
+8
+add_task a 1 []
+add_task b 1 ["a"]
+add_task c 1 ["b"]
+get_status c
+complete_task a
+get_status c
+complete_task b
+get_status c

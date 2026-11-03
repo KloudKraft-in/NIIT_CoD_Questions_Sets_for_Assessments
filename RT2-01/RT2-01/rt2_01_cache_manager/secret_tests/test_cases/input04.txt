@@ -1,0 +1,51 @@
+50
+init 9
+get JB
+put PR 55
+put GL 25
+status US
+get CV
+put TL 91
+put YJ 34
+status IC
+status XB
+put YJ 40
+get RW
+put XB 33
+put RW 43
+status TL
+put YJ 56
+status TV
+status RW
+put IC 83
+status PR
+status GC
+put PR 66
+put RW 74
+status GC
+status EU
+get IB
+put IC 35
+put CV 42
+get OT
+get FR
+get OT
+status EU
+get RS
+put TV 40
+status EU
+status TL
+put JB 63
+status GL
+status YJ
+get GL
+put CV 14
+status TL
+get CV
+put SO 39
+put TV 42
+put XB 45
+put SO 39
+put TL 41
+status TL
+put SO 79

@@ -1,0 +1,17 @@
+=== CURL REQUEST TIMING METRICS (curl -w) ===
+Target URL: https://api-gateway.corp/v1/reconcile
+HTTP Status: 504 Gateway Timeout
+----------------------------------------------------------------------
+time_namelookup:    0.002140 s  (DNS resolution time)
+time_connect:       0.004210 s  (TCP handshake time to gateway)
+time_appconnect:    0.012450 s  (TLS handshake time to gateway)
+time_pretransfer:   0.012580 s  (Time before client sends HTTP GET)
+time_starttransfer: 60.015210 s  (Time-to-first-byte: 60 seconds!)
+time_total:         60.015890 s  (Total execution time)
+----------------------------------------------------------------------
+Server Response Headers:
+< HTTP/1.1 504 Gateway Timeout
+< Date: Sun, 01 Nov 2026 15:10:00 GMT
+< Server: nginx/1.22.0
+< Content-Type: text/html
+< X-Gateway-Upstream-Time: 60.002

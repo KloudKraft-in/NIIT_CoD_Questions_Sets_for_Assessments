@@ -1,0 +1,18 @@
+{
+    "ticket_id": "INC-882910",
+    "service": "E-Commerce Checkout",
+    "reporter": "Customer Support Tier 1",
+    "initial_severity": "P1 - Critical",
+    "client_endpoint": {
+        "ip": "10.240.12.88",
+        "gateway": "10.240.12.1",
+        "dns_servers": ["10.240.0.10", "1.1.1.1"],
+        "internet_access_verified": true
+    },
+    "destination_endpoint": {
+        "fqdn": "checkout.shopacme.com",
+        "resolved_ip": "198.51.100.45",
+        "port": 443
+    },
+    "reported_symptom": "Browser displays ERR_CONNECTION_TIMED_OUT after 21 seconds."
+}

@@ -1,0 +1,4 @@
+LOAD {"debug": true}
+INSTANCE c1
+INSTANCE c2
+CHECK_IDENTITY c1 c2

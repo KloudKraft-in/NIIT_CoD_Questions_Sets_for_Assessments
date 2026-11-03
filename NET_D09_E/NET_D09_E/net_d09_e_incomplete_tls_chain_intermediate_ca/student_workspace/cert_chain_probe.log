@@ -1,0 +1,20 @@
+$ openssl s_client -connect api.mobilepay.net:443 -servername api.mobilepay.net
+CONNECTED(00000003)
+depth=0 CN = api.mobilepay.net
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+---
+Certificate chain
+ 0 s:CN = api.mobilepay.net
+   i:C = US, O = Let's Encrypt, CN = E1
+-----BEGIN CERTIFICATE-----
+MIIFajCCBFKgAwIBAgISBJ8810291...[LEAF CERTIFICATE]...
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN = api.mobilepay.net
+issuer=C = US, O = Let's Encrypt, CN = E1
+---
+No client certificate CA names sent
+Verify return code: 20 (unable to get local issuer certificate)
+---

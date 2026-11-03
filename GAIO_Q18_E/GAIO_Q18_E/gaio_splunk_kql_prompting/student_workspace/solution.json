@@ -1,0 +1,6 @@
+{
+    "question_id": "GAIO_Q18_E",
+    "problem_code": "gaio_splunk_kql_prompting",
+    "allowed_spl_commands": [],
+    "formatting_constraint": "TODO"
+}

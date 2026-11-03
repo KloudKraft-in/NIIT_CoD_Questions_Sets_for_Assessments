@@ -1,0 +1,15 @@
+=== BGP LOOKING GLASS ROUTE DUMP FOR PREFIX 198.51.100.0/24 ===
+Viewpoint: Level3 / Lumen London Router (AS3356)
+Route 1 (Active):
+  Prefix: 198.51.100.0/24
+  Next-Hop: 203.0.113.80 (Tokyo Transit Exchange)
+  AS-Path: 3356 2914 2500 2500 (Length 4)
+  Metric: 10
+  Status: Best, Active
+
+Route 2 (Backup):
+  Prefix: 198.51.100.0/24
+  Next-Hop: 198.18.10.1 (Frankfurt Edge Exchange)
+  AS-Path: 3356 64512 64512 64512 64512 64512 64512 2500 (Length 8) <-- ACCIDENTAL 6x PREPEND!
+  Metric: 100
+  Status: Valid, Deprioritized due to excessive AS-Path length

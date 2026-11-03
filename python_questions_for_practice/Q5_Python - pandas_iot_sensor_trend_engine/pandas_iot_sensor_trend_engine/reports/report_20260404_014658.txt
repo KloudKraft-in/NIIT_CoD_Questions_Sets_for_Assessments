@@ -1,0 +1,11 @@
+IoT Sensor Trend Engine Report - 2026-04-04 01:46:58
+========================================
+TC1: Passed (0 marks)
+TC2: Passed (5 marks)
+TC3: Passed (5 marks)
+TC4: Passed (5 marks)
+TC5: Passed (5 marks)
+TC6: Failed (Invalid frequency: 1H. Failed to parse with error message: ValueError("Invalid frequency: H. Failed to parse with error message: KeyError('H'). Did you mean h?")) (0 marks)
+TC7: Passed (5 marks)
+========================================
+Final Score: 25/30

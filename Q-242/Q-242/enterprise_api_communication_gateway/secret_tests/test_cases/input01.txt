@@ -1,0 +1,2 @@
+MOCK /u/1 200 {"id": 1}
+FETCH /u/1

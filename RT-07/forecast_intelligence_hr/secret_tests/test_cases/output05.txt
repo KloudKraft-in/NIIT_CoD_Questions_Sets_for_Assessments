@@ -1,0 +1,2 @@
+The temperature for ColdCity is -25
+The temperature for HotCity is 122

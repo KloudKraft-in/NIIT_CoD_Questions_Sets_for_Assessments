@@ -1,0 +1,11 @@
+Welcome, user_50yhd!
+Failed login attempt for user_UxU1K
+Welcome, user_wgioi!
+Failed login attempt for user_0Jkmk
+Failed login attempt for unknown_user
+Welcome, user_Nntt6!
+Failed login attempt for unknown_user
+Failed login attempt for user_UxU1K
+Failed login attempt for user_06008
+Failed login attempt for user_UxU1K
+Login Attempts - Successful: 3 Failed: 7

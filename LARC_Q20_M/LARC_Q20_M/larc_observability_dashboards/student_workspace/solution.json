@@ -1,0 +1,23 @@
+{
+    "question_id": "LARC_Q20_M",
+    "problem_code": "larc_observability_dashboards",
+    "dashboard_name": "TODO",
+    "error_rate_panel_type": "TODO",
+    "throughput_query": "TODO",
+    "latency_panel_type": "TODO",
+    "health_gauge_panel": "TODO",
+    "alert_channel": "TODO",
+    "auto_refresh": "TODO",
+    "grid_layout": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": false,
+        "tc7": false,
+        "tc8": false
+    }
+}

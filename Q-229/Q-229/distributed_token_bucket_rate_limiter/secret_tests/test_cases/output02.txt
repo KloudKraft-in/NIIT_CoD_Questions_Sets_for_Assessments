@@ -1,0 +1,3 @@
+Limiter initialized: cap=1.0, rate=0.5
+SUCCESS
+SUCCESS

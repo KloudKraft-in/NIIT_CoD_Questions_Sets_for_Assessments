@@ -1,0 +1,4 @@
+Netid State      Recv-Q Send-Q Local Address:Port  Peer Address:Port
+tcp   CLOSE-WAIT 1      0      10.0.10.15:8080     10.0.2.80:51200
+tcp   CLOSE-WAIT 1      0      10.0.10.15:8080     10.0.2.80:51202
+... [Total CLOSE_WAIT sockets: 41,250 across application fleet]

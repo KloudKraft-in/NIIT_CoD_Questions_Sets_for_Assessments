@@ -1,0 +1,11 @@
+Failed login attempt for user_gN5LE
+Welcome, user_ZjjC2!
+Welcome, user_gN5LE!
+Welcome, user_VHJTT!
+Welcome, user_diK6S!
+Welcome, user_lMYh4!
+Failed login attempt for user_gN5LE
+Welcome, user_lMYh4!
+Welcome, user_gN5LE!
+Failed login attempt for user_ZjjC2
+Login Attempts - Successful: 7 Failed: 3

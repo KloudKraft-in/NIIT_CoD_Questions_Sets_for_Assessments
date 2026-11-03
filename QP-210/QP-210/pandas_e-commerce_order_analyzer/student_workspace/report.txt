@@ -1,0 +1,11 @@
+Running Tests for: E-Commerce Order Analyzer
+
+PASS TC1 [Initialize and check empty state] (2/2)
+PASS TC2 [Load data and verify row count] (2/2)
+PASS TC3 [Verify Revenue column exists] (3/3)
+PASS TC4 [Check total revenue calculation] (3.5/3.5)
+PASS TC5 [Category quantity breakdown] (3.5/3.5)
+PASS TC6 [Filter orders above 500 revenue] (3/3)
+PASS TC7 [Check count of filtered orders] (3/3)
+
+SCORE: 20.0/20.0 (Visible)

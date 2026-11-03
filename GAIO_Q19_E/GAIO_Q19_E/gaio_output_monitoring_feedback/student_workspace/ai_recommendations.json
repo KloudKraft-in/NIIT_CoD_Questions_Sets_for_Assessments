@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    {"id": "REC-01", "text": "Restart application service"},
+    {"id": "REC-02", "text": "Reformat primary hard drive partition"},
+    {"id": "REC-03", "text": "Scale up Kubernetes pod replicas"}
+  ]
+}

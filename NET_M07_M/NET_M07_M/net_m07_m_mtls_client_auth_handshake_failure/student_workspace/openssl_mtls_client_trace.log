@@ -1,0 +1,18 @@
+$ openssl s_client -connect mtls-pay.enterprise.com:8443 \
+  -cert partner_client.crt -key partner_client.key \
+  -CAfile enterprise_server_ca.pem -msg
+
+>>> TLS 1.3, Handshake [length 0100], ClientHello
+<<< TLS 1.3, Handshake [length 0080], ServerHello
+<<< TLS 1.3, Handshake [length 0450], EncryptedExtensions
+<<< TLS 1.3, Handshake [length 0120], CertificateRequest
+  Acceptable client certificate CA names:
+    C = US, O = Enterprise Internal PKI, CN = Enterprise Internal Issuing CA 1
+    C = US, O = Enterprise Internal PKI, CN = Enterprise Internal Issuing CA 2
+>>> TLS 1.3, Handshake [length 0612], Certificate
+  Client Certificate presented:
+    Subject: C = UK, O = Partner Logistics Ltd, CN = partner-api-client
+    Issuer:  C = US, O = GlobalSign, CN = GlobalSign Client Authentication Root R45
+>>> TLS 1.3, Handshake [length 0256], CertificateVerify
+<<< TLS 1.3, Alert [length 0002], fatal unknown_ca (48)
+140291081912:error:0A000418:SSL routines:ssl3_read_bytes:tlsv1 alert unknown ca:../ssl/record/rec_layer_s3.c:1584:SSL alert number 48

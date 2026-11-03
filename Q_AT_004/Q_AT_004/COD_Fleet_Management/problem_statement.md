@@ -1,0 +1,102 @@
+# Low-Level Design (LLD) – Ride-Sharing Fleet Management
+(Multi-Class Composition in Kotlin)
+
+**Difficulty Level**: Intermediate | **Total Marks**: 10
+**Design Format**: 2 Classes | 7 Methods | 7 Test Cases
+
+**Summary of Design Requirements**
+Implement a fleet management system tracking vehicle dispatch, fares, and fleet earnings.
+
+1. **Class "Vehicle" (Data Entity)**:
+   - Stores: `vehicleId` (String), `driverName` (String), `isAvailable` (Boolean), `totalEarnings` (Double), `tripLog` (MutableList of Strings).
+   - Manages state for individual ride-sharing vehicles.
+
+2. **Class "FleetManager" (Manager)**:
+   - Manages a collection of "Vehicle" objects.
+   - Handles vehicle registration, dispatching rides, logging completed trips, and calculating fleet bonuses.
+
+**Concepts Tested**
+- Class Composition in Kotlin
+- MutableList/Log management within objects
+- Conditional logic with multiple constraints
+- Kotlin String templates ($)
+
+**Problem Statement**
+Design a Ride-Sharing Fleet Management hub where:
+- Vehicles log their dispatches and completed trips.
+- A vehicle cannot be dispatched if it is currently unavailable (already on a trip).
+- High-earning vehicles can receive a bulk surge bonus.
+
+Each vehicle object has:
+- `vehicleId` (str)
+- `driverName` (str)
+- `isAvailable` (boolean)
+- `totalEarnings` (double)
+- `tripLog` (MutableList<String>)
+
+**Operations (Methods)**
+
+1. **Initialize structures** (Class: `Vehicle` & `FleetManager`)
+Constructors for both. Vehicle log starts with `["Vehicle registered to [driverName]"]`. `isAvailable` defaults to true.
+`FleetManager` initializes an empty registry.
+
+2. **Register Vehicle** (Class: `FleetManager`)
+`fun registerVehicle(vehicleId: String, driverName: String): String`
+- Create Vehicle instance with log.
+- Return `"Vehicle [vehicleId] added."`
+
+3. **Dispatch Vehicle** (Class: `FleetManager`)
+`fun dispatchVehicle(vehicleId: String, destination: String): String`
+- Find the vehicle. If `isAvailable` is true, set it to false.
+- Append `"Dispatched to [destination]"` to the vehicle's tripLog.
+- Return `"Vehicle [vehicleId] dispatched."`
+- If already unavailable, return `"Vehicle unavailable."`
+- If vehicle not found, return `"Vehicle not found."`
+
+4. **Complete Trip** (Class: `FleetManager`)
+`fun completeTrip(vehicleId: String, fare: Double): String`
+- Rule: Only works if the vehicle is currently unavailable (on a trip).
+- If valid: Set `isAvailable` to true, add `fare` to `totalEarnings`.
+- Log `"Trip completed. Earned $[fare]"`.
+- Return `"Trip completed."`
+- If already available: return `"Vehicle is not on a trip."`
+- Else: return `"Vehicle not found."`
+
+5. **Audit Trail** (Class: `FleetManager`)
+`fun getVehicleHistory(vehicleId: String): List<String>`
+- Return the full list of strings from `vehicle.tripLog`.
+- If not found, return `["Vehicle not found."]`.
+
+6. **Network Earnings** (Class: `FleetManager`)
+`fun totalFleetEarnings(): Double`
+- Sum of `totalEarnings` for all registered vehicles.
+- Return Double.
+
+7. **Bulk Surge Bonus** (Class: `FleetManager`)
+`fun applySurgeBonus(): Int`
+- For EVERY vehicle where `totalEarnings` is greater than 500.0, add a 10% bonus (0.10) to their `totalEarnings` and log `"Surge Bonus Applied"`.
+- Return the integer count of vehicles that received the bonus.
+
+**Test Cases & Marks Allocation:**
+-----------------------------------------------------------------------------------------------------------------
+| Test Case ID |                            Description                       |                 Method                     | Marks |
+|-----------------|------------------------------------------------|------------------------------------|---------|
+| TC1                 | Instantiate complex structures                 | init() (Both)                         |      0     |
+| TC2                 | Add vehicle with initial log                     | registerVehicle()                   |     1     |
+| TC3                 | Dispatch vehicle with log tracking             | dispatchVehicle()                   |     2     |
+| TC4                 | Complete trip with earnings calculation      | completeTrip()                      |     3     |
+| TC5                 | Retrieve full trip trail of vehicle            | getVehicleHistory()                 |     1     |
+| TC6                 | Calculate total fleet earnings                 | totalFleetEarnings()                |     1     |
+| TC7                 | Perform bulk surge bonus sweep                   | applySurgeBonus()                   |     2     |
+-------------------------------------------------------------------------------------------------------------------
+|                                                      Total                                   |                                    10                           |
+-----------------------------------------------------------------------------------------------------------------
+
+**Visible Test Case Descriptions**
+- **TC1**: `FleetManager()` should initialize the registry.
+- **TC2**: `registerVehicle("V_01", "Alice")` creates Vehicle object with log `["Vehicle registered to Alice"]`.
+- **TC3**: `dispatchVehicle("V_01", "Downtown")` updates status to false and log to `["Vehicle registered to Alice", "Dispatched to Downtown"]`.
+- **TC4**: `completeTrip("V_01", 45.5)` updates status to true, adds 45.5 to totalEarnings, and returns `"Trip completed."`.
+- **TC5**: `getVehicleHistory("V_01")` returns the full list of formatted strings.
+- **TC6**: `totalFleetEarnings()` returns the Double sum of all vehicles' totalEarnings.
+- **TC7**: `applySurgeBonus()` applies a 10% bonus to eligible vehicles and returns the count of processed items.

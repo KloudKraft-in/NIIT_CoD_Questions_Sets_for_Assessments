@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["sub"]], "root/sub": [true, ["empty", "data"]], "root/sub/empty": [true, []], "root/sub/data": [false, 100]}
+SIZE

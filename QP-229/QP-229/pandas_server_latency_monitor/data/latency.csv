@@ -1,0 +1,13 @@
+EndpointID,Day,Latency
+E01,Mon,120
+E02,Mon,
+E01,Tue,140
+E03,Mon,350
+E04,Tue,98
+E05,Mon,180
+E06,Mon,
+E01,Wed,101
+E03,Tue,500
+E04,Wed,150
+E02,Tue,160
+E05,Wed,190

@@ -1,0 +1,13 @@
+{
+    "smb_share_unc": "//smbserver.corp.local/finance",
+    "local_mount_point": "/mnt/finance_share",
+    "credentials_file_path": "/etc/cifs_credentials/smb_finance.cred",
+    "credentials_file_permissions": "TODO_PERMISSIONS (e.g. 0600 or 600)",
+    "credentials_service_user": "TODO_USERNAME (e.g. svc_fin_app)",
+    "smb_protocol_version": "TODO_VERSION (e.g. vers=3.0 or 3.0)",
+    "fstab_mount_options": "TODO_OPTIONS (e.g. credentials=/etc/cifs_credentials/smb_finance.cred,vers=3.0,_netdev,nofail)",
+    "fstab_entry_line": "TODO_FSTAB_LINE (e.g. //smbserver.corp.local/finance /mnt/finance_share cifs credentials=/etc/cifs_credentials/smb_finance.cred,vers=3.0,_netdev,nofail 0 0)",
+    "active_mount_verified": "TODO_YES_NO (YES | NO)",
+    "share_read_verified": "TODO_YES_NO (YES | NO)",
+    "mount_status": "TODO_STATUS (SUCCESS | FAILED)"
+}

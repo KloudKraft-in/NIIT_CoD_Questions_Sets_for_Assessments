@@ -1,0 +1,11 @@
+{
+    "question_id": "BCA_Q18_E",
+    "problem_code": "bca_spring_profile_resolution",
+    "score": 5,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": true,
+        "tc4": false
+    }
+}

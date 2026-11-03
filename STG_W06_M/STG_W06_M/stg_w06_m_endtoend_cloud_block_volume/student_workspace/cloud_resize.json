@@ -1,0 +1,10 @@
+{
+    "target_device": "/dev/nvme1n1",
+    "target_partition": "/dev/nvme1n1p1",
+    "before_capacity_gb": "TODO_BEFORE_GB (e.g. 100)",
+    "after_capacity_gb": "TODO_AFTER_GB (e.g. 250)",
+    "partition_resize_tool": "TODO_TOOL (e.g. growpart /dev/nvme1n1 1)",
+    "filesystem_grow_tool": "TODO_TOOL (e.g. xfs_growfs /var/lib/pgsql)",
+    "database_io_interrupted": "NO",
+    "resize_result": "TODO_RESULT (SUCCESS | FAILED)"
+}

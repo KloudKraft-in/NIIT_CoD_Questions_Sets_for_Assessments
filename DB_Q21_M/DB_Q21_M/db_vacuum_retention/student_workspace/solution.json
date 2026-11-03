@@ -1,0 +1,14 @@
+{
+  "email": "candidate@email.com",
+  "question_id": "DB_Q21_M",
+  "labskraft_username": "candidate-user",
+  "problem_code": "db_vacuum_retention",
+  "exam_code": "1123",
+  "results": {
+    "tc1": false,
+    "tc2": false,
+    "tc3": false,
+    "tc4": false,
+    "tc5": false
+  }
+}

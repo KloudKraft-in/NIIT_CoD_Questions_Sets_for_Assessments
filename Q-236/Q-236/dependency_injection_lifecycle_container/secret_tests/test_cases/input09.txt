@@ -1,0 +1,2 @@
+REGISTER s9 true
+RESOLVE s9 x9

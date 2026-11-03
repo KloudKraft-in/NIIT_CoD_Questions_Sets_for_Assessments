@@ -1,0 +1,2 @@
+Template 1 (Log Review): Create a prompt template with {log_file} and {time_range} variables.
+Template 2 (RCA Template): Create a prompt template with {incident_id} and {service_name} variables.

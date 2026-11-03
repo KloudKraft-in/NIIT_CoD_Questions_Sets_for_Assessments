@@ -1,0 +1,7 @@
+Running Tests for: Product Price Manipulation and Operations
+
+PASS Visible Test Case 1 Passed: Calculate total revenue
+PASS Visible Test Case 2 Passed: Apply discount to all prices
+PASS Visible Test Case 3 Passed: Count affordable and premium products
+
+SCORE: 10/10.0 (Visible)

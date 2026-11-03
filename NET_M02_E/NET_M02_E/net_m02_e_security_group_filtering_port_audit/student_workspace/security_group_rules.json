@@ -1,0 +1,12 @@
+{
+    "web_sg": {
+        "id": "sg-01a88",
+        "inbound": [{"port": 443, "source": "0.0.0.0/0", "proto": "tcp"}],
+        "outbound": [{"port": "all", "destination": "0.0.0.0/0", "proto": "-1"}]
+    },
+    "db_sg": {
+        "id": "sg-02b99",
+        "inbound": [{"port": 5432, "source": "sg-01a88", "proto": "tcp"}],
+        "outbound": [{"port": "all", "destination": "0.0.0.0/0", "proto": "-1"}]
+    }
+}

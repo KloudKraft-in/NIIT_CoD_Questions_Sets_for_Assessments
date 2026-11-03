@@ -1,0 +1,5 @@
+buy_day=0 buy_price=1 sell_day=1 sell_price=5 profit=4
+buy_day=2 buy_price=2 sell_day=3 sell_price=8 profit=6
+buy_day=4 buy_price=3 sell_day=5 sell_price=9 profit=6
+buy_day=6 buy_price=4 sell_day=7 sell_price=10 profit=6
+total_profit=22

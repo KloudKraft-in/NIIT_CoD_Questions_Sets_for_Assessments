@@ -1,0 +1,4 @@
+1
+Desert,130,Heatwave
+1
+Desert,temperature

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-app-pod
+spec:
+  containers:
+  - name: java-app
+    image: openjdk:8

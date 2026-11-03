@@ -1,0 +1,15 @@
+[2026-10-24 10:15:00] [INFO] Initiating secure SMB/CIFS share mount workflow for corporate reporting.
+[2026-10-24 10:15:02] [INFO] Target remote SMB UNC path: //smbserver.corp.local/finance
+[2026-10-24 10:15:05] [CMD] Creating secure credentials directory: mkdir -p /etc/cifs_credentials
+[2026-10-24 10:15:08] [CONFIG] Staging credentials file at /etc/cifs_credentials/smb_finance.cred (user: svc_fin_app).
+[2026-10-24 10:15:10] [CMD] Restricting credentials file permissions: chmod 0600 /etc/cifs_credentials/smb_finance.cred
+[2026-10-24 10:15:12] [VERIFY] Permissions verified: -rw------- (0600), owner=root:root. Unprivileged read access blocked.
+[2026-10-24 10:15:20] [CMD] Preparing local mount directory: mkdir -p /mnt/finance_share
+[2026-10-24 10:15:35] [CONFIG] Preparing persistent CIFS entry for /etc/fstab:
+[2026-10-24 10:15:35] [CONFIG] Entry: //smbserver.corp.local/finance /mnt/finance_share cifs credentials=/etc/cifs_credentials/smb_finance.cred,vers=3.0,_netdev,nofail 0 0
+[2026-10-24 10:15:40] [INFO] Modern SMB dialect negotiation enforced: vers=3.0.
+[2026-10-24 10:16:00] [CMD] Executing mount: mount -a
+[2026-10-24 10:16:04] [VERIFY] Inspecting /proc/mounts: //smbserver.corp.local/finance mounted on /mnt/finance_share type cifs (rw,vers=3.0).
+[2026-10-24 10:16:10] [TEST] Verifying read access to share contents: ls /mnt/finance_share
+[2026-10-24 10:16:12] [INFO] Share read verified: 48 quarterly financial reports listed. Read access confirmed.
+[2026-10-24 10:16:15] [STATUS] SMB/CIFS secure mount verification completed: SUCCESS.

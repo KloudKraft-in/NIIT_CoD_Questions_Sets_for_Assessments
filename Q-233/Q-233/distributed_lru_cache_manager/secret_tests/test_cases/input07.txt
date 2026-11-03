@@ -1,0 +1,3 @@
+INIT 7
+PUT 7 VAL
+GET 7

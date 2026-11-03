@@ -1,0 +1,11 @@
+{
+    "question_id": "LARC_Q13_E",
+    "problem_code": "larc_timestamp_standardization",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

@@ -1,0 +1,30 @@
+* Connected to portal.enterprise.com (198.51.100.99) port 443 (#0)
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+> GET /login HTTP/1.1
+> Host: portal.enterprise.com
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+< HTTP/1.1 302 Found
+< Date: Sun, 01 Nov 2026 11:30:10 GMT
+< Server: nginx/1.18.0
+< Location: http://portal.enterprise.com/login
+< Content-Length: 0
+< Connection: keep-alive
+* Issue another request to this URL: 'http://portal.enterprise.com/login'
+* Connected to portal.enterprise.com (198.51.100.99) port 80 (#1)
+> GET /login HTTP/1.1
+> Host: portal.enterprise.com
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+< HTTP/1.1 301 Moved Permanently
+< Date: Sun, 01 Nov 2026 11:30:11 GMT
+< Server: nginx/1.18.0
+< Location: https://portal.enterprise.com/login
+< Content-Length: 0
+< Connection: keep-alive
+* Maximum (50) redirects followed
+curl: (47) Maximum (50) redirects followed

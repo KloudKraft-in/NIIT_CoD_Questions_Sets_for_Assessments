@@ -1,0 +1,51 @@
+50
+init 10
+put QF 21
+status PW
+put BA 64
+get JY
+put VM 41
+put LX 30
+status SO
+put PW 81
+put GA 75
+put KE 95
+get TE
+get KE
+get BA
+put JY 12
+get EJ
+put VI 42
+get VM
+put VW 22
+put ZH 69
+put VM 39
+put PW 25
+put SO 71
+get BA
+get VW
+status GA
+put VM 99
+status VM
+put BA 29
+put GA 56
+put BA 68
+get EJ
+get FL
+status TE
+put QF 29
+put PW 13
+get KE
+get EJ
+put ZH 98
+status PW
+put SO 83
+put VM 19
+put JJ 22
+status LX
+put QF 11
+status WE
+status YG
+put QF 23
+get PW
+status VI

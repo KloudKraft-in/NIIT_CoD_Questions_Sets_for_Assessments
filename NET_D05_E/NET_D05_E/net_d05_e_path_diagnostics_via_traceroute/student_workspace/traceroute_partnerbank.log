@@ -1,0 +1,11 @@
+traceroute to api.partnerbank.com (192.0.2.145), 30 hops max, 60 byte packets
+ 1  gw-core.internal.corp (10.0.1.1)  0.812 ms  0.785 ms  0.770 ms
+ 2  edge-router-01.internal.corp (10.0.254.1)  1.421 ms  1.398 ms  1.385 ms
+ 3  isp-gw.transit-carriera.net (203.0.113.1)  3.210 ms  3.180 ms  3.155 ms
+ 4  core-lon-01.transit-carriera.net (198.51.100.12)  4.850 ms  4.810 ms  4.790 ms
+ 5  peer-frankfurt.transit-carrierb.net (198.51.100.89)  12.110 ms  12.080 ms  12.050 ms
+ 6  backbone-ams.transit-carrierb.net (198.51.100.94)  14.250 ms  14.210 ms  14.180 ms
+ 7  * * *
+ 8  partner-peering-gw.transit-carrierb.net (203.0.113.98)  18.420 ms  18.390 ms  18.350 ms
+ 9  edge-firewall.partnerbank.com (192.0.2.1)  2148.510 ms  2151.120 ms  2149.880 ms
+10  api.partnerbank.com (192.0.2.145)  2152.140 ms  2153.450 ms  2150.920 ms

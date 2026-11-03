@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, [".hidden", "normal"]], "root/.hidden": [false, 50], "root/normal": [false, 50]}
+SIZE

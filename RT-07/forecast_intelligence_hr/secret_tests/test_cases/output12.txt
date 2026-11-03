@@ -1,0 +1,2 @@
+The temperature for City_12 is 12
+The forecast for City_12 is Forecast_12

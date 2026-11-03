@@ -1,0 +1,29 @@
+================================================================================
+LX_07_E: linux_user_navigation_local - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: Linux File Navigation & Directory Diagnostics
+
+This guide details the exact steps a learner must perform for LX_07_E.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: OPEN TERMINAL
+- Open a terminal session on your Linux machine.
+
+STEP 2: CREATE DIRECTORY LAYOUT (PASSES TC2 & TC3)
+- Run the following bash commands to create the target directories:
+  mkdir -p /tmp/deployment/logs
+
+STEP 3: LOG SYSTEM USERNAME ENVIRONMENT VARIABLE (PASSES TC4 & TC5)
+- Write the current system username to user_info.txt:
+  echo "$USER" > /tmp/deployment/logs/user_info.txt
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY
+--------------------------------------------------------------------------------
+- Switch to the student workspace terminal.
+- Run local evaluation:
+  python3 student_workspace/run.py

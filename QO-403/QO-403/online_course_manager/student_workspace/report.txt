@@ -1,0 +1,36 @@
+Running Tests for: Online Course Manager
+
+PASS Visible Test Case 1 Passed: Initialize manager structure
+PASS Visible Test Case 2 Passed: Add course to manager
+PASS Visible Test Case 3 Passed: Register student to course
+PASS Visible Test Case 4 Passed: Get available seats in course
+PASS Visible Test Case 5 Passed: Remove student from course
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Online Course Manager
+
+PASS Visible Test Case 1 Passed: Initialize manager structure
+PASS Visible Test Case 2 Passed: Add course to manager
+PASS Visible Test Case 3 Passed: Register student to course
+PASS Visible Test Case 4 Passed: Get available seats in course
+PASS Visible Test Case 5 Passed: Remove student from course
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Online Course Manager
+
+PASS Visible Test Case 1 Passed: Initialize manager structure
+PASS Visible Test Case 2 Passed: Add course to manager
+PASS Visible Test Case 3 Passed: Register student to course
+PASS Visible Test Case 4 Passed: Get available seats in course
+PASS Visible Test Case 5 Passed: Remove student from course
+
+SCORE: 25/25.0 (Visible)
+Running Tests for: Online Course Manager
+
+PASS Visible Test Case 1 Passed: Initialize manager structure
+PASS Visible Test Case 2 Passed: Add course to manager
+PASS Visible Test Case 3 Passed: Register student to course
+PASS Visible Test Case 4 Passed: Get available seats in course
+PASS Visible Test Case 5 Passed: Remove student from course
+
+SCORE: 25/25.0 (Visible)

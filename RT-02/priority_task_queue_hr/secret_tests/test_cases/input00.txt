@@ -1,0 +1,5 @@
+4
+add_task t1 10 []
+get_status t1
+complete_task t1
+get_status t1

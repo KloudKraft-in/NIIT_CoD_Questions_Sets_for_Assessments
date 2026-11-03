@@ -1,0 +1,11 @@
+6
+add
+my_max
+my_min
+my_max
+my_min
+splitter
+3
+4 7
+10 10
+2 10 4 2 5

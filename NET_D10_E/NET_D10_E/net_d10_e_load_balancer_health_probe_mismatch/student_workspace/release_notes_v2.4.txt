@@ -1,0 +1,4 @@
+Checkout Microservice Release v2.4 Changes:
+- Standardized monitoring endpoints under /api/v1 namespace.
+- Deprecated legacy /healthz endpoint (now returns HTTP 404).
+- Active health endpoint is now: GET /api/v1/health (returns HTTP 200 OK: {"status": "UP"}).

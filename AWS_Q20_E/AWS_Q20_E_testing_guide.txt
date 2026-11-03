@@ -1,0 +1,89 @@
+================================================================================
+               NIIT AWS_Q20_E LAB: STEP-BY-STEP TESTING GUIDE
+================================================================================
+
+This guide outlines the exact workflow required to successfully complete and test 
+the AWS_Q20_E (AWS Distributed Jenkins CI/CD Architecture) lab in Niit on your 
+Ubuntu EC2 instances. Following these steps ensures 100% compliance with the 
+real-time driver audit.
+
+--------------------------------------------------------------------------------
+PHASE 1: PROVISION EC2 INSTANCES & SET UP MASTER (Satisfies TC1 & TC2)
+--------------------------------------------------------------------------------
+1. Launch two EC2 Instances (Ubuntu 22.04 LTS):
+   - Instance 1: Name it `jenkins-master`. Open ports 22 (SSH) and 8080 (Custom TCP).
+   - Instance 2: Name it `jenkins-agent`. Open port 22 (SSH) allowing traffic from `jenkins-master`.
+
+2. Install Java and Jenkins on `jenkins-master`:
+   sudo apt update
+   sudo apt install openjdk-17-jdk -y
+   curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+     https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+     /etc/apt/sources.list.d/jenkins.list > /dev/null
+   sudo apt update
+   sudo apt install jenkins -y
+   sudo systemctl start jenkins
+   sudo systemctl enable jenkins
+
+3. Access the Jenkins Dashboard:
+   - In your browser, open: http://<jenkins-master-public-ip>:8080
+   - Follow instructions to unlock Jenkins (retrieve the admin password from `/var/lib/jenkins/secrets/initialAdminPassword`).
+   - Create your admin user and install default plugins.
+
+--------------------------------------------------------------------------------
+PHASE 2: PREPARE SSH CONNECTIVITY & AGENT (Satisfies TC3)
+--------------------------------------------------------------------------------
+1. Generate SSH Keys on `jenkins-master`:
+   - Log into `jenkins-master` via SSH.
+   - Switch to the jenkins user (or run as ubuntu):
+     sudo -u jenkins ssh-keygen -t rsa -b 4096 -f /var/lib/jenkins/.ssh/id_rsa -N ""
+     (Ensure permissions are set correctly on the key files: chmod 600 id_rsa)
+
+2. Configure Java and SSH public key on `jenkins-agent`:
+   - Log into `jenkins-agent` via SSH.
+   - Install Java 17 (must match the master):
+     sudo apt update && sudo apt install openjdk-17-jdk -y
+   - Open `/home/ubuntu/.ssh/authorized_keys` and append the public key generated on `jenkins-master` (`/var/lib/jenkins/.ssh/id_rsa.pub`).
+   - Test passwordless SSH from the master:
+     sudo -u jenkins ssh -o StrictHostKeyChecking=no ubuntu@<jenkins-agent-private-ip>
+
+3. Register the Agent Node in Jenkins:
+   - On the Jenkins Dashboard, navigate to: Manage Jenkins -> Nodes -> New Node.
+   - Node Name: `jenkins-agent` (Select "Permanent Agent").
+   - Remote Root Directory: `/home/ubuntu/jenkins-agent` (Ensure this directory exists on the agent: `mkdir -p /home/ubuntu/jenkins-agent`).
+   - Labels: `build-agent`
+   - Launch Method: Launch agents via SSH.
+   - Host: `<jenkins-agent-private-ip>`
+   - Credentials: Add a new SSH Username with Private Key credential. Username: `ubuntu`, Private Key: Paste the master's private key (`/var/lib/jenkins/.ssh/id_rsa`).
+   - Host Key Verification Strategy: Non-verifying Verification Strategy.
+   - Click Save. Verify the node connects and displays as Online.
+
+--------------------------------------------------------------------------------
+PHASE 3: CREATE AND EXECUTE FREESTYLE BUILD JOB (Satisfies TC4)
+--------------------------------------------------------------------------------
+1. Create Freestyle Project:
+   - Click "New Item", enter "Agent-Build-Job" as the item name, and select "Freestyle project".
+   - Under "General", check "Restrict where this project can be run".
+   - Enter `build-agent` as the Label Expression.
+
+2. Configure Build Script:
+   - Under "Build Steps", select "Add build step" -> "Execute shell".
+   - Input the following shell command to generate the build logs:
+     mkdir -p /home/ubuntu/build-logs
+     echo "--- Execution Details ---" > /home/ubuntu/build-logs/agent-build.log
+     echo "Build Executed On Node: $(hostname)" >> /home/ubuntu/build-logs/agent-build.log
+     echo "System OS Info: $(uname -a)" >> /home/ubuntu/build-logs/agent-build.log
+     echo "Execution Timestamp: $(date)" >> /home/ubuntu/build-logs/agent-build.log
+
+3. Click Save and trigger the build manually by selecting "Build Now".
+4. Check the Console Output to verify the build ran successfully on the agent node.
+5. Log into `jenkins-agent` and verify that the file `/home/ubuntu/build-logs/agent-build.log` exists and contains correct execution details.
+
+--------------------------------------------------------------------------------
+PHASE 4: RUN REAL-TIME EVALUATION
+--------------------------------------------------------------------------------
+1. Run Tests in Niit:
+   - Go back to the Niit IDE and click "Run Tests" (or execute `python student_workspace/run.py`).
+   - The test suite will inspect the running EC2 instances, Jenkins master, node registrations, and execution logs, reporting a perfect 20/20 [PASSED] score!

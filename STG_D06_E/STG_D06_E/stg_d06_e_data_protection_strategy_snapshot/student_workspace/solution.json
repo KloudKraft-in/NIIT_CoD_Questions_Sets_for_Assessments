@@ -1,0 +1,14 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_D06_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_d06_e_data_protection_strategy_snapshot",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    },
+    "score": 0,
+    "total_marks": 10
+}

@@ -1,0 +1,5 @@
+Subnet,Rule_Number,Type,Protocol,Port_Range,Source_Dest,Action
+Database_Subnet,100,Inbound,TCP,5432,10.0.1.0/24,ALLOW
+Database_Subnet,*,Inbound,ALL,ALL,0.0.0.0/0,DENY
+Database_Subnet,100,Outbound,TCP,5432,10.0.1.0/24,ALLOW
+Database_Subnet,*,Outbound,ALL,ALL,0.0.0.0/0,DENY

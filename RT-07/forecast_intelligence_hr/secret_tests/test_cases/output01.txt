@@ -1,0 +1,2 @@
+The temperature for London is 15
+The forecast for Paris is Cloudy

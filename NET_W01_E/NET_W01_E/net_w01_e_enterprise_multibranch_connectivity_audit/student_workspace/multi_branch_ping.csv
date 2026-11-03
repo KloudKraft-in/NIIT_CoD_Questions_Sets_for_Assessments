@@ -1,0 +1,13 @@
+Branch_ID,Location,Gateway_IP,Ping_Packet_Loss_Pct,Avg_Latency_MS,Status
+BR-01,New York,10.1.0.1,0%,2.4,HEALTHY
+BR-02,London,10.2.0.1,0%,14.2,HEALTHY
+BR-03,Frankfurt,10.3.0.1,0%,18.1,HEALTHY
+BR-04,Tokyo,10.4.0.1,0%,122.5,HEALTHY
+BR-05,Sydney,10.5.0.1,100%,0.0,OFFLINE_GATEWAY_DOWN
+BR-06,Singapore,10.6.0.1,0%,110.2,HEALTHY
+BR-07,Chicago,10.7.0.1,0%,8.9,HEALTHY
+BR-08,Sao Paulo,10.8.0.1,0%,145.0,HEALTHY
+BR-09,Mumbai,10.9.0.1,0%,130.4,HEALTHY
+BR-10,Dubai,10.10.0.1,0%,98.2,HEALTHY
+BR-11,Toronto,10.11.0.1,0%,6.5,HEALTHY
+BR-12,Paris,10.12.0.1,0%,16.8,HEALTHY

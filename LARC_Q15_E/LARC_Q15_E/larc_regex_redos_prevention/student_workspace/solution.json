@@ -1,0 +1,12 @@
+{
+    "question_id": "LARC_Q15_E",
+    "problem_code": "larc_regex_redos_prevention",
+    "refactored_regex": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

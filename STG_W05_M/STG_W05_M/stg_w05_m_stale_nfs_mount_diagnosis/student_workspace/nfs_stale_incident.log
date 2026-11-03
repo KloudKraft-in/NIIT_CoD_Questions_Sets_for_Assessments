@@ -1,0 +1,37 @@
+[2026-10-21 09:12:00] [INFO] Host networking reconfiguration initiated: interface eth0 migrated to VLAN 20.
+[2026-10-21 09:12:05] [INFO] IPv4 address updated: 192.168.20.50/24 (Gateway: 192.168.20.1, Subnet: 192.168.20.0/24).
+[2026-10-21 09:13:40] [WARN] [NFS] RPC call to NetApp SVM svm_netapp_prod for mountpoint /mnt/netapp_shared timed out.
+[2026-10-21 09:14:02] [KERNEL] [NFS] nfs: server svm_netapp_prod not responding, timed out.
+[2026-10-21 09:14:15] [KERNEL] [NFS] NFS: server svm_netapp_prod error -116 (ESTALE: Stale file handle) on lookup /mnt/netapp_shared
+[2026-10-21 09:15:10] [CMD] bash[3214]: ls -la /mnt/netapp_shared
+[2026-10-21 09:15:25] [ERROR] ls: cannot open directory '/mnt/netapp_shared': Stale file handle (ESTALE)
+[2026-10-21 09:16:01] [DIAG] Diagnosing locking processes on stale mount: fuser -mv /mnt/netapp_shared
+[2026-10-21 09:16:02] [DIAG]                      USER        PID ACCESS COMMAND
+[2026-10-21 09:16:02] [DIAG] /mnt/netapp_shared:   appuser    4812 ..c.. report_worker
+[2026-10-21 09:16:10] [DIAG] Alternative diagnostic tool verified: lsof +D /mnt/netapp_shared (PID 4812 holding cwd descriptor)
+[2026-10-21 09:17:02] [CMD] Standard unmount attempted: umount /mnt/netapp_shared
+[2026-10-21 09:17:02] [ERROR] umount: /mnt/netapp_shared: target is busy (device or resource busy)
+[2026-10-21 09:18:30] [CMD] Executing safe lazy unmount: umount -l /mnt/netapp_shared
+[2026-10-21 09:18:31] [INFO] Filesystem /mnt/netapp_shared detached cleanly via MNT_DETACH.
+[2026-10-21 09:18:31] [INFO] Orphaned kernel states avoided: YES. Host reboot not required.
+[2026-10-21 09:19:15] [DIAG] NetApp ONTAP SVM export policy dump:
+[2026-10-21 09:19:15] [DIAG] -------------------------------------------------------------------
+[2026-10-21 09:19:15] [DIAG] Vserver: svm_netapp_prod
+[2026-10-21 09:19:15] [DIAG] Policy Name: app_export_policy
+[2026-10-21 09:19:15] [DIAG] Rule Index: 1
+[2026-10-21 09:19:15] [DIAG] Client Match: 192.168.10.0/24
+[2026-10-21 09:19:15] [DIAG] RO Access Rule: sys
+[2026-10-21 09:19:15] [DIAG] RW Access Rule: sys
+[2026-10-21 09:19:15] [DIAG] Anonymous User ID: 65534
+[2026-10-21 09:19:15] [DIAG] Superuser Security: sys
+[2026-10-21 09:19:15] [DIAG] Protocols: nfs3,nfs4
+[2026-10-21 09:19:15] [DIAG] -------------------------------------------------------------------
+[2026-10-21 09:19:16] [DIAG] Discrepancy isolated: Rule 1 matches legacy subnet 192.168.10.0/24. New client host IP 192.168.20.50 (subnet 192.168.20.0/24) is denied access.
+[2026-10-21 09:20:45] [ONTAP] Applying remediation rule on Vserver svm_netapp_prod:
+[2026-10-21 09:20:45] [ONTAP] vserver export-policy rule create -vserver svm_netapp_prod -policyname app_export_policy -clientmatch 192.168.20.0/24 -rorule sys -rwrule sys
+[2026-10-21 09:20:48] [ONTAP] Export policy rule created and activated successfully.
+[2026-10-21 09:22:10] [CMD] Executing remount: mount -t nfs -o vers=4.1 svm_netapp_prod:/shared /mnt/netapp_shared
+[2026-10-21 09:22:12] [INFO] Remount successful. Mountpoint /mnt/netapp_shared active (rw,relatime,vers=4.1).
+[2026-10-21 09:22:20] [TEST] Read/Write transaction verification: touch /mnt/netapp_shared/.healthcheck && rm /mnt/netapp_shared/.healthcheck
+[2026-10-21 09:22:21] [INFO] Read/Write transaction verification completed: SUCCESS.
+[2026-10-21 09:22:25] [STATUS] Storage cluster recovery status: SUCCESS.

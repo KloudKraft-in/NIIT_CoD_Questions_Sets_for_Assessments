@@ -1,0 +1,5 @@
+Server:         10.200.0.10
+Address:        10.200.0.10#53
+
+Name:   api-orders.internal.corp
+Address: 10.200.15.82

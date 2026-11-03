@@ -1,0 +1,22 @@
+=== PING EXECUTION LOG ===
+[Target 1: 10.10.1.10 (DC)]
+PING 10.10.1.10 (10.10.1.10) 56(84) bytes of data.
+64 bytes from 10.10.1.10: icmp_seq=1 ttl=62 time=2.14 ms
+64 bytes from 10.10.1.10: icmp_seq=2 ttl=62 time=1.98 ms
+--- 10.10.1.10 ping statistics --- 2 packets transmitted, 2 received, 0% packet loss
+
+[Target 2: portal.acme.corp]
+ping: portal.acme.corp: Name or service not known
+
+[Target 3: api.paygateway.com]
+PING api.paygateway.com (198.51.100.20) 56(84) bytes of data.
+--- api.paygateway.com ping statistics --- 4 packets transmitted, 0 received, 100% packet loss
+
+[Target 4: hr.local (10.10.5.20)]
+PING 10.10.5.20 (10.10.5.20) 56(84) bytes of data.
+64 bytes from 10.10.5.20: icmp_seq=1 ttl=60 time=4.32 ms
+--- 10.10.5.20 ping statistics --- 2 packets transmitted, 2 received, 0% packet loss
+
+[Target 5: 8.8.8.8]
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=118 time=14.2 ms
+--- 8.8.8.8 ping statistics --- 2 packets transmitted, 2 received, 0% packet loss

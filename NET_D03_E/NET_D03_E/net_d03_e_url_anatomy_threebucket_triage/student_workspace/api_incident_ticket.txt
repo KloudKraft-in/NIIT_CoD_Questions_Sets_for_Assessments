@@ -1,0 +1,5 @@
+INCIDENT TICKET: INC-99014
+Title: The API is down! Customers are blocked!
+Reported URL: https://api-orders.internal.corp:8443/v2/orders?status=pending
+Impacted Service: Checkout & Order Processing
+Reported By: OrderGateway Microservice

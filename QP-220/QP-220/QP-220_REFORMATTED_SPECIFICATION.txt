@@ -1,0 +1,209 @@
+QP-220: PATIENT HEALTH MONITOR
+(Reformatted to match standard specification format)
+
+================================================================================
+PROBLEM STATEMENT
+================================================================================
+
+You are required to implement a HealthMonitor class to track and analyze patient 
+heart rate readings using Pandas DataFrames. The system should support data loading, 
+data cleaning, peak reading identification, and calculating health metrics.
+
+Design Format: 1 Class with 7 Independent Methods
+Difficulty Level: Medium
+Number of Test Cases: 7
+Total Marks: 20
+
+================================================================================
+CLASS SPECIFICATION
+================================================================================
+
+Class Name: HealthMonitor
+
+================================================================================
+METHOD DEFINITIONS
+================================================================================
+
+Method 1: __init__
+-----------
+def __init__(self):
+    """
+    Initialize the HealthMonitor with empty storage.
+    Set self.df to None.
+    
+    Returns: None
+    """
+
+Method 2: read_data
+-----------
+def read_data(self, file_path: str) -> None:
+    """
+    Load patient health logs from a CSV file into self.df.
+    
+    Parameters:
+        file_path (str): Path to the CSV file
+    
+    Returns: None
+    
+    Behavior:
+        - Load CSV file into the Pandas DataFrame self.df.
+    """
+
+Method 3: clean_records
+-----------
+def clean_records(self) -> int:
+    """
+    Drop all rows from self.df where 'HeartRate' is NaN.
+    Update the internal DataFrame in place.
+    
+    Returns:
+        int: Number of rows removed from the DataFrame
+    """
+
+Method 4: find_highest_rate
+-----------
+def find_highest_rate(self) -> int:
+    """
+    Find the maximum heart rate value across all cleaned records.
+    
+    Returns:
+        int: The maximum heart rate (or 0 if self.df is None or empty)
+    """
+
+Method 5: patient_averages
+-----------
+def patient_averages(self) -> dict:
+    """
+    Calculate the mean HeartRate for each unique PatientID in the records.
+    
+    Returns:
+        dict: A dictionary mapping PatientID (str) to average heart rate (float, rounded to 2 decimal places)
+        Format: {'PatientID': float}
+    """
+
+Method 6: high_risk
+-----------
+def high_risk(self, threshold: int) -> list:
+    """
+    Identify unique PatientID values who have at least one reading strictly greater than the threshold.
+    
+    Parameters:
+        threshold (int): Heart rate threshold value
+    
+    Returns:
+        list: Sorted list of unique PatientIDs (strings) exceeding the threshold
+    """
+
+Method 7: count_high_risk
+-----------
+def count_high_risk(self, threshold: int) -> int:
+    """
+    Count the number of unique high-risk patients meeting the threshold criteria.
+    
+    Parameters:
+        threshold (int): Heart rate threshold value
+        
+    Returns:
+        int: Count of unique patients with a heart rate strictly greater than the threshold
+    """
+
+================================================================================
+TEST CASES
+================================================================================
+
+Total Marks: 20 marks
+
+TC1: Verify initial state (Sample)
+---
+Description: Check that self.df is None upon class initialization.
+Method: __init__()
+Expected Output: None
+Marks: 0
+
+TC2: Verify data loading (Sample)
+---
+Description: Load the sample data from health_old.csv into self.df and verify the total record count (12 records initially).
+Method: read_data()
+Expected Output: 12
+Marks: 0
+
+TC3: Verify removal of missing value records
+---
+Description: Remove records where HeartRate is NaN and return count of deleted records (2 records removed).
+Method: clean_records()
+Expected Output: 2
+Marks: 4
+
+TC4: Identify the highest recorded heart rate
+---
+Description: Find the peak heart rate across all records.
+Method: find_highest_rate()
+Expected Output: 110
+Marks: 4
+
+TC5: Calculate health averages for each patient
+---
+Description: Calculate mean HeartRate for each patient rounded to 2 decimal places.
+Method: patient_averages()
+Expected Output: Patient averages mapping (e.g. 'P01' averages to 72.33)
+Marks: 4
+
+TC6: Identify patients exceeding threshold
+---
+Description: Find patients with heart rate exceeding 100 BPM.
+Method: high_risk(100)
+Expected Output: ['P03']
+Marks: 4
+
+TC7: Count unique high-risk individuals
+---
+Description: Count unique patients exceeding 100 BPM.
+Method: count_high_risk(100)
+Expected Output: 1
+Marks: 4
+
+================================================================================
+MARKS DISTRIBUTION
+================================================================================
+
+TC1: Initial State             0 marks (Sample)
+TC2: Data Loading             0 marks (Sample)
+TC3: Clean Records             4 marks
+TC4: Find Highest Rate         4 marks
+TC5: Patient Averages           4 marks
+TC6: High Risk Patients         4 marks
+TC7: Count High Risk Patients   4 marks
+---
+TOTAL                         20 marks
+
+================================================================================
+SAMPLE DATA STRUCTURE
+================================================================================
+
+CSV format:
+PatientID,Day,HeartRate
+P01,Mon,72
+P02,Mon,
+...
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+1. Language: Python 3.x
+2. Data Structure: Pandas DataFrame
+3. External Libraries: pandas, numpy
+4. Type hints required for all methods
+5. Return type specifications required
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+1. Each test case must use a fresh instance of HealthMonitor
+2. Test cases are independent - no shared state between tests
+3. Average calculations must be rounded to exactly 2 decimal places
+4. Patient IDs are strings (e.g., "P01")
+5. High-risk patient list must be sorted alphabetically
+6. Missing values in csv (like empty HeartRate values) must be represented as NaN/None internally
+7. Case sensitivity should match original keys (e.g., 'PatientID', 'Day', 'HeartRate')
+================================================================================

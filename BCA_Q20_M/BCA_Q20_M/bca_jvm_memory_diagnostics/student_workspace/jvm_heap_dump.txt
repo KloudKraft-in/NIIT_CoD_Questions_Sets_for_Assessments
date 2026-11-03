@@ -1,0 +1,5 @@
+Heap Dump Analysis
+Leak suspect: com.company.service.SessionManager
+Object causing leak: java.util.HashMap (HashMap entries not evicted)
+Originating line: SessionManager.java:89
+Recommended JVM parameter: -Xmx4g

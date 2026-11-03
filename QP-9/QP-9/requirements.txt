@@ -1,0 +1,13 @@
+pandas
+python-dateutil
+pytz
+tzdata
+openpyxl
+et_xmlfile
+matplotlib
+matplotlib-inline
+seaborn
+joblib
+threadpoolctl
+scikit-learn
+pillow

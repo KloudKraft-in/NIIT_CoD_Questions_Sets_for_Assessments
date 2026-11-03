@@ -1,0 +1,2 @@
+REGISTER s12 true
+RESOLVE s12 x12

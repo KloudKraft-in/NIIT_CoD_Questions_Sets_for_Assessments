@@ -1,0 +1,20 @@
+{
+    "project": "Enterprise Multi-Tier Storage Architecture",
+    "workloads": [
+        {
+            "workload_id": 1,
+            "name": "Transactional Oracle database datafiles",
+            "description": "High transaction rate OLTP database requiring low latency block-level access and dedicated disk controller throughput."
+        },
+        {
+            "workload_id": 2,
+            "name": "Shared application server media uploads accessed concurrently by five web nodes",
+            "description": "Web tier content uploads requiring concurrent read/write POSIX access across multiple Linux virtual machines simultaneously."
+        },
+        {
+            "workload_id": 3,
+            "name": "Cold quarterly audit log archives",
+            "description": "Compliance logs retained for 7 years, accessed infrequently via HTTPS API, requiring maximum durability at lowest per-GB storage cost."
+        }
+    ]
+}

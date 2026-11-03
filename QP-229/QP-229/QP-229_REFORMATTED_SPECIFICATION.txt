@@ -1,0 +1,209 @@
+QP-229: SERVER LATENCY MONITOR
+(Reformatted to match standard specification format)
+
+================================================================================
+PROBLEM STATEMENT
+================================================================================
+
+You are required to implement a ServerLatencyMonitor class to track and analyze server 
+response latencies using Pandas DataFrames. The system should support data loading, 
+data cleaning, peak reading identification, and calculating response speed metrics.
+
+Design Format: 1 Class with 7 Independent Methods
+Difficulty Level: Medium
+Number of Test Cases: 7
+Total Marks: 20
+
+================================================================================
+CLASS SPECIFICATION
+================================================================================
+
+Class Name: ServerLatencyMonitor
+
+================================================================================
+METHOD DEFINITIONS
+================================================================================
+
+Method 1: __init__
+-----------
+def __init__(self):
+    """
+    Initialize the ServerLatencyMonitor with empty storage.
+    Set self.df to None.
+    
+    Returns: None
+    """
+
+Method 2: read_data
+-----------
+def read_data(self, file_path: str) -> None:
+    """
+    Load server latency logs from a CSV file into self.df.
+    
+    Parameters:
+        file_path (str): Path to the CSV file
+    
+    Returns: None
+    
+    Behavior:
+        - Load CSV file into the Pandas DataFrame self.df.
+    """
+
+Method 3: clean_records
+-----------
+def clean_records(self) -> int:
+    """
+    Drop all rows from self.df where 'Latency' is NaN.
+    Update the internal DataFrame in place.
+    
+    Returns:
+        int: Number of rows removed from the DataFrame
+    """
+
+Method 4: find_highest_latency
+-----------
+def find_highest_latency(self) -> int:
+    """
+    Find the maximum latency value across all cleaned records.
+    
+    Returns:
+        int: The maximum latency (or 0 if self.df is None or empty)
+    """
+
+Method 5: endpoint_averages
+-----------
+def endpoint_averages(self) -> dict:
+    """
+    Calculate the mean Latency for each unique EndpointID in the records.
+    
+    Returns:
+        dict: A dictionary mapping EndpointID (str) to average latency (float, rounded to 2 decimal places)
+        Format: {'EndpointID': float}
+    """
+
+Method 6: high_latency_endpoints
+-----------
+def high_latency_endpoints(self, threshold: int) -> list:
+    """
+    Identify unique EndpointID values who have at least one reading strictly greater than the threshold.
+    
+    Parameters:
+        threshold (int): Latency threshold value in ms
+    
+    Returns:
+        list: Sorted list of unique EndpointIDs (strings) exceeding the threshold
+    """
+
+Method 7: count_high_latency_endpoints
+-----------
+def count_high_latency_endpoints(self, threshold: int) -> int:
+    """
+    Count the number of unique high-latency endpoints meeting the threshold criteria.
+    
+    Parameters:
+        threshold (int): Latency threshold value in ms
+        
+    Returns:
+        int: Count of unique endpoints with a latency strictly greater than the threshold
+    """
+
+================================================================================
+TEST CASES
+================================================================================
+
+Total Marks: 20 marks
+
+TC1: Verify initial state (Sample)
+---
+Description: Check that self.df is None upon class initialization.
+Method: __init__()
+Expected Output: None
+Marks: 0
+
+TC2: Verify data loading (Sample)
+---
+Description: Load the sample data from latency.csv into self.df and verify the total record count (12 records initially).
+Method: read_data()
+Expected Output: 12
+Marks: 0
+
+TC3: Verify removal of missing value records
+---
+Description: Remove records where Latency is NaN and return count of deleted records (2 records removed).
+Method: clean_records()
+Expected Output: 2
+Marks: 4
+
+TC4: Identify the highest recorded latency
+---
+Description: Find the peak latency across all records.
+Method: find_highest_latency()
+Expected Output: 500
+Marks: 4
+
+TC5: Calculate latency averages for each endpoint
+---
+Description: Calculate mean Latency for each endpoint rounded to 2 decimal places.
+Method: endpoint_averages()
+Expected Output: Endpoint averages mapping (e.g. 'E01' averages to 120.33)
+Marks: 4
+
+TC6: Identify endpoints exceeding threshold
+---
+Description: Find endpoints with latency exceeding 200 ms.
+Method: high_latency_endpoints(200)
+Expected Output: ['E03']
+Marks: 4
+
+TC7: Count unique high-latency endpoints
+---
+Description: Count unique endpoints exceeding 200 ms.
+Method: count_high_latency_endpoints(200)
+Expected Output: 1
+Marks: 4
+
+================================================================================
+MARKS DISTRIBUTION
+================================================================================
+
+TC1: Initial State             0 marks (Sample)
+TC2: Data Loading             0 marks (Sample)
+TC3: Clean Records             4 marks
+TC4: Find Highest Latency      4 marks
+TC5: Endpoint Averages         4 marks
+TC6: High Latency Endpoints    4 marks
+TC7: Count High Latency        4 marks
+---
+TOTAL                         20 marks
+
+================================================================================
+SAMPLE DATA STRUCTURE
+================================================================================
+
+CSV format:
+EndpointID,Day,Latency
+E01,Mon,120
+E02,Mon,
+...
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+1. Language: Python 3.x
+2. Data Structure: Pandas DataFrame
+3. External Libraries: pandas, numpy
+4. Type hints required for all methods
+5. Return type specifications required
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+1. Each test case must use a fresh instance of ServerLatencyMonitor
+2. Test cases are independent - no shared state between tests
+3. Average calculations must be rounded to exactly 2 decimal places
+4. Endpoint IDs are strings (e.g., "E01")
+5. High-latency endpoint list must be sorted alphabetically
+6. Missing values in csv (like empty Latency values) must be represented as NaN/None internally
+7. Case sensitivity should match original keys (e.g., 'EndpointID', 'Day', 'Latency')
+================================================================================

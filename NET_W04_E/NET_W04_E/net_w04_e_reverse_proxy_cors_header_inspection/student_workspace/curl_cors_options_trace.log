@@ -1,0 +1,21 @@
+$ curl -iv -X OPTIONS https://api.enterprise.com/v1/users \
+  -H "Origin: https://app.enterprise.com" \
+  -H "Access-Control-Request-Method: POST" \
+  -H "Access-Control-Request-Headers: Content-Type, Authorization"
+
+* Connected to api.enterprise.com (198.51.100.22) port 443 (#0)
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+> OPTIONS /v1/users HTTP/1.1
+> Host: api.enterprise.com
+> Origin: https://app.enterprise.com
+> Access-Control-Request-Method: POST
+> Access-Control-Request-Headers: Content-Type, Authorization
+> Accept: */*
+> 
+< HTTP/1.1 204 No Content
+< Date: Sun, 01 Nov 2026 14:15:20 GMT
+< Server: nginx/1.20.1
+< Allow: GET, POST, OPTIONS
+< Content-Length: 0
+< Connection: keep-alive
+* NOTE: Access-Control-Allow-Origin and Access-Control-Allow-Methods headers are MISSING from response!

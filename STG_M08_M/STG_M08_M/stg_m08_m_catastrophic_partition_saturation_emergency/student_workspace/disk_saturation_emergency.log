@@ -1,0 +1,23 @@
+[2026-10-30 08:00:00] [ALERT] Filesystem saturation alert: /dev/root mounted on / is at 100% capacity (0 bytes available).
+[2026-10-30 08:00:05] [EXEC] df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        20G   20G     0 100% /
+[2026-10-30 08:01:00] [WARN] Technician executed 'rm -f /var/log/app/transaction.log'. Disk space not freed.
+[2026-10-30 08:01:30] [EXEC] lsof +L1
+COMMAND    PID    USER   FD   TYPE DEVICE SIZE/OFF   NLINK NAME
+app_server 4821 appuser   4w   REG  259,1 6442450944     0 /var/log/app/transaction.log (deleted)
+[2026-10-30 08:02:15] [DIAG] File /var/log/app/transaction.log is unlinked but held open by PID 4821 (FD 4).
+[2026-10-30 08:03:00] [EXEC] Truncating open deleted descriptor without process restart:
+[2026-10-30 08:03:01] [EXEC] : > /proc/4821/fd/4
+[2026-10-30 08:03:05] [INFO] Descriptor truncated. 6,144 MB immediately reclaimed.
+[2026-10-30 08:04:00] [EXEC] Purging obsolete core dumps: rm -rf /var/lib/systemd/coredump/*
+[2026-10-30 08:04:05] [INFO] Core dumps purged. 1,150 MB reclaimed.
+[2026-10-30 08:05:00] [EXEC] Vacuuming systemd journal logs: journalctl --vacuum-size=200M
+[2026-10-30 08:05:04] [INFO] Journal vacuum completed. Vacuumed down to 200MB, 810 MB reclaimed.
+[2026-10-30 08:05:30] [EXEC] Cleaning package manager cache: apt-get clean
+[2026-10-30 08:05:35] [INFO] Package cache cleaned. 446 MB reclaimed.
+[2026-10-30 08:06:00] [EXEC] Post-remediation filesystem verification: df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        20G   11G  7.5G  62% /
+[2026-10-30 08:06:05] [SUCCESS] Restored headroom: 8,550 MB. Root filesystem utilization dropped to 62% (< 70%).
+[2026-10-30 08:06:10] [STATUS] Emergency recovery status: RESOLVED.

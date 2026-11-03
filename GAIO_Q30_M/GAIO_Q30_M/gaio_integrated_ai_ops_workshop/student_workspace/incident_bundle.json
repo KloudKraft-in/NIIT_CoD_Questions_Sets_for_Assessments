@@ -1,0 +1,5 @@
+{
+  "incident_id": "INC-GLOBAL-01",
+  "logs": "2026-08-04 15:00:00 ERROR DB Connection timeout",
+  "runbook": "Runbook RB-102: Check DB pool max_connections parameter"
+}

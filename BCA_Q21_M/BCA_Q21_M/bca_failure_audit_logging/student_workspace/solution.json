@@ -1,0 +1,20 @@
+{
+    "question_id": "BCA_Q21_M",
+    "problem_code": "bca_failure_audit_logging",
+    "classification": "TODO",
+    "deadlock_transaction": "TODO",
+    "timeout_seconds": 0,
+    "correlation_id": "TODO",
+    "mitigation_steps": "TODO",
+    "score": 8,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": true,
+        "tc7": false,
+        "tc8": true
+    }
+}

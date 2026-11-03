@@ -1,0 +1,201 @@
+200
+init 5
+put KB 92
+status AA
+put DS 76
+put DS 41
+put QS 62
+status AA
+put HZ 62
+get HT
+put DS 15
+get GP
+get DS
+get GP
+put CE 42
+status HZ
+get OD
+status HZ
+status KB
+status GF
+get CE
+put CE 63
+status BW
+put AA 25
+put OD 26
+get DO
+put DI 34
+get BE
+get DI
+put DO 99
+status DS
+put DS 62
+put HT 36
+put GP 38
+get AA
+status DS
+get LE
+put GP 38
+get FQ
+status QS
+status OD
+put FQ 94
+put KB 58
+put CE 95
+status QS
+status BW
+status DS
+status OD
+put FQ 37
+status DI
+get OD
+get ED
+get DO
+status GP
+status BE
+put GP 35
+get BZ
+put BE 65
+put CE 15
+get DS
+put AA 94
+status FB
+put GF 35
+put BE 56
+status FQ
+status DI
+put HZ 80
+get BE
+put HZ 98
+status DS
+put BZ 22
+status HZ
+status HT
+status QS
+put LE 82
+put QS 17
+get DS
+status OD
+put BZ 14
+put GF 47
+get DO
+put DO 66
+put ED 54
+status BW
+put ED 42
+put FB 58
+status ED
+put ED 50
+put HT 38
+put FB 74
+status AA
+status DO
+status QS
+put DS 15
+status LE
+get QS
+get BE
+status CE
+get LE
+put BE 18
+put OD 87
+get HT
+get FQ
+put DO 74
+get BW
+get GF
+get ED
+status AA
+put FQ 10
+get FB
+get GP
+get BZ
+status DS
+put GF 98
+get BE
+get HT
+put CE 95
+put BE 17
+put BZ 48
+status BW
+status BE
+status GF
+status BE
+put FB 14
+get BE
+put OD 44
+status DO
+get DO
+get BE
+put OD 34
+status FB
+status GF
+put AA 15
+status HT
+status DI
+get HZ
+status BZ
+status KB
+get DI
+put BW 87
+get OD
+status CE
+put BZ 57
+put OD 82
+get FQ
+get GF
+status DI
+status BW
+get GF
+put LE 60
+get GF
+put HT 72
+put OD 68
+get BW
+put QS 98
+get CE
+status ED
+put BZ 31
+get DI
+status QS
+get OD
+put FB 68
+put OD 11
+status HT
+status FB
+get QS
+put BE 43
+status LE
+put BW 78
+status DO
+put CE 87
+status HT
+status ED
+get CE
+put BZ 26
+status ED
+get CE
+status OD
+put DS 18
+put DO 35
+status FQ
+put FQ 53
+status HZ
+get LE
+put GF 34
+get HZ
+status QS
+put FB 15
+get BZ
+get DO
+put AA 21
+get DS
+get DI
+put DS 73
+put FQ 69
+status BW
+put FQ 85
+put OD 18
+get HZ
+status OD
+status OD

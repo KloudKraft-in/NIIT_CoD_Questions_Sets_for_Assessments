@@ -1,0 +1,6 @@
+{
+    "question_id": "GAIO_Q03_E",
+    "problem_code": "gaio_hallucination_audit",
+    "fake_flags": [],
+    "hallucinated_commands": []
+}

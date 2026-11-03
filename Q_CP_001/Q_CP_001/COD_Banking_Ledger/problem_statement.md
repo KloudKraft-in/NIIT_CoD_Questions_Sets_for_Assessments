@@ -1,0 +1,98 @@
+# Low-Level Design (LLD) – Banking Ledger System
+(Multi-Class Composition in C++)
+
+**Difficulty Level**: Intermediate | **Total Marks**: 10
+**Design Format**: 2 Classes | 7 Methods | 7 Test Cases
+
+**Summary of Design Requirements**
+Implement a Banking Ledger system tracking account balances and transaction histories.
+
+1. **Class "Account" (Data Entity)**:
+   - Stores: `accountId` (string), `ownerName` (string), `balance` (double), `transactionLog` (vector of strings).
+   - Manages state for individual bank accounts.
+
+2. **Class "BankManager" (Manager)**:
+   - Manages a collection of "Account" objects.
+   - Handles deposits, withdrawals, history tracking, and interest application.
+
+**Concepts Tested**
+- Class Composition in C++
+- `std::vector` and `std::map` / `std::unordered_map` usage
+- Pointers or Object References
+- Conditional logic with constraints
+
+**Problem Statement**
+Design a Banking Ledger where:
+- Accounts track every transaction in a log.
+- Withdrawals are blocked if the balance goes below 0 (No overdraft).
+- High-balance accounts receive bulk interest.
+
+Each account object has:
+- `accountId` (string)
+- `ownerName` (string)
+- `balance` (double)
+- `transactionLog` (std::vector<std::string>)
+
+**Operations (Methods)**
+
+1. **Initialize structures** (Class: `Account` & `BankManager`)
+Constructors for both. Account log starts with `["Account opened with deposit: $[val]"]`.
+`BankManager` initializes an empty registry.
+
+2. **Open Account** (Class: `BankManager`)
+`std::string openAccount(std::string accountId, std::string ownerName, double initialDeposit)`
+- Create Account instance with log.
+- Return `"Account [accountId] opened."`
+
+3. **Deposit** (Class: `BankManager`)
+`std::string deposit(std::string accountId, double amount)`
+- Find the account. Add amount to balance.
+- Append `"Deposited $[amount]"` to the account's transactionLog.
+- Return `"Success. New Balance: $[new_balance]"`
+- If account not found, return `"Account not found."`
+
+4. **Withdraw** (Class: `BankManager`)
+`std::string withdraw(std::string accountId, double amount)`
+- Rule: `(balance - amount) >= 0`.
+- If valid: Deduct, log `"Withdrew $[amount]"`, return `"Withdrew $[amount]"`.
+- If below 0: return `"Insufficient funds."`
+- Else if account not found: return `"Account not found."`
+
+5. **Audit Trail** (Class: `BankManager`)
+`std::vector<std::string> getTransactionHistory(std::string accountId)`
+- Return the full list of strings from `account.transactionLog`.
+- If not found, return `["Account not found."]`.
+
+6. **Network Liquidity** (Class: `BankManager`)
+`double totalBankLiquidity()`
+- Sum of `balance` for all registered accounts.
+- Return double.
+
+7. **Bulk Interest Sweep** (Class: `BankManager`)
+`int applyInterest()`
+- For EVERY account where `balance` is greater than 1000.0, add a 5% interest (0.05) to their `balance` and log `"Interest Applied"`.
+- Return the integer count of accounts that received interest.
+
+**Test Cases & Marks Allocation:**
+-----------------------------------------------------------------------------------------------------------------
+| Test Case ID |                            Description                       |                 Method                     | Marks |
+|-----------------|------------------------------------------------|------------------------------------|---------|
+| TC1                 | Instantiate complex structures                 | init() (Both)                         |      0     |
+| TC2                 | Add account with initial log                   | openAccount()                       |     1     |
+| TC3                 | Deposit with log tracking                      | deposit()                           |     2     |
+| TC4                 | Withdraw with overdraft logic                  | withdraw()                          |     3     |
+| TC5                 | Retrieve full transaction trail                | getTransactionHistory()             |     1     |
+| TC6                 | Calculate total bank liquidity                 | totalBankLiquidity()                |     1     |
+| TC7                 | Perform bulk interest sweep                    | applyInterest()                     |     2     |
+-------------------------------------------------------------------------------------------------------------------
+|                                                      Total                                   |                                    10                           |
+-----------------------------------------------------------------------------------------------------------------
+
+**Visible Test Case Descriptions**
+- **TC1**: `BankManager()` should initialize the registry.
+- **TC2**: `openAccount("A_01", "Alice", 500.0)` creates Account object with log `["Account opened with deposit: $500"]`.
+- **TC3**: `deposit("A_01", 200.0)` updates balance to 700.0 and log.
+- **TC4**: `withdraw("A_01", 800.0)` returns `"Insufficient funds."`.
+- **TC5**: `getTransactionHistory("A_01")` returns the full vector of formatted strings.
+- **TC6**: `totalBankLiquidity()` returns the double sum of all balances.
+- **TC7**: `applyInterest()` applies a 5% bonus to eligible accounts and returns the count of processed items.

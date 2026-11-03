@@ -1,0 +1,15 @@
+1
+13
+new prod_3
+del prod_2
+limit 5
+new prod_6
+del prod_19
+new prod_15
+del prod_18
+new prod_13
+print prod_9
+new prod_16
+del prod_18
+print prod_19
+new prod_2

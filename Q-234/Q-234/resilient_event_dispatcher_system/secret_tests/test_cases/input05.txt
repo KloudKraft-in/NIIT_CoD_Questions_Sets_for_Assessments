@@ -1,0 +1,3 @@
+SUBSCRIBE e1 log_event
+SUBSCRIBE e1 log_event
+DISPATCH e1 {"message": "twice"}

@@ -1,0 +1,21 @@
+{
+    "incident_overview": {
+        "target_host": "db-payments-prod-01",
+        "volume_id": "vol-09a8b7c6d5e4f3a21",
+        "incident_window": "14:00 to 16:00 UTC"
+    },
+    "telemetry_correlation": {
+        "total_sustained_iops": "TODO_IOPS",
+        "provisioned_volume_limit_iops": 3000,
+        "iops_throttling_detected": "TODO_YES_NO (YES | NO)",
+        "average_calculated_latency_ms": "TODO_LATENCY_MS",
+        "peak_cloudwatch_volume_queue_length": "TODO_QUEUE_DEPTH"
+    },
+    "root_cause_determination": {
+        "storage_subsystem_culpable": "TODO_YES_NO (YES | NO)",
+        "technical_causal_mechanism": "TODO_EXPLAIN"
+    },
+    "remediation_blueprint": {
+        "aws_cli_command": "TODO_CLI_COMMAND"
+    }
+}

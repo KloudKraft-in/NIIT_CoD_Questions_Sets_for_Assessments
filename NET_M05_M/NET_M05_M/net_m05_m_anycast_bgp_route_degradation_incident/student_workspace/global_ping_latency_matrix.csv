@@ -1,0 +1,7 @@
+Source_City,Target_Anycast_IP,Previous_Baseline_MS,Current_Incident_MS,Ingress_POP
+London,198.51.100.53,8.2,315.4,Tokyo (NRT)
+Frankfurt,198.51.100.53,4.1,328.1,Tokyo (NRT)
+Paris,198.51.100.53,11.5,310.2,Tokyo (NRT)
+New York,198.51.100.53,6.4,6.5,New York (JFK)
+Tokyo,198.51.100.53,3.2,3.2,Tokyo (NRT)
+Sydney,198.51.100.53,110.4,111.0,Tokyo (NRT)

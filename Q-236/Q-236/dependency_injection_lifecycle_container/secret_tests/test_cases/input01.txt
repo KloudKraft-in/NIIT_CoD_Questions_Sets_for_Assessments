@@ -1,0 +1,4 @@
+REGISTER db true
+RESOLVE db d1
+RESOLVE db d2
+CHECK_IDENTITY d1 d2

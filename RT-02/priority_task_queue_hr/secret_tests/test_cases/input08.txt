@@ -1,0 +1,6 @@
+5
+add_task t1 10 []
+add_task t2 20 []
+get_next
+complete_task t2
+get_next

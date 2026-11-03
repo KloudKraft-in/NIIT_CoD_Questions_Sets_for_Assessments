@@ -1,0 +1,6 @@
+{
+  "throughput_4kb_mbps": "TODO_CALCULATE",
+  "throughput_256kb_mbps": "TODO_CALCULATE",
+  "identified_bottleneck": "TODO_BOTTLENECK",
+  "diagnosis_summary": "TODO_SUMMARY"
+}

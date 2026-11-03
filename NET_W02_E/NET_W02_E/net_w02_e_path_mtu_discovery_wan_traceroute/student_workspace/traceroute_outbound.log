@@ -1,0 +1,7 @@
+traceroute to db-cluster.aws.internal (10.250.10.4), 30 hops max, 60 byte packets
+ 1  br-gw.corp (10.10.0.1)  0.920 ms  0.880 ms  0.850 ms
+ 2  mpls-pe-01.carrier.net (198.51.100.1)  4.120 ms  4.080 ms  4.050 ms
+ 3  wan-core-nyc.carrier.net (198.51.100.45)  12.450 ms  12.410 ms  12.380 ms
+ 4  ipsec-tunnel-edge.carrier.net (198.51.100.99)  14.210 ms  14.180 ms  14.150 ms [MTU 1400]
+ 5  tgw-us-east-1.aws.internal (10.250.0.1)  16.850 ms  16.810 ms  16.780 ms
+ 6  db-cluster.aws.internal (10.250.10.4)  17.420 ms  17.380 ms  17.350 ms

@@ -1,0 +1,9 @@
+Operational Incident Scenarios for AI Assistance Pattern Assignment:
+
+Scenario 1 (Ticket Triage): A support team receives 50 incoming user tickets daily. They need an AI assistant to summarize ticket text and classify incoming tickets into service categories.
+
+Scenario 2 (Runbook Lookup): An on-call engineer needs to query emergency recovery procedures across 200 PDF runbooks using semantic Retrieval-Augmented Generation (RAG).
+
+Scenario 3 (SQL Generation): A DBA asks the AI assistant to generate an optimized SQL update script for indexing transaction logs.
+
+Scenario 4 (Log Anomaly Classification): A NOC operator inputs web server log streams to classify error spikes into network vs storage faults.

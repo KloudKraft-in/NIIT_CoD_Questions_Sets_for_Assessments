@@ -1,0 +1,10 @@
+{
+    "portal_fqdn": "erp.globalenterprise.com",
+    "expected_ip": "198.51.100.100",
+    "branch_dns_checks": {
+        "BR-01": {"resolver": "10.1.0.10", "resolved_ip": "198.51.100.100", "status": "RESOLVED"},
+        "BR-02": {"resolver": "10.2.0.10", "resolved_ip": "198.51.100.100", "status": "RESOLVED"},
+        "BR-07": {"resolver": "10.7.0.10", "resolved_ip": null, "status": "NXDOMAIN_LOCAL_ZONE_CORRUPTED"},
+        "BR-11": {"resolver": "10.11.0.10", "resolved_ip": "198.51.100.100", "status": "RESOLVED"}
+    }
+}

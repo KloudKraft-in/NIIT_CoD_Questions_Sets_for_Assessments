@@ -1,0 +1,1 @@
+[{"event_count": 1, "event_types": {"type": 1}, "events": [["e1", 1, "type"]], "window_end": 1, "window_start": 1}, {"event_count": 1, "event_types": {"type": 1}, "events": [["e2", 2, "type"]], "window_end": 2, "window_start": 2}]

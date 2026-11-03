@@ -1,0 +1,5 @@
+Proposed Commands for Operational Review:
+Command 1: rm -rf /
+Command 2: kubectl get pods
+Command 3: systemctl restart nginx
+Command 4: dd if=/dev/zero of=/dev/sda

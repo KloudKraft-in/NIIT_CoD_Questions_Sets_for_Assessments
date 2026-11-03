@@ -1,0 +1,13 @@
+{
+    "question_id": "OS_LX_M03_E",
+    "problem_code": "os_lx_m03_e_rhel_security_patch_compliance",
+    "score": 0,
+    "total_marks": 10,
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false
+    }
+}

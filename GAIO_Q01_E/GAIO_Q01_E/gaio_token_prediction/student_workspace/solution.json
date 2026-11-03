@@ -1,0 +1,7 @@
+{
+    "question_id": "GAIO_Q01_E",
+    "problem_code": "gaio_token_prediction",
+    "is_probabilistic": true,
+    "root_cause": "TODO",
+    "temperature_impact": "TODO"
+}

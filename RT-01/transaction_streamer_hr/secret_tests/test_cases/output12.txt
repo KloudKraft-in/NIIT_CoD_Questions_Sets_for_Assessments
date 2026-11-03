@@ -1,0 +1,2 @@
+buy_day=0 buy_price=0 sell_day=50 sell_price=99 profit=99
+total_profit=99

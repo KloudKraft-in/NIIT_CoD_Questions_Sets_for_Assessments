@@ -1,0 +1,2 @@
+MOCK /u/2 404 {"err": 1}
+FETCH /u/2

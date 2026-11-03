@@ -1,0 +1,8 @@
+{
+  "name": "njs_latency_monitor",
+  "version": "1.0.0",
+  "main": "monitor.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

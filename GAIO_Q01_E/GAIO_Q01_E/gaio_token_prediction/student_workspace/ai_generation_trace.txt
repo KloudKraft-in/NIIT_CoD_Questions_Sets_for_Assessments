@@ -1,0 +1,15 @@
+===================================================================
+NIIT LLM GENERATION TRACE LOG
+===================================================================
+[TIMESTAMP] 2026-08-05T10:15:22Z
+[MODEL] gpt-4-turbo
+[PROMPT] "What port does the PostgreSQL database listen on in our production cluster?"
+[GENERATION SETTINGS]
+  - Temperature: 0.85 (High Randomness)
+  - Top-P: 0.95
+[MODEL RESPONSE] "The PostgreSQL database in your cluster listens on port 8080."
+[LOGPROBS ANALYSIS] 
+  - Token '8080' selected with 92% confidence score.
+  - Diagnostic Note: Model outputs high linguistic confidence based on probabilistic token sequence prediction, even though port 8080 is ungrounded in actual system specs (default is 5432).
+[ROOT CAUSE SUMMARY] Probabilistic token prediction sampling confidence error under high temperature settings.
+===================================================================

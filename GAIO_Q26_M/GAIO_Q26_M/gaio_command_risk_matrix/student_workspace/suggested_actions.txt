@@ -1,0 +1,4 @@
+Action 1: rm -rf /
+Action 2: systemctl status nginx
+Action 3: chmod 777 /etc/passwd
+Action 4: kubectl get pods

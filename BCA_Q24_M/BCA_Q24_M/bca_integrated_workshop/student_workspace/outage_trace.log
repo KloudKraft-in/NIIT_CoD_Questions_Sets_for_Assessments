@@ -1,0 +1,2 @@
+[2026-08-10 10:00:00] [CRITICAL] Database connection pool exhaustion at com.company.service.CheckoutService.processCheckout (45 minutes outage).
+[2026-08-10 10:00:00] [WARN] Property spring.datasource.hikari.max-active is set incorrectly.

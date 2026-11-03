@@ -1,0 +1,12 @@
+{
+    "question_id": "BCA_Q11_E",
+    "problem_code": "bca_git_conflict",
+    "conflicting_branch": "TODO",
+    "conflict_file": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false
+    }
+}

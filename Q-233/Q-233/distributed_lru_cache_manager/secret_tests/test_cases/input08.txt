@@ -1,0 +1,3 @@
+INIT 8
+PUT 8 VAL
+GET 8

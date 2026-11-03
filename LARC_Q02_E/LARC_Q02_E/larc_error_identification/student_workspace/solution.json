@@ -1,0 +1,12 @@
+{
+    "question_id": "LARC_Q02_E",
+    "problem_code": "larc_error_identification",
+    "root_cause_exception": "TODO",
+    "failing_line_number": 0,
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false
+    }
+}

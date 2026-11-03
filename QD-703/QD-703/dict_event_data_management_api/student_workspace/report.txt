@@ -1,0 +1,9 @@
+Running Tests for: Event Manager
+
+PASS TC1 [Initialize EventManager with empty dictionary]
+PASS TC2 [Add event to manager]
+PASS TC3 [Get event by ID]
+PASS TC4 [Filter events by type]
+PASS TC5 [Get event summary]
+
+SCORE: 25/25 (Visible)

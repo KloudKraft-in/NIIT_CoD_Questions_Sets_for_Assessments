@@ -1,0 +1,11 @@
+IoT Sensor Trend Engine Report - 2026-04-04 01:54:16
+========================================
+TC1: Failed (Incorrect attributes) (0 marks)
+TC2: Failed ('TrendAnalyzer' object has no attribute 'df') (0 marks)
+TC3: Failed (Column not converted) (0 marks)
+TC4: Failed (Rows: 3) (0 marks)
+TC5: Failed (Empty results) (0 marks)
+TC6: Failed (Got None, expected 2) (0 marks)
+TC7: Failed (Got None) (0 marks)
+========================================
+Final Score: 0/30

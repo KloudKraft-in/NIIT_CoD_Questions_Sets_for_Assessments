@@ -1,0 +1,7 @@
+[2026-11-01 10:14:02.112] [INFO]  Navigating to https://checkout.shopacme.com/pay
+[2026-11-01 10:14:02.118] [DEBUG] Resolving DNS for checkout.shopacme.com...
+[2026-11-01 10:14:02.135] [DEBUG] DNS resolved: 198.51.100.45 (TTL 300)
+[2026-11-01 10:14:02.136] [DEBUG] Initiating TCP connection to 198.51.100.45:443
+[2026-11-01 10:14:23.140] [ERROR] net::ERR_CONNECTION_TIMED_OUT
+[2026-11-01 10:14:23.141] [WARN]  TCP SYN retransmission limit reached (syn_retries=6). No SYN-ACK received.
+[2026-11-01 10:14:23.142] [FATAL] Failed to establish TLS handshake: socket transport unavailable.

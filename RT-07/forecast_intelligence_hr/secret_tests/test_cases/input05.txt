@@ -1,0 +1,6 @@
+2
+ColdCity,-25,Snow
+HotCity,122,Clear
+2
+ColdCity,temperature
+HotCity,temperature

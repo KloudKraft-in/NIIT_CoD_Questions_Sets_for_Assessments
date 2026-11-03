@@ -1,0 +1,14 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_D05_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_d05_e_windows_volume_capacity_triage",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    },
+    "score": 0,
+    "total_marks": 10
+}

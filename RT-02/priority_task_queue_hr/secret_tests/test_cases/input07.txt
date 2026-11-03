@@ -1,0 +1,5 @@
+4
+add_task t1 10 []
+add_task t2 10 []
+add_task t3 10 []
+get_ready_tasks

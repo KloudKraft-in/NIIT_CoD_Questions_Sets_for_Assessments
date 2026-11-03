@@ -1,0 +1,12 @@
+{
+    "remote_nfs_export": "192.168.10.50:/srv/nfs/shared",
+    "local_mount_point": "/mnt/app_shared",
+    "mount_point_permissions": "TODO_PERMISSIONS (e.g. 0755 or 755)",
+    "filesystem_type": "TODO_FS_TYPE (e.g. nfs or nfs4)",
+    "fstab_mount_options": "TODO_OPTIONS (e.g. defaults,_netdev,nofail - must include _netdev and nofail)",
+    "fstab_entry_line": "TODO_FSTAB_LINE (e.g. 192.168.10.50:/srv/nfs/shared /mnt/app_shared nfs defaults,_netdev,nofail 0 0)",
+    "mount_command_executed": "TODO_MOUNT_CMD (e.g. mount -a)",
+    "active_mount_verified": "TODO_YES_NO (YES | NO)",
+    "test_file_created": "TODO_YES_NO (YES | NO - write verification inside /mnt/app_shared)",
+    "mount_status": "TODO_STATUS (SUCCESS | FAILED)"
+}

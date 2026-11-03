@@ -1,0 +1,27 @@
+Running Tests for: Retail Inventory System
+
+PASS Visible Test Case 1 Passed: Initialize retail store structure
+PASS Visible Test Case 2 Passed: Register a new product
+PASS Visible Test Case 3 Passed: Update stock for existing item
+PASS Visible Test Case 4 Passed: Process a sale with stock check
+PASS Visible Test Case 5 Passed: Calculate total inventory value
+
+SCORE: 25/25.0 (Visible)
+Running Tests for: Retail Inventory System
+
+PASS Visible Test Case 1 Passed: Initialize retail store structure
+PASS Visible Test Case 2 Passed: Register a new product
+PASS Visible Test Case 3 Passed: Update stock for existing item
+PASS Visible Test Case 4 Passed: Process a sale with stock check
+PASS Visible Test Case 5 Passed: Calculate total inventory value
+
+SCORE: 25/25.0 (Visible)
+Running Tests for: Retail Inventory System
+
+PASS Visible Test Case 1 Passed: Initialize retail store structure
+PASS Visible Test Case 2 Passed: Register a new product
+PASS Visible Test Case 3 Passed: Update stock for existing item
+PASS Visible Test Case 4 Passed: Process a sale with stock check
+PASS Visible Test Case 5 Passed: Calculate total inventory value
+
+SCORE: 25/25.0 (Visible)

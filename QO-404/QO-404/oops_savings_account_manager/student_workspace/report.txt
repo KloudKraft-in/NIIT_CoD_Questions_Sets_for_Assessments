@@ -1,0 +1,9 @@
+Running Tests for: Savings Account Manager
+
+PASS TC1 [Initialize account and check initial balance] (2/2)
+PASS TC2 [Deposit 500 and verify new balance] (2/2)
+PASS TC3 [Withdraw 200 (Successful) and check balance] (2/2)
+PASS TC4 [Withdraw 2000 (Insufficient funds)] (2/2)
+PASS TC5 [Check formatted account summary string] (2/2)
+
+SCORE: 10/10 (Visible)

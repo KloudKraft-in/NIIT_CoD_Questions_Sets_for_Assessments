@@ -1,0 +1,9 @@
+{
+    "target_partition": "/var",
+    "initial_usage_percent": "98%",
+    "final_usage_percent": "TODO_PERCENT (e.g. 68% - must be < 75%)",
+    "freed_megabytes": "TODO_MB (e.g. 4200)",
+    "safe_log_cleanup_applied": "TODO_YES_NO (YES | NO)",
+    "active_file_descriptors_preserved": "TODO_YES_NO (YES | NO)",
+    "recovery_status": "TODO_STATUS (SUCCESS | FAILED)"
+}

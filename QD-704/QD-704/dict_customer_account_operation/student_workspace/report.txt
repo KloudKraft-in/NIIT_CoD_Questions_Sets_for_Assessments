@@ -1,0 +1,7 @@
+Running Tests for: Customer Account Operations
+
+PASS TC1 [Count customers in region North]
+PASS TC2 [Find customer with highest balance]
+PASS TC3 [Check customer existence by ID]
+
+SCORE: 10/10 (Visible)

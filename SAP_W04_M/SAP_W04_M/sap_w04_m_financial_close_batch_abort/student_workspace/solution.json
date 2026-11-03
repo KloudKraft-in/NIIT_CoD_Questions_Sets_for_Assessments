@@ -1,0 +1,13 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "SAP_W04_M",
+    "labskraft_username": "candidate-user",
+    "problem_code": "sap_w04_m_financial_close_batch_abort",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

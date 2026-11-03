@@ -1,0 +1,10 @@
+{
+    "question_id": "BCA_Q03_E",
+    "problem_code": "bca_programming_logic",
+    "score": 10,
+    "results": {
+        "tc1": true,
+        "tc2": true,
+        "tc3": true
+    }
+}

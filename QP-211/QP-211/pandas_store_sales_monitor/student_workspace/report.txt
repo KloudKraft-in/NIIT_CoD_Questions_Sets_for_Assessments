@@ -1,0 +1,24 @@
+Running Tests for: Store Sales Monitor
+
+PASS Visible Test Case 1 Passed: Load mock_sales.csv and verify 15 rows loaded
+PASS Visible Test Case 2 Passed: Verify 'Revenue' column is created after calculate_revenue()
+PASS Visible Test Case 3 Passed: Check Revenue calculation for ORD001 (Qty=2, Price=500, Expected=1000)
+PASS Visible Test Case 4 Passed: Get total revenue for 'North' region (Expected=3475.0)
+PASS Visible Test Case 5 Passed: Search for revenue in 'Unknown' region (Expected=0.0)
+PASS Visible Test Case 6 Passed: Count bulk orders with Qty >= 10 (Expected=3)
+PASS Visible Test Case 7 Passed: Verify top product by quantity sold (Expected='Charger')
+PASS Visible Test Case 8 Passed: Verify top product 'Charger' total qty is 35
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Store Sales Monitor
+
+PASS Visible Test Case 1 Passed: Load mock_sales.csv and verify 15 rows loaded
+PASS Visible Test Case 2 Passed: Verify 'Revenue' column is created after calculate_revenue()
+PASS Visible Test Case 3 Passed: Check Revenue calculation for ORD001 (Qty=2, Price=500, Expected=1000)
+PASS Visible Test Case 4 Passed: Get total revenue for 'North' region (Expected=3475.0)
+PASS Visible Test Case 5 Passed: Search for revenue in 'Unknown' region (Expected=0.0)
+PASS Visible Test Case 6 Passed: Count bulk orders with Qty >= 10 (Expected=3)
+PASS Visible Test Case 7 Passed: Verify top product by quantity sold (Expected='Charger')
+PASS Visible Test Case 8 Passed: Verify top product 'Charger' total qty is 35
+
+SCORE: 20/20.0 (Visible)

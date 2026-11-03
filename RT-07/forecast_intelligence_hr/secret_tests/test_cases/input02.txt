@@ -1,0 +1,4 @@
+1
+Mumbai,32,Humid
+1
+Delhi,temperature

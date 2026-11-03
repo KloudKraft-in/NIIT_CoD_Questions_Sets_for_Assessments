@@ -1,0 +1,2 @@
+Transaction successful!
+Updated account balance: 2000.0

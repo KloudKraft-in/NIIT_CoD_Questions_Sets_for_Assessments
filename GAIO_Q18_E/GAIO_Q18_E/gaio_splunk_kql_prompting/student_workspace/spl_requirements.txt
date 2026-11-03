@@ -1,0 +1,3 @@
+Splunk Prompt Requirements:
+Constrain model output to valid Splunk SPL commands (stats, transaction, eval).
+Prohibit markdown code block wrappers if raw JSON output is requested.

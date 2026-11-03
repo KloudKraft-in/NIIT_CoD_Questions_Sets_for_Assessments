@@ -1,0 +1,13 @@
+PatientID,Day,HeartRate
+P01,Mon,72
+P02,Mon,
+P01,Tue,75
+P03,Mon,105
+P04,Tue,68
+P05,Mon,80
+P06,Mon,
+P01,Wed,70
+P03,Tue,110
+P04,Wed,75
+P02,Tue,85
+P05,Wed,90

@@ -1,0 +1,12 @@
+=== NSLOOKUP EXECUTION LOG ===
+Server:         10.10.1.10
+Address:        10.10.1.10#53
+
+** server can't find portal.acme.corp: NXDOMAIN
+
+> set type=A
+> api.paygateway.com
+Server:         10.10.1.10
+Non-authoritative answer:
+Name:   api.paygateway.com
+Address: 198.51.100.20

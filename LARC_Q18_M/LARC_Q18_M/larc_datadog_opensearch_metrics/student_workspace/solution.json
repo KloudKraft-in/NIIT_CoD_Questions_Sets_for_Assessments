@@ -1,0 +1,22 @@
+{
+    "question_id": "LARC_Q18_M",
+    "problem_code": "larc_datadog_opensearch_metrics",
+    "opensearch_agg_syntax": "TODO",
+    "p99_latency_ms": 0,
+    "datadog_query": "TODO",
+    "sla_breach": 0,
+    "group_by_field": "TODO",
+    "time_bucket": "TODO",
+    "alert_condition": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": false,
+        "tc7": false,
+        "tc8": false
+    }
+}

@@ -1,0 +1,4 @@
+COLD
+10
+HOT
+COLD

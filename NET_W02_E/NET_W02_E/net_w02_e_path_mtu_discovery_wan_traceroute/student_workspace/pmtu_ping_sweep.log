@@ -1,0 +1,8 @@
+$ ping -M do -s 1372 10.250.10.4
+64 bytes from 10.250.10.4: icmp_seq=1 ttl=58 time=17.2 ms (1372 bytes + 28 bytes header = 1400 bytes, PASSED)
+
+$ ping -M do -s 1373 10.250.10.4
+From 198.51.100.99: icmp_seq=1 Frag needed and DF set (mtu = 1400)
+
+$ ping -M do -s 1472 10.250.10.4
+From 198.51.100.99: icmp_seq=1 Frag needed and DF set (mtu = 1400)

@@ -1,0 +1,2 @@
+1
+Book,The Great Gatsby,F. Scott Fitzgerald,1925,Fiction,9780743273565

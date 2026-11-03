@@ -1,0 +1,47 @@
+================================================================================
+AWS_WIN_01_M: ec2_windows_basics - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: AWS EC2 (Windows Server) Basics: Navigation, Environment Variables & File Operations
+
+This guide details the exact steps a learner must perform for AWS_WIN_01_M.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: AWS CONSOLE LOGIN
+- Log into AWS Console.
+- Ensure you are in the eu-west-2 Region.
+
+STEP 2: CREATE EC2 INSTANCE (PASSES TC1)
+- Navigate to EC2 -> "Launch Instance".
+- Name: `niit-windows-basics-<your-labskraft-username>` (replace <your-labskraft-username> with your actual username, e.g. labs-kraft-demo106).
+- Select Microsoft Windows Server 2022 Base AMI.
+- Select t2.micro Instance Type.
+
+STEP 3: CONFIGURE DIRECTORY LAYOUT (PASSES TC2)
+- Connect via RDP or EC2 Instance Connect / SSM Session Manager.
+- Open PowerShell as Administrator.
+- Run the following commands to create the directory layout:
+  New-Item -ItemType Directory -Path "C:\workspace\logs" -Force
+  New-Item -ItemType Directory -Path "C:\workspace\backups" -Force
+
+STEP 4: SET UP SYSTEM ENVIRONMENT VARIABLES (PASSES TC3)
+- In the PowerShell session, configure the system-level variable permanently:
+  [Environment]::SetEnvironmentVariable("APP_ENVIRONMENT", "production", "Machine")
+
+STEP 5: SYSTEM METADATA AND LOG AUDITING (PASSES TC4)
+- Retrieve the hostname and OS caption details, and write them to C:\workspace\sysinfo.txt:
+  $hostname = hostname
+  $os = (Get-CimInstance Win32_OperatingSystem).Caption
+  "Hostname: $hostname`nOS: $os" | Out-File -FilePath "C:\workspace\sysinfo.txt" -Encoding ascii -Force
+- Locate all .log files directly inside the C:\Windows folder and save their absolute paths to C:\workspace\log_files.txt:
+  Get-ChildItem -Path "C:\Windows" -Filter "*.log" -File | Select-Object -ExpandProperty FullName | Out-File -FilePath "C:\workspace\log_files.txt" -Encoding ascii -Force
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY
+--------------------------------------------------------------------------------
+- Switch to the student workspace terminal.
+- Run local evaluation:
+  python student_workspace/run.py

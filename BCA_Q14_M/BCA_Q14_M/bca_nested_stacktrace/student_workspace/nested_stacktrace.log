@@ -1,0 +1,2 @@
+System.Exception: Transaction failed
+  ---> System.Data.SqlClient.SqlException: Deadlock victim error 1205 in TransactionManager

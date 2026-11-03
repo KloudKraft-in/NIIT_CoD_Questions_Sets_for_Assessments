@@ -1,0 +1,8 @@
+7
+add_task m 1 []
+add_task n 1 []
+add_task o 1 []
+add_task p 1 ["m", "n", "o"]
+complete_task m
+complete_task o
+is_ready p

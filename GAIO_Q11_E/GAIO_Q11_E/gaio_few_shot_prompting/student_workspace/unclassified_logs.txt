@@ -1,0 +1,4 @@
+Log Stream Sample:
+Log 1: 2026-08-04 12:00:01 INFO [AuthService] User login success
+Log 2: 2026-08-04 12:00:05 ERROR [DBPool] Connection refused to host 10.0.1.5
+Log 3: 2026-08-04 12:00:10 WARN [Memory] High heap memory utilization 88%

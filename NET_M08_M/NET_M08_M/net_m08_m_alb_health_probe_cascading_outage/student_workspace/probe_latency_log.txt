@@ -1,0 +1,9 @@
+=== HEALTH PROBE CODE ANALYSIS (GET /health) ===
+# Current implementation in HealthController.java:
+public HealthStatus checkHealth() {
+    boolean dbOk = testDatabaseHeavyQuery();      // Takes 3000ms under load!
+    boolean redisOk = testRedisCachePing();       // Takes 500ms
+    boolean thirdPartyOk = callExternalPartner(); // Takes 2000ms
+    return (dbOk && redisOk && thirdPartyOk) ? 200 : 500;
+}
+# Critical Anti-Pattern: Deep dependency checks in load balancer health probes create cascading collapse!

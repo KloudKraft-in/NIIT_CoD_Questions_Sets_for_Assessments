@@ -1,0 +1,13 @@
+prod_3 created
+prod_2 not found
+limit updated to 5
+prod_6 created
+prod_19 not found
+prod_15 created
+prod_18 not found
+prod_13 created
+prod_9 not found
+prod_16 created
+prod_18 not found
+prod_19 not found
+Product prod_2 cannot be created. Maximum 5 products allowed

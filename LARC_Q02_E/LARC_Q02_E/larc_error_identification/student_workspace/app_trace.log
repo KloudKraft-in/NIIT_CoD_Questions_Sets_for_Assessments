@@ -1,0 +1,2 @@
+2026-08-10 10:00:00 [ERROR] java.lang.NullPointerException: User profile is null
+    at com.company.service.UserService.getUserEmail(UserService.java:88)

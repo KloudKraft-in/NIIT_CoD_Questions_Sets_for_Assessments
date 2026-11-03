@@ -1,0 +1,13 @@
+{
+    "question_id": "LARC_Q12_M",
+    "problem_code": "larc_splunk_spl_queries",
+    "stats_spl_query": "TODO",
+    "transaction_spl_query": "TODO",
+    "score": 5,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

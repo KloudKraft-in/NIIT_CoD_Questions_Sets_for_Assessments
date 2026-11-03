@@ -1,0 +1,14 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_D03_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_d03_e_multialert_queue_triage_failure",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    },
+    "score": 0,
+    "total_marks": 10
+}

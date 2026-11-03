@@ -1,0 +1,22 @@
+2
+20
+del prod_11
+new prod_19
+new prod_5
+print prod_12
+new prod_17
+del prod_8
+new prod_2
+print prod_11
+del prod_1
+print prod_9
+new prod_10
+print prod_1
+new prod_5
+print prod_19
+print prod_8
+new prod_14
+del prod_7
+new prod_4
+print prod_4
+print prod_18

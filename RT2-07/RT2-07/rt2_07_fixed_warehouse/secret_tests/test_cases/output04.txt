@@ -1,0 +1,14 @@
+prod_8 created
+prod_1 created
+prod_15 created
+prod_14 created
+limit updated to 5
+prod_11 created
+Product prod_14 cannot be created. Maximum 5 products allowed
+Product prod_17 cannot be created. Maximum 5 products allowed
+limit updated to 5
+limit updated to 10
+limit updated to 6
+prod_14 created
+limit updated to 6
+prod_4 not found

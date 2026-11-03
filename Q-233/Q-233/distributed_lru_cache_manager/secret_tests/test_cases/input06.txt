@@ -1,0 +1,3 @@
+INIT 6
+PUT 6 VAL
+GET 6

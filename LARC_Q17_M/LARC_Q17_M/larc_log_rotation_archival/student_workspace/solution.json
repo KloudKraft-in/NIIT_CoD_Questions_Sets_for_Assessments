@@ -1,0 +1,22 @@
+{
+    "question_id": "LARC_Q17_M",
+    "problem_code": "larc_log_rotation_archival",
+    "archive_filename": "TODO",
+    "failure_timestamp": "TODO",
+    "exception_class": "TODO",
+    "zgrep_cmd": "TODO",
+    "rotation_policy": "TODO",
+    "pid": 0,
+    "rca_summary": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": false,
+        "tc7": false,
+        "tc8": false
+    }
+}

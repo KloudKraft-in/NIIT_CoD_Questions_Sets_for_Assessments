@@ -1,0 +1,4 @@
+Thread 8812 (HTTP-Handler-Pool-44):
+  at java.net.SocketInputStream.read(SocketInputStream.java:180)
+  at com.acme.gateway.HttpConnectionHandler.process(HttpConnectionHandler.java:62)
+  # NOTE: In HttpConnectionHandler.java, the catch block logs exception but omits socket.close() in finally block!

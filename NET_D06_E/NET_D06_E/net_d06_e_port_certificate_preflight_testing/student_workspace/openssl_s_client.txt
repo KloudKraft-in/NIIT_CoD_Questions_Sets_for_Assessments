@@ -1,0 +1,31 @@
+$ openssl s_client -connect logistics-edi.freight.com:8443 -servername logistics-edi.freight.com
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN = logistics-edi.freight.com
+   i:C = US, O = Let's Encrypt, CN = R3
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct  1 00:00:00 2026 GMT; NotAfter : Dec 30 23:59:59 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdPe5...[TRUNCATED]...
+-----END CERTIFICATE-----
+subject=CN = logistics-edi.freight.com
+issuer=C = US, O = Let's Encrypt, CN = R3
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1984 bytes and written 312 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---

@@ -1,0 +1,3 @@
+Username matched, database connection initialized
+Database running...
+Connection string matched, database connection closed

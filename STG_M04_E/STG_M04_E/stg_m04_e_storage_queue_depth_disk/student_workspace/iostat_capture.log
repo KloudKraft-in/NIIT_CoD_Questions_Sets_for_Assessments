@@ -1,0 +1,8 @@
+Linux 5.15.0-88-generic (db-node-01) 	10/30/2026 	_x86_64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          12.45    0.00   14.20   48.35    0.00   25.00
+
+Device            r/s     w/s     rkB/s     wkB/s   rrqm/s   wrqm/s  %rrqm  %wrqm r_await w_await aqu-sz rareq-sz wareq-sz  svctm  %util
+sda             45.00 1250.00    180.00  85400.00     0.00    12.00   0.00   0.95    4.20   86.50   8.42     4.00    68.32   0.72  94.50
+sdb              2.00    5.00      8.00     20.00     0.00     0.00   0.00   0.00    1.10    2.50   0.02     4.00     4.00   0.50   0.35

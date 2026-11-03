@@ -1,0 +1,13 @@
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 02:42:0a:00:00:02 brd ff:ff:ff:ff:ff:ff
+    RX: bytes  packets  errors  dropped overrun mcast   
+    891244012  642109   0       0       0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    412099142  310920   0       1420    0       0       
+
+3: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1420 qdisc fq_codel state UP mode DEFAULT group default qlen 500
+    link/none 
+    RX: bytes  packets  errors  dropped overrun mcast   
+    1249012    8912     0       0       0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    981240     7210     0       1420    0       0       

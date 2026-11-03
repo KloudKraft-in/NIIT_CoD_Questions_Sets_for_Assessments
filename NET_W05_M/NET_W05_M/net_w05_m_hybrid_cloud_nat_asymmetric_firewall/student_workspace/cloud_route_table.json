@@ -1,0 +1,20 @@
+{
+    "vpc_id": "vpc-0a8819bc",
+    "private_subnet_route_table": {
+        "id": "rtb-01928374",
+        "associated_subnets": ["10.100.20.0/24"],
+        "routes": [
+            {"destination": "10.100.0.0/16", "target": "local", "status": "active"},
+            {"destination": "10.20.0.0/16", "target": "vgw-directconnect-01", "status": "active"},
+            {"destination": "0.0.0.0/0", "target": "nat-0a991823ef", "status": "active"}
+        ]
+    },
+    "on_premises_core_route_table": {
+        "device": "core-router-onprem",
+        "routes": [
+            {"destination": "10.20.0.0/16", "target": "VLAN-20-Mainframe", "status": "active"},
+            {"destination": "10.100.0.0/16", "target": "firewall-internal-interface (10.20.1.1)", "status": "active"},
+            {"destination": "0.0.0.0/0", "target": "edge-isp-router", "status": "active"}
+        ]
+    }
+}

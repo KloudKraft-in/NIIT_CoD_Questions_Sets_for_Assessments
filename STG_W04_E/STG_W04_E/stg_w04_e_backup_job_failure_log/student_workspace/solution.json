@@ -1,0 +1,14 @@
+{
+    "candidate_prefix": "student_user",
+    "assessment_start_time": null,
+    "max_duration_minutes": 30,
+    "evaluation_type": "AUTO_EVALUATION",
+    "score": 0,
+    "total_marks": 10,
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    },
+    "exam_code": "UNKNOWN"
+}

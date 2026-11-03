@@ -1,0 +1,10 @@
+{
+    "target_filesystem": "/",
+    "initial_utilization": "TODO_INITIAL_UTIL (e.g. 100%)",
+    "open_deleted_descriptors_truncated": "TODO_YES_NO (YES | NO)",
+    "journalctl_vacuum_size": "TODO_VACUUM_SIZE (e.g. 200M)",
+    "package_cache_cleaned": "TODO_YES_NO (YES | NO)",
+    "final_utilization": "TODO_PERCENT (e.g. 64% - must be < 70%)",
+    "restored_headroom_mb": "TODO_MB (e.g. 8500)",
+    "emergency_recovery_status": "TODO_STATUS (RESOLVED | FAILED)"
+}

@@ -1,0 +1,6 @@
+buy_day=0 buy_price=0 sell_day=999 sell_price=999 profit=999
+buy_day=1000 buy_price=0 sell_day=1999 sell_price=999 profit=999
+buy_day=2000 buy_price=0 sell_day=2999 sell_price=999 profit=999
+buy_day=3000 buy_price=0 sell_day=3999 sell_price=999 profit=999
+buy_day=4000 buy_price=0 sell_day=4999 sell_price=999 profit=999
+total_profit=4995

@@ -1,0 +1,3 @@
+LOAD portfolio.csv
+CALC
+TOTAL

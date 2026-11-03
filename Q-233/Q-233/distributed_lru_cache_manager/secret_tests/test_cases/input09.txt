@@ -1,0 +1,3 @@
+INIT 9
+PUT 9 VAL
+GET 9

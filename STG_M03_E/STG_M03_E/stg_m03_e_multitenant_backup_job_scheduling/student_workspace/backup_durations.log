@@ -1,0 +1,4 @@
+2026-10-29 01:00:00 [JOB_SNAPSHOT] Started on /dev/vg_app/lv_data. Duration: 82 minutes (Finished 02:22:00)
+2026-10-29 01:00:00 [JOB_ARCHIVE] Started on /dev/vg_app/lv_data. Result: FAILED - Volume lock already acquired by another process
+2026-10-28 01:00:00 [JOB_SNAPSHOT] Started on /dev/vg_app/lv_data. Duration: 78 minutes (Finished 02:18:00)
+2026-10-28 01:00:00 [JOB_ARCHIVE] Started on /dev/vg_app/lv_data. Result: FAILED - Volume lock collision

@@ -1,0 +1,16 @@
+OrderID,Region,Product,Qty,UnitPrice
+ORD001,North,Laptop,2,500
+ORD002,North,Phone,3,625
+ORD003,South,Charger,9,25
+ORD004,East,Mouse,5,15
+ORD005,West,Laptop,15,100
+ORD006,North,Mouse,2,75
+ORD007,South,Phone,4,350
+ORD008,East,Charger,12,25
+ORD009,West,Mouse,11,20
+ORD010,South,Laptop,1,500
+ORD011,East,Phone,6,400
+ORD012,West,Charger,5,30
+ORD013,North,Charger,9,50
+ORD014,East,Laptop,2,600
+ORD015,South,Mouse,1,10

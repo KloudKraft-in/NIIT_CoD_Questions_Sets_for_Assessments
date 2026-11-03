@@ -1,0 +1,2 @@
+Ticket 1: Database timeout occurred on payment-db-01. Response latency exceeded 15000ms.
+Ticket 2: Authentication failed. Invalid DB credentials for db_user.

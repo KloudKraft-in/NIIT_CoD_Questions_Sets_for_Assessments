@@ -1,0 +1,19 @@
+{
+    "candidate_prefix": "TEST_VM",
+    "assessment_start_time": null,
+    "max_duration_minutes": 90,
+    "evaluation_type": "AUTO_EVALUATION",
+    "score": 0,
+    "total_marks": 20,
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": false,
+        "tc7": false,
+        "tc8": false
+    },
+    "exam_code": "EXAM01"
+}

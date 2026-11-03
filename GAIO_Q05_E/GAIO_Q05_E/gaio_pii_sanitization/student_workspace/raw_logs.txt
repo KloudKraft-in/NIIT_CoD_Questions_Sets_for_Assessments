@@ -1,0 +1,5 @@
+2026-08-04 10:15:22 ERROR [user-service] Authentication failed for User SSN: 123-45-6789.
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+java.lang.NullPointerException: Cannot invoke "com.app.User.getId()" because "user" is null
+    at com.app.UserService.authenticate(UserService.java:42)

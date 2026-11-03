@@ -1,0 +1,11 @@
+{
+    "job_name": "BACKUP_VOL_APP01",
+    "failure_timestamp": "TODO_TIMESTAMP (e.g. 2026-10-20 02:30:44)",
+    "error_message": "TODO_ERROR_MSG",
+    "failure_category": "TODO_CATEGORY (Destination Full | Permission Denied | Source Lock | Schedule Conflict)",
+    "root_cause_explanation": "TODO_ROOT_CAUSE",
+    "remediation_actions": [
+        "TODO_ACTION_1 (e.g. Prune expired backup chains in /mnt/backup_repo)",
+        "TODO_ACTION_2 (e.g. Re-trigger backup job before next scheduled window)"
+    ]
+}

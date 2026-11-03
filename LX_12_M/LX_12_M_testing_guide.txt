@@ -1,0 +1,41 @@
+================================================================================
+LX_12_M: linux_telemetry_socket_audit_local - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: Linux System Log Diagnosis & Service Management
+
+This guide details the exact steps a learner must perform for LX_12_M.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: OPEN TERMINAL
+- Open a terminal session on your Linux machine.
+
+STEP 2: CREATE SYSTEM AUDIT WORKSPACE (PASSES TC2)
+- Create audit directory:
+  mkdir -p /tmp/sys_audit
+
+STEP 3: QUERY SERVICE DIAGNOSTICS (PASSES TC3)
+- Query status of cron and rsyslog services:
+  systemctl status cron rsyslog > /tmp/sys_audit/service_diagnostics.txt || service cron status > /tmp/sys_audit/service_diagnostics.txt
+
+STEP 4: RETRIEVE SYSTEM KERNEL ERRORS (PASSES TC4)
+- Save latest 5 kernel/system errors from dmesg/journalctl to /tmp/sys_audit/system_errors.log:
+  dmesg --level=err | tail -n 5 > /tmp/sys_audit/system_errors.log || journalctl -p err -n 5 > /tmp/sys_audit/system_errors.log
+
+STEP 5: AUDIT VAR LOG METADATA (PASSES TC5)
+- Save metadata of log files in /var/log:
+  ls -la /var/log > /tmp/sys_audit/var_log_metadata.txt
+
+STEP 6: EXPORT NETWORK INTERFACE DUMP (PASSES TC6 & TC7)
+- Save network interfaces summary to /tmp/sys_audit/network_interface_info.txt:
+  ifconfig -a > /tmp/sys_audit/network_interface_info.txt || ip a > /tmp/sys_audit/network_interface_info.txt
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY
+--------------------------------------------------------------------------------
+- Switch to the student workspace terminal.
+- Run local evaluation:
+  python3 student_workspace/run.py

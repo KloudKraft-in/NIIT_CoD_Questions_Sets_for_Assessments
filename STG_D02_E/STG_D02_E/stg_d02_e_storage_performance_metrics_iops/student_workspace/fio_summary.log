@@ -1,0 +1,12 @@
+fio-3.28
+Job 'random_reads_4k': (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=32
+  read: IOPS=15000, BW=58.6MiB/s (61.4MB/s)(3516MiB/60002msec)
+    clat (usec): min=120, max=45020, avg=12400.12, stdev=2140.5
+    lat (msec): avg=12.42
+    cpu : usr=2.10%, sys=14.20%, ctx=184020, majf=0, minf=14
+
+Job 'sequential_reads_256k': (g=0): rw=read, bs=(R) 256KiB-256KiB, (W) 256KiB-256KiB, (T) 256KiB-256KiB, ioengine=libaio, iodepth=16
+  read: IOPS=2000, BW=500MiB/s (524MB/s)(30.0GiB/60001msec)
+    clat (usec): min=840, max=18200, avg=4200.50, stdev=620.1
+    lat (msec): avg=4.21
+    cpu : usr=1.50%, sys=8.10%, ctx=24100, majf=0, minf=12

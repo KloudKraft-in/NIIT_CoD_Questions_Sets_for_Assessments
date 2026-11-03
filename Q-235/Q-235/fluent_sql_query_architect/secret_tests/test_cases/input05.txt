@@ -1,0 +1,1 @@
+QUERY SELECT id FROM orders WHERE id > 10 WHERE status = 'ok' BUILD

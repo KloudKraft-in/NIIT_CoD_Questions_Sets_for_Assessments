@@ -1,0 +1,5 @@
+[2026-11-01 11:20:04] [CLIENT-LOG] Initiating TLS handshake from Legacy Logistics Daemon...
+[2026-11-01 11:20:04] [CLIENT-LOG] Client Hello offered ciphers: [TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+[2026-11-01 11:20:04] [CLIENT-LOG] Supported protocols: [TLSv1.0, TLSv1.1]
+[2026-11-01 11:20:04] [ERROR] Received TLS Alert from server: Alert Level: Fatal, Description: Handshake Failure (40)
+[2026-11-01 11:20:04] [FATAL] SSL negotiation failed: no shared cipher suite supported by remote server.

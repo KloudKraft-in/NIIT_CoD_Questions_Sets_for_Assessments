@@ -1,0 +1,30 @@
+prod_0 not found
+prod_11 not found
+prod_5 created
+prod_2 created
+prod_10 created
+prod_7 created
+prod_17 not found
+prod_18 not found
+prod_11 not found
+prod_2 created
+prod_4 not found
+prod_4 created
+prod_9 not found
+Product prod_6 cannot be created. Maximum 5 products allowed
+Product prod_0 cannot be created. Maximum 5 products allowed
+prod_12 not found
+Product prod_1 cannot be created. Maximum 5 products allowed
+prod_7 found
+Product prod_15 cannot be created. Maximum 5 products allowed
+Product prod_10 cannot be created. Maximum 5 products allowed
+prod_3 not found
+limit updated to 6
+prod_3 created
+Product prod_12 cannot be created. Maximum 6 products allowed
+prod_7 deleted successfully
+prod_3 deleted successfully
+prod_10 created
+prod_11 created
+prod_8 not found
+prod_17 not found

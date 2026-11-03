@@ -1,0 +1,7 @@
+Metric,Value,Threshold,Description
+TcpCurrEstab,8420,10000,Current established connections
+TcpPassiveOpens,8410291,N/A,Total incoming TCP handshakes accepted
+TcpAttemptFails,42109,100,Failed connection attempts due to backlog/resource limits
+TcpListenOverflows,38120,0,Times the listen queue of a socket overflowed
+TcpListenDrops,38120,0,Incoming SYNs dropped because accept queue was full
+OpenFileDescriptors,64100,65535,Process open file descriptor count near hard limit!

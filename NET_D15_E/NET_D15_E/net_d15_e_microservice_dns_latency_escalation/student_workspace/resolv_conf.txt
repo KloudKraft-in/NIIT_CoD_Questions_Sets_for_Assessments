@@ -1,0 +1,5 @@
+# /etc/resolv.conf
+nameserver 10.96.0.15     # Primary CoreDNS (decommissioned / unreachable)
+nameserver 10.96.0.10     # Secondary CoreDNS (healthy)
+search default.svc.cluster.local svc.cluster.local cluster.local
+# NOTE: No 'options' directive configured; defaults to 5s timeout and 2 retries!

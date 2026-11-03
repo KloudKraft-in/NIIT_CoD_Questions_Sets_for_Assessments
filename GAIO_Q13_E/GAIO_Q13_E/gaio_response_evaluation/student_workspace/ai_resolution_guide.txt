@@ -1,0 +1,4 @@
+AI Incident Resolution Guide:
+Step 1: Check service status using systemctl status app.service
+Step 2: Clear log space using rm -rf /var/log/*
+Step 3: Restart app service using systemctl restart app.service

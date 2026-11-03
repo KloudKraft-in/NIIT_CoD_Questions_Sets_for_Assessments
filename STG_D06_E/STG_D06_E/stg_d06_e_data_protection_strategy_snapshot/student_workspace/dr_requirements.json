@@ -1,0 +1,28 @@
+{
+    "requirements": [
+        {
+            "id": "DR-01",
+            "system": "Operational e-commerce transactional database",
+            "business_impact": "Loss of checkout transactions impairs revenue immediately.",
+            "recovery_need": "Requires frequent 15-minute point-in-time recovery without application downtime."
+        },
+        {
+            "id": "DR-02",
+            "system": "Corporate ERP financial ledger",
+            "business_impact": "Subject to SOX compliance and ransomware threat.",
+            "recovery_need": "Requires immutable, air-gapped retention for 7 years with verified audit isolation."
+        },
+        {
+            "id": "DR-03",
+            "system": "High-availability cross-region customer portal",
+            "business_impact": "Multi-region disaster recovery standby.",
+            "recovery_need": "Requires continuous real-time data sync with sub-minute failover RTO."
+        },
+        {
+            "id": "DR-04",
+            "system": "Pre-production staging and developer sandboxes",
+            "business_impact": "Fast rollbacks during automated CI/CD canary deployments.",
+            "recovery_need": "Requires instantaneous point-in-time state capture and fast rollback before deployments."
+        }
+    ]
+}

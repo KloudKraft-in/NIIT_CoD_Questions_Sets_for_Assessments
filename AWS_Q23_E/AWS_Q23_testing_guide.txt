@@ -1,0 +1,38 @@
+================================================================================
+AWS_Q23: ec2_ebs_ubuntu - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: AWS EC2 (Ubuntu) & Storage Infrastructure Provisioning
+
+This guide details the exact steps a learner (or automated tester) must perform to achieve a perfect score for AWS_Q23.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: AWS CONSOLE LOGIN
+- Log into the AWS Management Console using your assigned student credentials.
+- Ensure you are operating in the eu-west-2 Region.
+
+STEP 2: CREATE EC2 INSTANCE (PASSES TC1)
+- Navigate to the EC2 Dashboard -> Click "Launch Instance".
+- Enter the exact Instance Name: `niit-ubuntu-ec2-<your-labskraft-username>`.
+- Select Ubuntu Server 22.04 LTS AMI.
+- Select t2.micro Instance Type.
+
+STEP 3: CREATE & ATTACH EBS VOLUME (PASSES TC2)
+- Go to Volumes -> "Create volume".
+- Size: 10 GB, Type: gp3.
+- Attach the volume to the instance created in Step 2.
+
+STEP 4: MOUNT EBS VOLUME (PASSES TC3)
+- SSH into the EC2 instance.
+- Format the volume with ext4 using `mkfs.ext4`.
+- Mount it to `/mnt/data-store`.
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY IN POWERSHELL (ADMIN / TESTER)
+--------------------------------------------------------------------------------
+$env:NIIT_START_TIME="2026-05-18T10:00:00Z"
+cd C:\Users\nandi\Downloads\git_repo_QC-20260610T061029Z-3-001\git_repo_QC\DevOps_Auto_Evaluation\AWS_Q23_E\AWS_Q23_E\ec2_ebs_ubuntu\student_workspace
+python run.py "labs-kraft-demo106"

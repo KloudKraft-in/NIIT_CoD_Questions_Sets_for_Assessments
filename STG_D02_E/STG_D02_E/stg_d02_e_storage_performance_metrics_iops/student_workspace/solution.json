@@ -1,0 +1,12 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_D02_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_d02_e_storage_performance_metrics_iops",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    }
+}

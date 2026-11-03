@@ -1,0 +1,9 @@
+{
+    "target_device": "/dev/sda",
+    "disk_utilization_percent": "TODO_PERCENT (e.g. 94.5)",
+    "average_queue_size_aqu_sz": "TODO_AQU_SZ (e.g. 8.42)",
+    "write_latency_w_await_ms": "TODO_W_AWAIT (e.g. 86.5)",
+    "read_latency_r_await_ms": "TODO_R_AWAIT (e.g. 4.2)",
+    "saturation_verdict": "TODO_VERDICT (Saturated | Healthy)",
+    "primary_io_bottleneck": "TODO_BOTTLENECK (Write-heavy saturation | Read latency | Idle)"
+}

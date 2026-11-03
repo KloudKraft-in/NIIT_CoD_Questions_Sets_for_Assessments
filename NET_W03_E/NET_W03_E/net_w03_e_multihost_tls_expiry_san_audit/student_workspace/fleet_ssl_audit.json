@@ -1,0 +1,8 @@
+[
+    {"endpoint": "auth.company.com:443", "issuer": "DigiCert Global CA", "valid_to": "2026-11-04 23:59:59", "days_remaining": 3, "san": ["auth.company.com"], "status": "CRITICAL_EXPIRING_IMMINENT"},
+    {"endpoint": "api.company.com:443", "issuer": "Let's Encrypt R3", "valid_to": "2026-12-15 00:00:00", "days_remaining": 44, "san": ["api.company.com", "v2.api.company.com"], "status": "HEALTHY"},
+    {"endpoint": "billing.company.com:443", "issuer": "DigiCert Global CA", "valid_to": "2027-04-10 00:00:00", "days_remaining": 160, "san": ["billing.company.com"], "status": "HEALTHY"},
+    {"endpoint": "checkout-us.company.com:443", "issuer": "Sectigo RSA CA", "valid_to": "2026-11-01 00:00:00", "days_remaining": -1, "san": ["checkout.company.com"], "status": "EXPIRED_AND_SAN_MISMATCH"},
+    {"endpoint": "portal.company.com:443", "issuer": "DigiCert Global CA", "valid_to": "2026-11-09 12:00:00", "days_remaining": 8, "san": ["portal.company.com"], "status": "WARNING_EXPIRING_SOON"},
+    {"endpoint": "partner-edi.company.com:8443", "issuer": "Internal Enterprise CA", "valid_to": "2028-01-01 00:00:00", "days_remaining": 425, "san": ["partner-edi.company.com"], "status": "HEALTHY"}
+]

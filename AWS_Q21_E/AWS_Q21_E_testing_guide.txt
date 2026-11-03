@@ -1,0 +1,115 @@
+================================================================================
+               NIIT AWS_Q21_E LAB: STEP-BY-STEP TESTING GUIDE
+================================================================================
+
+This guide outlines the exact workflow required to successfully complete and test 
+the AWS_Q21_E (AWS Distributed Jenkins Master-Slave Java Tomcat Setup) lab in 
+Niit on your Ubuntu instances. Following these steps ensures 100% compliance 
+with the real-time driver audit.
+
+IMPORTANT: To avoid resource name collisions, always append your unique Niit 
+username/candidate prefix (e.g., `<your-labskraft-username>`) to the end of all 
+provisioned EC2 instances, Jenkins node names, Jenkins jobs, and agent labels.
+
+--------------------------------------------------------------------------------
+PHASE 1: PROVISION EC2 INSTANCES & SET UP MASTER (Satisfies TC1 & TC2)
+--------------------------------------------------------------------------------
+1. Launch two EC2 Instances (Ubuntu 22.04 LTS):
+   - Instance 1: Name it `jenkins-master-<your-labskraft-username>`. Open ports 22 (SSH) and 8080 (Custom TCP).
+   - Instance 2: Name it `jenkins-slave-<your-labskraft-username>`. Open port 22 (SSH) allowing traffic from `jenkins-master-<your-labskraft-username>`.
+
+2. Install Java 17 and Jenkins on `jenkins-master-<your-labskraft-username>`:
+   sudo apt update
+   sudo apt install openjdk-17-jdk -y
+   curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+     https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+     /etc/apt/sources.list.d/jenkins.list > /dev/null
+   sudo apt update
+   sudo apt install jenkins -y
+   sudo systemctl start jenkins
+   sudo systemctl enable jenkins
+
+3. Access the Jenkins Dashboard:
+   - In your browser, open: http://<jenkins-master-public-ip>:8080
+   - Follow instructions to unlock Jenkins (retrieve the admin password from `/var/lib/jenkins/secrets/initialAdminPassword`).
+   - Create your admin user and install default plugins.
+
+--------------------------------------------------------------------------------
+PHASE 2: PREPARE SSH CONNECTIVITY & SLAVE (Satisfies TC3)
+--------------------------------------------------------------------------------
+1. Generate SSH Keys on `jenkins-master-<your-labskraft-username>`:
+   - Log into `jenkins-master-<your-labskraft-username>` via SSH.
+   - Switch to the jenkins user:
+     sudo su - jenkins
+     ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+     (Ensure permissions are set correctly on the key files: chmod 600 id_rsa)
+
+2. Configure Java, Maven, Tomcat & SSH public key on `jenkins-slave-<your-labskraft-username>`:
+   - Log into `jenkins-slave-<your-labskraft-username>` via SSH.
+   - Install Java 17, Maven, and Tomcat 9:
+     sudo apt update && sudo apt install openjdk-17-jdk maven tomcat9 -y
+   - Set Tomcat9 permissions to allow the default 'ubuntu' user to deploy WAR files:
+     sudo chown -R ubuntu:ubuntu /var/lib/tomcat9/webapps/
+     sudo chmod -R 775 /var/lib/tomcat9/webapps/
+   - Open `/home/ubuntu/.ssh/authorized_keys` and append the public key generated on `jenkins-master-<your-labskraft-username>` (`/var/lib/jenkins/.ssh/id_rsa.pub`).
+   - Test passwordless SSH from the master:
+     sudo -u jenkins ssh -o StrictHostKeyChecking=no ubuntu@<jenkins-slave-private-ip>
+
+3. Register the Slave Node in Jenkins:
+   - On the Jenkins Dashboard, navigate to: Manage Jenkins -> Nodes -> New Node.
+   - Node Name: `jenkins-slave-<your-labskraft-username>` (Select "Permanent Agent").
+   - Remote Root Directory: `/home/ubuntu/jenkins-slave` (Ensure this directory exists on the slave: `mkdir -p /home/ubuntu/jenkins-slave`).
+   - Labels: `java-builder-<your-labskraft-username>`
+   - Launch Method: Launch agents via SSH.
+   - Host: `<jenkins-slave-private-ip>`
+   - Credentials: Add a new SSH Username with Private Key credential. Username: `ubuntu`, Private Key: Paste the master's private key (`/var/lib/jenkins/.ssh/id_rsa`).
+   - Host Key Verification Strategy: Non-verifying Verification Strategy.
+   - Click Save. Verify the node connects and displays as Online.
+
+--------------------------------------------------------------------------------
+PHASE 3: CREATE AND EXECUTE MAVEN BUILD & DEPLOYMENT JOB (Satisfies TC4 & TC5)
+--------------------------------------------------------------------------------
+1. Create Freestyle Project:
+   - Click "New Item", enter "Tomcat-Deployment-Eval-<your-labskraft-username>" as the item name, and select "Freestyle project".
+   - Under "General", check "Restrict where this project can be run".
+   - Enter `java-builder-<your-labskraft-username>` as the Label Expression.
+
+2. Configure Source Control & Trigger:
+   - Under "Source Code Management", select "Git" and specify your Java web app repository.
+   - Under "Build Triggers", check the box for "GitHub hook trigger for GITScm polling".
+
+3. Configure Webhook on GitHub:
+   - Go to your repository settings -> Webhooks -> Add webhook.
+   - Payload URL: http://<jenkins-master-public-ip>:8080/github-webhook/
+   - Content type: application/json. Add webhook.
+
+4. Configure Build Script:
+   - Under "Build Steps", select "Add build step" -> "Execute shell".
+   - Input the following shell command to compile, package, deploy, and generate logs:
+     
+     # 1. Package Java App to WAR file
+     mvn clean package
+
+     # 2. Deploy WAR to local Tomcat webapps directory
+     cp target/*.war /var/lib/tomcat9/webapps/app.war
+
+     # 3. Write structured evaluation log
+     mkdir -p /home/ubuntu/build-logs
+     echo "GIT_CLONE=SUCCESS" > /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "MAVEN_BUILD=SUCCESS" >> /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "TOMCAT_DEPLOYMENT=SUCCESS" >> /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "PIPELINE_NAME=Tomcat-Deployment-Eval-<your-labskraft-username>" >> /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "BUILD_NUMBER=${BUILD_NUMBER}" >> /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "FINAL_STATUS=SUCCESS" >> /home/ubuntu/build-logs/tomcat-deploy.log
+     echo "TIMESTAMP=$(date -u)" >> /home/ubuntu/build-logs/tomcat-deploy.log
+
+5. Click Save. Commit a minor change to GitHub to trigger the webhook and verify that the build completes, Tomcat hosts your application under /app/, and the log file is generated.
+
+--------------------------------------------------------------------------------
+PHASE 4: RUN REAL-TIME EVALUATION
+--------------------------------------------------------------------------------
+1. Run Tests in Niit:
+   - Go back to the Niit IDE and click "Run Tests" (or execute `python student_workspace/run.py`).
+   - The test suite will inspect the running EC2 instances, Jenkins master, node registrations, and execution logs, reporting a perfect 20/20 [PASSED] score!

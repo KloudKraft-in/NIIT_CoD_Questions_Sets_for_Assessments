@@ -1,0 +1,5 @@
+2026-08-06 09:55:00 [INFO] System initialized. Gateway listener active on port 8080.
+2026-08-06 09:58:12 [WARN] Correlation ID: tx-8891 - Incoming request /api/v1/transfer delayed.
+2026-08-06 09:58:42 [ERROR] Correlation ID: tx-8891 - Gateway timeout after 30 seconds waiting for downstream microservice response.
+2026-08-06 09:59:15 [CRITICAL] Database deadlock detected on transaction update_account_transfer (tx-8891). Lock wait timeout exceeded.
+2026-08-06 10:00:00 [CRITICAL] Primary Infrastructure & Integration failure. Database connection pool exhausted by commit 8c9e012. Exception: ConnectionTimeoutException at Pool.java:98

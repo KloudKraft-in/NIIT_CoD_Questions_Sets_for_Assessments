@@ -1,0 +1,4 @@
+[
+    {"timestamp": "2026-11-01 14:30:01", "action": "PERMIT", "interface": "inside", "src_ip": "10.100.20.45", "dst_ip": "10.20.5.12", "proto": "TCP", "src_port": 49120, "dst_port": 1433, "flags": "SYN", "state": "NEW_SESSION_CREATED"},
+    {"timestamp": "2026-11-01 14:30:01", "action": "DROP", "interface": "dmz", "src_ip": "10.20.5.12", "dst_ip": "10.100.20.45", "proto": "TCP", "src_port": 1433, "dst_port": 49120, "flags": "SYN-ACK", "reason": "TCP_OUT_OF_STATE_DROP", "details": "SYN-ACK received on interface dmz but original SYN was recorded on interface inside. Asymmetric path violation."}
+]

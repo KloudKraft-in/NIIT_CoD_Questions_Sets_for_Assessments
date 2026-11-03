@@ -1,0 +1,4 @@
+Limiter initialized: cap=2.0, rate=1.0
+SUCCESS
+SUCCESS
+ERROR: Rate limit exceeded - Try later

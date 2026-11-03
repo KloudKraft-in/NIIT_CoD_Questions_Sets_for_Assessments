@@ -1,0 +1,3 @@
+2026-08-10 10:00:00 [INFO] [trace-7741, span-102] service=gateway message="processing"
+2026-08-10 10:00:01 [INFO] [trace-7741, span-103] service=inventory latency=3400ms message="fetching item"
+2026-08-10 10:03:41 [ERROR] [trace-7741, span-104] service=payment message="failed to charge card"

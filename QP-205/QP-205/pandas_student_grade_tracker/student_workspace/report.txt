@@ -1,0 +1,9 @@
+Running Tests for: Student Performance Tracker
+
+PASS TC1 [Initialize empty DataFrame structure]
+PASS TC2 [Add records to DataFrame]
+PASS TC3 [Calculate average score for subject]
+PASS TC4 [Get top scorers by threshold]
+PASS TC5 [Get summary statistics]
+
+SCORE: 25/25 (Visible)

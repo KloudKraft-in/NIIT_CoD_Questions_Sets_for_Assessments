@@ -1,0 +1,2 @@
+SUBSCRIBE e2 process_data
+DISPATCH e2 {"fail": true}

@@ -1,0 +1,209 @@
+QP-228: SOIL TEMPERATURE MONITOR
+(Reformatted to match standard specification format)
+
+================================================================================
+PROBLEM STATEMENT
+================================================================================
+
+You are required to implement a SoilTempMonitor class to track and analyze soil 
+temperature readings using Pandas DataFrames. The system should support data loading, 
+data cleaning, peak reading identification, and calculating temperature metrics.
+
+Design Format: 1 Class with 7 Independent Methods
+Difficulty Level: Medium
+Number of Test Cases: 7
+Total Marks: 20
+
+================================================================================
+CLASS SPECIFICATION
+================================================================================
+
+Class Name: SoilTempMonitor
+
+================================================================================
+METHOD DEFINITIONS
+================================================================================
+
+Method 1: __init__
+-----------
+def __init__(self):
+    """
+    Initialize the SoilTempMonitor with empty storage.
+    Set self.df to None.
+    
+    Returns: None
+    """
+
+Method 2: read_data
+-----------
+def read_data(self, file_path: str) -> None:
+    """
+    Load soil temperature logs from a CSV file into self.df.
+    
+    Parameters:
+        file_path (str): Path to the CSV file
+    
+    Returns: None
+    
+    Behavior:
+        - Load CSV file into the Pandas DataFrame self.df.
+    """
+
+Method 3: clean_records
+-----------
+def clean_records(self) -> int:
+    """
+    Drop all rows from self.df where 'Temperature' is NaN.
+    Update the internal DataFrame in place.
+    
+    Returns:
+        int: Number of rows removed from the DataFrame
+    """
+
+Method 4: find_highest_temp
+-----------
+def find_highest_temp(self) -> int:
+    """
+    Find the maximum temperature value across all cleaned records.
+    
+    Returns:
+        int: The maximum temperature (or 0 if self.df is None or empty)
+    """
+
+Method 5: sensor_averages
+-----------
+def sensor_averages(self) -> dict:
+    """
+    Calculate the mean Temperature for each unique SensorID in the records.
+    
+    Returns:
+        dict: A dictionary mapping SensorID (str) to average temperature (float, rounded to 2 decimal places)
+        Format: {'SensorID': float}
+    """
+
+Method 6: high_temp_sensors
+-----------
+def high_temp_sensors(self, threshold: int) -> list:
+    """
+    Identify unique SensorID values who have at least one reading strictly greater than the threshold.
+    
+    Parameters:
+        threshold (int): Temperature threshold value
+    
+    Returns:
+        list: Sorted list of unique SensorIDs (strings) exceeding the threshold
+    """
+
+Method 7: count_high_temp_sensors
+-----------
+def count_high_temp_sensors(self, threshold: int) -> int:
+    """
+    Count the number of unique high-temperature sensors meeting the threshold criteria.
+    
+    Parameters:
+        threshold (int): Temperature threshold value
+        
+    Returns:
+        int: Count of unique sensors with a temperature strictly greater than the threshold
+    """
+
+================================================================================
+TEST CASES
+================================================================================
+
+Total Marks: 20 marks
+
+TC1: Verify initial state (Sample)
+---
+Description: Check that self.df is None upon class initialization.
+Method: __init__()
+Expected Output: None
+Marks: 0
+
+TC2: Verify data loading (Sample)
+---
+Description: Load the sample data from temperature.csv into self.df and verify the total record count (12 records initially).
+Method: read_data()
+Expected Output: 12
+Marks: 0
+
+TC3: Verify removal of missing value records
+---
+Description: Remove records where Temperature is NaN and return count of deleted records (2 records removed).
+Method: clean_records()
+Expected Output: 2
+Marks: 4
+
+TC4: Identify the highest recorded temperature
+---
+Description: Find the peak temperature across all records.
+Method: find_highest_temp()
+Expected Output: 45
+Marks: 4
+
+TC5: Calculate temperature averages for each sensor
+---
+Description: Calculate mean Temperature for each sensor rounded to 2 decimal places.
+Method: sensor_averages()
+Expected Output: Sensor averages mapping (e.g. 'S01' averages to 32.33)
+Marks: 4
+
+TC6: Identify sensors exceeding threshold
+---
+Description: Find sensors with temperature exceeding 40 degrees.
+Method: high_temp_sensors(40)
+Expected Output: ['S03']
+Marks: 4
+
+TC7: Count unique high-temperature sensors
+---
+Description: Count unique sensors exceeding 40 degrees.
+Method: count_high_temp_sensors(40)
+Expected Output: 1
+Marks: 4
+
+================================================================================
+MARKS DISTRIBUTION
+================================================================================
+
+TC1: Initial State             0 marks (Sample)
+TC2: Data Loading             0 marks (Sample)
+TC3: Clean Records             4 marks
+TC4: Find Highest Temp         4 marks
+TC5: Sensor Averages           4 marks
+TC6: High Temp Sensors         4 marks
+TC7: Count High Temp Sensors   4 marks
+---
+TOTAL                         20 marks
+
+================================================================================
+SAMPLE DATA STRUCTURE
+================================================================================
+
+CSV format:
+SensorID,Day,Temperature
+S01,Mon,32
+S02,Mon,
+...
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+1. Language: Python 3.x
+2. Data Structure: Pandas DataFrame
+3. External Libraries: pandas, numpy
+4. Type hints required for all methods
+5. Return type specifications required
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+1. Each test case must use a fresh instance of SoilTempMonitor
+2. Test cases are independent - no shared state between tests
+3. Average calculations must be rounded to exactly 2 decimal places
+4. Sensor IDs are strings (e.g., "S01")
+5. High-temperature sensor list must be sorted alphabetically
+6. Missing values in csv (like empty Temperature values) must be represented as NaN/None internally
+7. Case sensitivity should match original keys (e.g., 'SensorID', 'Day', 'Temperature')
+================================================================================

@@ -1,0 +1,15 @@
+--- Item Information ---
+A Brief History of Time by Stephen Hawking (1988)
+Title: A Brief History of Time
+Author: Stephen Hawking
+Year: 1988
+Genre: Science
+ISBN: 9780553380163
+
+Details:
+--- Item Information ---
+The Dark Knight by Christopher Nolan (2008)
+Title: The Dark Knight
+Author: Christopher Nolan
+Year: 2008
+Duration: 152 minutes

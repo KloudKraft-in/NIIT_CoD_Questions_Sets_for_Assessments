@@ -1,0 +1,16 @@
+{
+    "vserver": "TODO_VSERVER (e.g. svm_k8s)",
+    "policy_name": "TODO_POLICY (e.g. k8s_policy)",
+    "junction_path_active": "TODO_YES_NO (YES | NO)",
+    "offending_rule_index": "TODO_INDEX (e.g. 2)",
+    "root_cause_analysis": "TODO_ROOT_CAUSE (e.g. clientmatch CIDR mismatch and superuser none blocking root mounts)",
+    "detected_cidr_mismatch": {
+        "configured_clientmatch": "TODO_CONFIGURED (e.g. 10.10.10.0/24)",
+        "actual_worker_subnet": "TODO_ACTUAL (e.g. 10.10.20.0/24)"
+    },
+    "root_squash_issue": "TODO_EXPLAIN (e.g. superuser none prevents kubelet root volume initialization)",
+    "protocols_supported": "TODO_PROTOCOLS (e.g. nfs3,nfs4)",
+    "corrected_ontap_cli_command": "TODO_COMMAND (e.g. vserver export-policy rule modify -vserver svm_k8s -policyname k8s_policy -ruleindex 2 -clientmatch 10.10.20.0/24 -rorule sys -rwrule sys -superuser sys)",
+    "client_mount_status": "TODO_STATUS (SUCCESS | FAILED)",
+    "prevention_governance_controls": "TODO_CONTROLS (e.g. CI/CD pre-commit export policy validation against cluster CIDR inventory)"
+}

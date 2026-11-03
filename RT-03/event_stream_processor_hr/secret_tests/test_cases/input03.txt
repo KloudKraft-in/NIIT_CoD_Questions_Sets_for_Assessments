@@ -1,0 +1,1 @@
+{"events": [["e1", 1000, "login"], ["e2", 1005, "click"], ["e3", 1011, "logout"]], "window_seconds": 10}

@@ -1,0 +1,18 @@
+Running Tests for: Cpp_Track_Banking_Ledger (Central Server - C++ Mode)
+
+CRITICAL SYSTEM ERROR: Traceback (most recent call last):
+  File "C:\Users\nandi\Downloads\git_repo_QC-20260624T052405Z-3-001\git_repo_QC\C++\Q_CP_001\Q_CP_001\COD_Banking_Ledger\secret_tests\driver_central.py", line 55, in test_student_code
+    compile_res = subprocess.run(
+                  ^^^^^^^^^^^^^^^
+  File "C:\Users\nandi\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nandi\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\nandi\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+
+SCORE: 0/10 (Visible) | 0/10 (Total)

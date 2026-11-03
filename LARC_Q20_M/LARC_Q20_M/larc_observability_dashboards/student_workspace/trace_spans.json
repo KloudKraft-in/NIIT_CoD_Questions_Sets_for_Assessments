@@ -1,0 +1,20 @@
+{
+    "description": "Dashboard layout guidelines and trace spans data",
+    "trace_spans": [
+        {
+            "trace_id": "tr-001",
+            "span_id": "sp-101",
+            "service": "payment-api",
+            "duration_ms": 145,
+            "status_code": "200"
+        },
+        {
+            "trace_id": "tr-002",
+            "span_id": "sp-102",
+            "service": "auth-service",
+            "duration_ms": 320,
+            "status_code": "500",
+            "error": "TimeoutException"
+        }
+    ]
+}

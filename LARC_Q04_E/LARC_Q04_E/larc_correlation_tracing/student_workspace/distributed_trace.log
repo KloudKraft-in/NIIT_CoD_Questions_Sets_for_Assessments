@@ -1,0 +1,3 @@
+2026-08-10 10:15:30 [INFO] trace_id=trace-9912a service=gateway message="incoming order request"
+2026-08-10 10:15:31 [INFO] trace_id=trace-9912a service=order-service message="creating order"
+2026-08-10 10:15:32 [ERROR] trace_id=trace-9912a service=payment-service status_code=500 message="Connection reset"

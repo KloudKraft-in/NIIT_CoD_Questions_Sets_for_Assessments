@@ -1,0 +1,6 @@
+LogName: Application
+Source: SideBySide
+Date: 2026-08-10T10:00:00.000Z
+EventID: 1000
+Computer: Server-Win01
+Description: Faulting application name: w3wp.exe

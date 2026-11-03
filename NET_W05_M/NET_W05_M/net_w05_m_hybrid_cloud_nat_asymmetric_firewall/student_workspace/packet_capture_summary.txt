@@ -1,0 +1,4 @@
+=== PACKET CAPTURE TRACE (tcpdump on onprem mainframe interface) ===
+14:30:01.102 IP 10.100.20.45.49120 > 10.20.5.12.1433: Flags [S], seq 38102910, win 65535, options [mss 1460,sackOK,TS val 10291 ecr 0]
+14:30:01.103 IP 10.20.5.12.1433 > 10.100.20.45.49120: Flags [S.], seq 98120491, ack 38102911, win 65535, options [mss 1460,sackOK,TS val 88120 ecr 10291]
+14:30:04.105 IP 10.100.20.45.49120 > 10.20.5.12.1433: Flags [S], seq 38102910, win 65535, options [mss 1460,sackOK,TS val 10321 ecr 0] (Retransmission)

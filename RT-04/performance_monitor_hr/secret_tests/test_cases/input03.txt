@@ -1,0 +1,4 @@
+3
+delay_max 1 2 50
+delay_sum 10 20 30 150
+delay_min 0 100 0 5

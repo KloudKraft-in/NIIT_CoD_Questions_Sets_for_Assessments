@@ -1,0 +1,4 @@
+Instruction: Analyze the attached server log and extract all error stack traces.
+Context: Production API server web-01 experienced a 500 internal server error spike at 14:00 UTC.
+Constraints: Do not invent non-existent Linux commands.
+Output Format: Return the output formatted strictly as valid JSON.

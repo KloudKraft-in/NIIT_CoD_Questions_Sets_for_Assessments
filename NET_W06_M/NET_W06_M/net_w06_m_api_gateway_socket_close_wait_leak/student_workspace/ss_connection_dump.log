@@ -1,0 +1,15 @@
+=== SS -TAN AGGREGATE SUMMARY ===
+Total Sockets: 62,400
+LISTEN:           12
+ESTABLISHED:   8,420
+SYN_RECV:        140
+TIME_WAIT:       980
+CLOSE_WAIT:   52,848   <-- CRITICAL ANOMALY
+FIN_WAIT_1:        0
+FIN_WAIT_2:        0
+
+Sample Socket Details:
+tcp   CLOSE-WAIT 1      0 10.100.12.80:8080 10.100.5.12:48120 users:(("node",pid=1420,fd=812))
+tcp   CLOSE-WAIT 1      0 10.100.12.80:8080 10.100.5.12:48122 users:(("node",pid=1420,fd=813))
+tcp   CLOSE-WAIT 1      0 10.100.12.80:8080 10.100.5.12:48124 users:(("node",pid=1420,fd=814))
+... [52,800 additional identical sockets held by node pid 1420]

@@ -1,0 +1,12 @@
+[2026-10-20 02:30:01] [INFO] Initializing enterprise backup job 'BACKUP_VOL_APP01' v4.2.1
+[2026-10-20 02:30:03] [INFO] Source volume identified: /dev/vg_app/lv_data (Mount: /opt/app_data, Size: 120GB)
+[2026-10-20 02:30:05] [INFO] Target backup repository: /mnt/backup_repo/nightly_chains/
+[2026-10-20 02:30:08] [INFO] Creating LVM snapshot for consistent backup: /dev/vg_app/lv_data_snap (Size: 10GB)
+[2026-10-20 02:30:12] [INFO] LVM snapshot created successfully.
+[2026-10-20 02:30:15] [INFO] Initiating streaming transfer to repository...
+[2026-10-20 02:30:42] [ERROR] write error: failed to write block at offset 4194304 to /mnt/backup_repo/nightly_chains/app01_20261020.tar.gz
+[2026-10-20 02:30:43] [ERROR] OS return code 28: No space left on device
+[2026-10-20 02:30:44] [CRITICAL] Target storage pool /mnt/backup_repo out of space - 0 bytes free on destination volume
+[2026-10-20 02:30:46] [WARN] Rolling back and removing LVM snapshot /dev/vg_app/lv_data_snap
+[2026-10-20 02:30:48] [INFO] Snapshot removed cleanly.
+[2026-10-20 02:30:50] [FATAL] Backup execution terminated unexpectedly with return code 1.

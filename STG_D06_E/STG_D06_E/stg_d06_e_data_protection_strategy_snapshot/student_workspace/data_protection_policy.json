@@ -1,0 +1,36 @@
+{
+    "policies": [
+        {
+            "requirement_id": "DR-01",
+            "system": "Operational e-commerce transactional database",
+            "recommended_mechanism": "TODO_MECHANISM (Snapshot | Backup | Asynchronous Replication | Synchronous Replication)",
+            "target_rpo_minutes": "TODO_RPO",
+            "target_rto_minutes": "TODO_RTO",
+            "technical_rationale": "TODO_RATIONALE"
+        },
+        {
+            "requirement_id": "DR-02",
+            "system": "Corporate ERP financial ledger",
+            "recommended_mechanism": "TODO_MECHANISM",
+            "target_rpo_minutes": "TODO_RPO",
+            "target_rto_minutes": "TODO_RTO",
+            "technical_rationale": "TODO_RATIONALE"
+        },
+        {
+            "requirement_id": "DR-03",
+            "system": "High-availability cross-region customer portal",
+            "recommended_mechanism": "TODO_MECHANISM",
+            "target_rpo_minutes": "TODO_RPO",
+            "target_rto_minutes": "TODO_RTO",
+            "technical_rationale": "TODO_RATIONALE"
+        },
+        {
+            "requirement_id": "DR-04",
+            "system": "Pre-production staging and developer sandboxes",
+            "recommended_mechanism": "TODO_MECHANISM",
+            "target_rpo_minutes": "TODO_RPO",
+            "target_rto_minutes": "TODO_RTO",
+            "technical_rationale": "TODO_RATIONALE"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+* Connected to api-orders.internal.corp (10.200.15.82) port 8443 (#0)
+* ALPN, server accepted to use http/1.1
+> GET /v2/orders?status=pending HTTP/1.1
+> Host: api-orders.internal.corp:8443
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+< HTTP/1.1 503 Service Unavailable
+< Date: Sun, 01 Nov 2026 10:28:14 GMT
+< Content-Type: application/json
+< Content-Length: 104
+< Connection: keep-alive
+< X-Order-Backend-Error: DatabaseConnectionPoolExhausted
+< 
+{"error": "Service Unavailable", "details": "Unable to acquire database connection from pool after 30000ms"}

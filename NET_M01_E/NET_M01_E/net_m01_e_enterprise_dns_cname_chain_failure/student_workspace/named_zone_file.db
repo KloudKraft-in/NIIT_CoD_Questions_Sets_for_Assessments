@@ -1,0 +1,8 @@
+; Zone file for enterprise.com (TTL 300)
+$ORIGIN enterprise.com.
+@       IN  SOA ns1.enterprise.com. admin.enterprise.com. ( 2026110101 3600 1800 604800 300 )
+@       IN  NS  ns1.enterprise.com.
+
+promo           IN  CNAME   campaign-cdn.enterprise.com.
+campaign-cdn    IN  CNAME   edge-origin.cloud-cdn-provider.net.
+; NOTE: cloud-cdn-provider recently decommissioned 'edge-origin' and replaced with 'cdn-edge-v2.cloud-cdn-provider.net'

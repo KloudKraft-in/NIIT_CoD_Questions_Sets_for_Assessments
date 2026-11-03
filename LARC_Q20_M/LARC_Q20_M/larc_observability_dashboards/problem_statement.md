@@ -1,0 +1,45 @@
+# Log Analysis: Dashboard Panel Visualizations & Health Metrics
+
+Duration : 90 Min.
+
+## Scenario
+Design an observability dashboard layout containing field-based visualizations for error rate, throughput, transaction latency, and service health status.
+
+## Target File Location & Creation
+**File to Create/Update**: `student_workspace/solution.json`
+**Input Resource File to Inspect**: `student_workspace/trace_spans.json`
+
+## Task Objectives
+Perform the following actions inside the `student_workspace` directory:
+- Inspect `trace_spans.json` in `student_workspace/`.
+- Edit `solution.json` and record the required log analytics or findings.
+
+## Instructions to Perform the Task
+1. When your workspace loads in **VS Code**, use the **Explorer** panel on the left to locate your files.
+2. Open and inspect `trace_spans.json` inside `student_workspace/`.
+3. Open `solution.json` in `student_workspace/` and perform the required modifications.
+4. Save your changes (`Ctrl + S` or `Cmd + S`).
+5. Open the built-in terminal by clicking **Terminal > New Terminal** from the top menu.
+6. Verify your progress by running `python run.py` locally in the terminal.
+
+## Validation
+Once you have saved your files and verified your progress, return to the platform dashboard and click the **"Run Test" / "Verify"** button. This will automatically evaluate your changes and generate your score!
+
+## Grading Criteria
+Your performance will be evaluated based on the following test cases:
+
+| Test Case | Requirement | Marks |
+| --------- | ----------- | ----- |
+| **TC1** | solution.json exists and is valid JSON | 3 Marks |
+| **TC2** | Error rate panel query and timeseries chart configured | 3 Marks |
+| **TC3** | Throughput panel (requests per minute) configured | 3 Marks |
+| **TC4** | Latency heatmap / bar chart panel configured | 3 Marks |
+| **TC5** | Service health status gauge panel included | 2 Marks |
+| **TC6** | Alert notification channel mapped | 2 Marks |
+| **TC7** | Auto-refresh interval set to 30s/1m | 2 Marks |
+| **TC8** | Dashboard grid layout coordinates specified | 2 Marks |
+
+**Total Score: 20 Marks**
+
+## Important Notes
+- This is an auto-evaluated question. Ensure all code edits are properly saved and the 'run.py' checks pass before submission.

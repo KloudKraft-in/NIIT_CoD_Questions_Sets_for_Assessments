@@ -1,0 +1,201 @@
+200
+init 10
+get SK
+put VY 92
+put LW 48
+get XE
+put MN 27
+status AB
+put LW 91
+put QO 18
+status TS
+status JK
+get JC
+get YH
+status EX
+put TS 61
+put JC 72
+put YH 18
+put QO 47
+status QO
+status JK
+put JC 94
+status BB
+status GN
+status QO
+put NZ 44
+status EX
+status JC
+status ZG
+get AB
+put IF 72
+get NZ
+put AB 88
+put GN 12
+status LW
+status YH
+put GN 12
+get NN
+put MN 68
+status JC
+get NZ
+put QO 66
+get JK
+get AB
+get IF
+put NZ 43
+get IF
+put ZG 44
+get ZG
+put EX 78
+status BB
+put ZG 16
+status XE
+put SK 99
+put ZG 34
+put EX 60
+get TS
+status AB
+status YH
+get JK
+status TS
+status QO
+get XE
+put ZG 34
+put QO 46
+get AB
+get SK
+get AB
+get VV
+put XE 32
+status TS
+put MN 78
+put VV 53
+status SK
+status VY
+status MN
+status NN
+put NZ 99
+put NZ 13
+get LW
+put BB 92
+status IF
+get XE
+put XE 84
+status JK
+put JK 58
+status NN
+put GN 29
+get BB
+put AB 65
+put IF 18
+put IF 54
+put QO 18
+get GN
+status JC
+status ZG
+put LW 90
+status EX
+get JK
+put LW 81
+get SK
+get ZG
+status JC
+status VY
+get JK
+get JK
+status JK
+get SK
+status JK
+put QO 53
+put NZ 62
+status TS
+put NN 18
+get TP
+put MN 12
+get VY
+get VV
+status XE
+put NZ 35
+status QO
+put TS 11
+put VV 94
+status GN
+status IF
+put AB 24
+put SK 27
+get GN
+status TP
+put BB 59
+get MN
+status ZG
+get MN
+status SK
+put BB 23
+status BB
+put MN 21
+get TP
+get VY
+get ZG
+status NN
+put EX 67
+get QO
+status YH
+status EX
+status IF
+status LW
+status XE
+status YH
+put MN 67
+put BB 98
+get NN
+put JC 46
+put SK 99
+status MN
+get VY
+get LW
+get JK
+status NZ
+put LW 42
+get YH
+put BB 18
+status NN
+put TS 38
+status JK
+get IF
+put NZ 22
+status LW
+put TP 35
+put QO 70
+status XE
+status SK
+put ZG 83
+put TS 87
+get JC
+status JC
+put GN 37
+status VY
+status LW
+status GN
+get IF
+put EX 52
+put TS 23
+get MN
+status JK
+get QO
+put TP 91
+get NZ
+status NZ
+status MN
+put AB 42
+put NN 16
+get SK
+put GN 26
+get XE
+status JC
+put JC 83
+put XE 96
+status XE
+status GN
+get QO
+put MN 40

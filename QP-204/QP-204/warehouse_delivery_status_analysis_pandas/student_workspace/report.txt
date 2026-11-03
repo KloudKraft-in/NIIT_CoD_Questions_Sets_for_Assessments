@@ -1,0 +1,24 @@
+Running Tests for: Warehouse Delivery Status Analysis
+
+PASS Visible Test Case 1 Passed: Create structured delivery DataFrame
+PASS Visible Test Case 2 Passed: Compute monthly delivery rate per warehouse
+PASS Visible Test Case 3 Passed: Add delay flag column
+PASS Visible Test Case 4 Passed: Identify warehouses with frequent returns
+PASS Visible Test Case 5 Passed: Warehouse-wise status summary
+PASS Hidden Test Case 6 Passed: Clean records with invalid status and nulls
+PASS Hidden Test Case 7 Passed: Handle warehouse with perfect delivery rate
+PASS Hidden Test Case 8 Passed: Warehouse with only one type of status
+
+SCORE: 12.5/12.5 (Visible) | Total: 20 (Visible: 12.5 + Hidden: 7.5)
+Running Tests for: Warehouse Delivery Status Analysis
+
+PASS Visible Test Case 1 Passed: Create structured delivery DataFrame
+PASS Visible Test Case 2 Passed: Compute monthly delivery rate per warehouse
+PASS Visible Test Case 3 Passed: Add delay flag column
+PASS Visible Test Case 4 Passed: Identify warehouses with frequent returns
+PASS Visible Test Case 5 Passed: Warehouse-wise status summary
+PASS Hidden Test Case 6 Passed: Clean records with invalid status and nulls
+PASS Hidden Test Case 7 Passed: Handle warehouse with perfect delivery rate
+PASS Hidden Test Case 8 Passed: Warehouse with only one type of status
+
+SCORE: 12.5/12.5 (Visible) | Total: 20 (Visible: 12.5 + Hidden: 7.5)

@@ -1,0 +1,2 @@
+[Error] Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.enterprise.com/v1/users. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 204.
+[Error] Fetch API cannot load https://api.enterprise.com/v1/users. Preflight response is not successful.

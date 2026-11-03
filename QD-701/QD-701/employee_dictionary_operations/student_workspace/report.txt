@@ -1,0 +1,49 @@
+Running Tests for: Employee Dictionary Operations
+
+PASS Visible Test Case 1 Passed: Calculate average IT department salary
+PASS Visible Test Case 2 Passed: Find highest paid employee
+PASS Visible Test Case 3 Passed: Check employee existence by ID
+
+SCORE: 10/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+PASS Visible Test Case 1 Passed: Calculate average IT department salary
+PASS Visible Test Case 2 Passed: Find highest paid employee
+PASS Visible Test Case 3 Passed: Check employee existence by ID
+
+SCORE: 10/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+FAIL Visible Test Case 1 Crashed: Calculate average IT department salary | Error: 'EmployeeManager' object has no attribute 'employees'
+FAIL Visible Test Case 2 Crashed: Find highest paid employee | Error: 'EmployeeManager' object has no attribute 'employees'
+FAIL Visible Test Case 3 Crashed: Check employee existence by ID | Error: 'EmployeeManager' object has no attribute 'employees'
+
+SCORE: 0/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+FAIL Visible Test Case 1 Failed: Calculate average IT department salary | Reason: Output mismatch
+PASS Visible Test Case 2 Passed: Find highest paid employee
+PASS Visible Test Case 3 Passed: Check employee existence by ID
+
+SCORE: 7/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+FAIL Visible Test Case 1 Failed: Calculate average IT department salary | Reason: Output mismatch
+FAIL Visible Test Case 2 Failed: Find highest paid employee | Reason: Output mismatch
+PASS Visible Test Case 3 Passed: Check employee existence by ID
+
+SCORE: 4/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+FAIL Visible Test Case 1 Failed: Calculate average IT department salary | Reason: Output mismatch
+FAIL Visible Test Case 2 Failed: Find highest paid employee | Reason: Output mismatch
+FAIL Visible Test Case 3 Failed: Check employee existence by ID | Reason: Output mismatch
+
+SCORE: 0/10.0 (Visible)
+Running Tests for: Employee Dictionary Operations
+
+PASS Visible Test Case 1 Passed: Calculate average IT department salary
+PASS Visible Test Case 2 Passed: Find highest paid employee
+PASS Visible Test Case 3 Passed: Check employee existence by ID
+
+SCORE: 10/10.0 (Visible)

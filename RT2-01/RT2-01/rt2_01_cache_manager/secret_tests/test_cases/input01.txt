@@ -1,0 +1,9 @@
+8
+init 2
+put A 10
+put B 20
+put C 30
+status A
+get A
+status A
+status B

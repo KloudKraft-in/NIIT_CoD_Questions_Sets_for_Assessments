@@ -1,0 +1,201 @@
+200
+init 8
+status BG
+put KP 51
+put TG 79
+status KP
+get BG
+get HL
+status OP
+get SU
+status AC
+put NP 42
+get AM
+status NP
+put OP 37
+get OP
+get AC
+status KO
+put II 21
+put BM 90
+put OP 30
+status RQ
+put BG 47
+put HL 26
+put KP 11
+get PG
+get NP
+put KO 42
+put WF 60
+status MY
+get HL
+put XC 31
+status RQ
+get HL
+get JX
+get OP
+get MY
+status BG
+put BM 13
+get BM
+status AM
+put AM 86
+status JX
+status HL
+put KO 19
+put PG 13
+get KP
+get WF
+put AM 11
+put BG 46
+put CH 62
+get PG
+status CH
+status MY
+status MY
+put XC 52
+put BM 43
+status PG
+status PG
+put OP 18
+put MY 90
+status HL
+get KP
+get BM
+status II
+get II
+put BG 60
+status HL
+put JX 19
+put GH 93
+status GH
+get BM
+get KO
+status RQ
+put AM 65
+put WF 89
+get KP
+status NP
+put KO 15
+put KO 72
+put WF 33
+get KO
+status PG
+status JX
+get II
+get AM
+put WF 70
+get AM
+put RQ 67
+get KP
+get PG
+put RQ 94
+get KP
+get MY
+status PG
+get KO
+put AM 47
+put PG 46
+status WF
+get KP
+status AC
+status AC
+status KO
+get SU
+get XC
+get HL
+get NP
+get KP
+put OP 47
+get TG
+put XC 35
+put JX 78
+get AM
+status TG
+put RQ 36
+get KP
+put TG 62
+put MY 81
+status AC
+status WF
+status JX
+put PG 20
+status MY
+put GH 42
+get PG
+put HL 69
+status TG
+get AC
+status MY
+status KO
+get II
+put KP 86
+put SU 90
+put II 37
+put BM 70
+status AM
+put AM 63
+status BG
+status XC
+put NP 26
+status II
+get KO
+status AC
+put PG 24
+put BM 53
+put AC 71
+status AC
+put PG 16
+get MY
+status RQ
+get OP
+get NP
+put XC 51
+get WF
+put KO 63
+get SU
+put KP 62
+put II 29
+put MY 59
+status RQ
+put HL 84
+put RQ 98
+status II
+status KO
+get XC
+status OP
+put BG 94
+put NP 76
+put MY 11
+status PG
+status AC
+status CH
+get GH
+put KO 28
+get GH
+status TG
+status WF
+status PG
+get SU
+status MY
+status HL
+get II
+put II 82
+put BM 10
+status II
+status RQ
+get MY
+put AC 62
+get AC
+get JX
+status BM
+get HL
+put TG 30
+status SU
+status GH
+status SU
+put AM 84
+status AM
+status WF
+put KO 66
+put WF 14

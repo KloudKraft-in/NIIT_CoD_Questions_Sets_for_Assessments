@@ -1,0 +1,3 @@
+ADD 10
+ADD 20
+STATS

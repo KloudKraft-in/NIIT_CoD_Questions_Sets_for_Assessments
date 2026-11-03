@@ -1,0 +1,8 @@
+{
+  "name": "njs_pm2_config",
+  "version": "1.0.0",
+  "main": "config.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

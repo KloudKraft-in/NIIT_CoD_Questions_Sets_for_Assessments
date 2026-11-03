@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Cannot invoke "com.company.User.getEmail()" because "user" is null
+    at com.company.service.UserService.processRegistration(UserService.java:142)
+    at com.company.controller.UserController.signup(UserController.java:55)
+    at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)

@@ -1,0 +1,2 @@
+REGISTER s6 true
+RESOLVE s6 x6

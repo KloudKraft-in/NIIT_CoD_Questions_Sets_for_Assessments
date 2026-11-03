@@ -1,0 +1,1 @@
+Error creating bean with name 'paymentController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.company.app.UserService' available

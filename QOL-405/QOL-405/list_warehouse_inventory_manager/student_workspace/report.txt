@@ -1,0 +1,27 @@
+Running Tests for: List Warehouse Inventory Manager (Central Server)
+
+PASS TC1 [Check items in blank inventory (Initial State)] (2/2)
+PASS TC2 [Add multiple items and verify list] (2/2)
+PASS TC3 [Verify the total count of items] (2/2)
+PASS TC4 [Successfully remove an existing item] (2/2)
+PASS TC5 [Remove a non-existent item] (2/2)
+
+SCORE: 10/10 (Visible) | 10/10 (Total)
+Running Tests for: List Warehouse Inventory Manager
+
+PASS Visible Test Case 1 Passed: Check items in blank inventory (Initial State)
+PASS Visible Test Case 2 Passed: Add multiple items and verify list
+PASS Visible Test Case 3 Passed: Verify the total count of items
+PASS Visible Test Case 4 Passed: Successfully remove an existing item
+PASS Visible Test Case 5 Passed: Remove a non-existent item (No error/No change)
+
+SCORE: 10/10.0 (Visible)
+Running Tests for: List Warehouse Inventory Manager
+
+PASS Visible Test Case 1 Passed: Check items in blank inventory (Initial State)
+PASS Visible Test Case 2 Passed: Add multiple items and verify list
+PASS Visible Test Case 3 Passed: Verify the total count of items
+PASS Visible Test Case 4 Passed: Successfully remove an existing item
+PASS Visible Test Case 5 Passed: Remove a non-existent item (No error/No change)
+
+SCORE: 10/10.0 (Visible)

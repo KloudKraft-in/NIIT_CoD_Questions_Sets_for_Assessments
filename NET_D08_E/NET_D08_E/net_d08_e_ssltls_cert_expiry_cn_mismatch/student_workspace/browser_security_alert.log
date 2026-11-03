@@ -1,0 +1,4 @@
+[2026-11-01 11:45:00] [BROWSER-SECURITY] Insecure connection detected for URL: https://secure.pay.acmebank.com
+[2026-11-01 11:45:00] [ERROR] Certificate validation failed.
+[2026-11-01 11:45:00] [CODE] NET::ERR_CERT_COMMON_NAME_INVALID
+[2026-11-01 11:45:00] [DETAILS] The certificate presented by the server is valid for 'acmebank.com' and 'www.acmebank.com', but not for 'secure.pay.acmebank.com'.

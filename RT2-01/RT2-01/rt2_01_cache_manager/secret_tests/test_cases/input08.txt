@@ -1,0 +1,201 @@
+200
+init 10
+status DE
+status TK
+get TC
+put QT 95
+status ZU
+status PO
+get TK
+put MT 43
+status QT
+status DE
+put SY 23
+put GG 67
+status CI
+get FK
+put PB 79
+status PO
+get WT
+put PO 49
+get PB
+get GG
+status JI
+put SR 96
+status NU
+get CI
+put CI 42
+put TK 51
+get FK
+put QT 88
+get JI
+put BJ 45
+status FK
+put NU 42
+put PB 90
+status PB
+status CI
+get ZU
+status QT
+get GG
+get WT
+status IC
+put SY 97
+status SR
+put BJ 96
+get CI
+status JI
+put MT 16
+status JI
+status QT
+status TK
+get WT
+status BJ
+get IC
+get CI
+status RB
+status TK
+status JI
+status PO
+status NU
+get FK
+status PO
+get SR
+status WT
+get SY
+put TK 21
+get PO
+put RB 26
+status RB
+get TC
+status JI
+get WT
+put TC 43
+status QT
+get TK
+get GG
+get TK
+put NU 21
+status PO
+put CI 46
+get IC
+put TC 17
+get SY
+put MT 94
+status CI
+get SY
+status CI
+get SY
+get PB
+status PB
+get GG
+get RB
+put SY 65
+put ZU 91
+get TC
+get TK
+get CI
+put IC 64
+put DE 32
+get TK
+status DE
+status QT
+put WT 69
+put CI 18
+put CI 34
+put SR 98
+get SY
+get WT
+get TC
+put NU 40
+get MT
+get PO
+put JI 27
+status GG
+get IC
+status FK
+status ZU
+put BJ 47
+get QT
+get IC
+put FK 66
+put PO 92
+status MT
+status ZU
+status SR
+status PO
+put NU 60
+status QT
+status FK
+status PB
+put CI 34
+put MT 13
+put TC 26
+put WT 43
+get CI
+status NU
+status MT
+status BJ
+status WT
+status PB
+put TC 91
+put DE 48
+put MT 21
+put PO 80
+get WT
+put NU 74
+get PB
+status CI
+get CI
+put QT 66
+put GG 51
+put NU 45
+status PO
+put QT 47
+put GG 87
+status SY
+put PB 43
+status DE
+get FK
+put CI 54
+status BJ
+get CI
+put FK 38
+put RB 99
+put TK 34
+put SY 90
+put ZU 74
+status JI
+put SR 14
+get WT
+put TC 22
+get TC
+put BJ 71
+status QT
+get FK
+get SY
+status PO
+get BJ
+status CI
+put WT 13
+get BJ
+put NU 13
+put PO 54
+get MT
+put QT 71
+get NU
+get MT
+get CI
+get DE
+put GG 81
+get JI
+status JI
+put QT 60
+put PB 93
+put QT 27
+status NU
+get CI
+status PB
+status PB
+status PB
+put RB 41

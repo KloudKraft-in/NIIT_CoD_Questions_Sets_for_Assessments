@@ -1,0 +1,6 @@
+{
+    "question_id": "GAIO_Q04_E",
+    "problem_code": "gaio_command_verification",
+    "rm_rf_safety": "TODO",
+    "kubectl_get_safety": "TODO"
+}

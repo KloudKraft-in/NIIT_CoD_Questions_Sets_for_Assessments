@@ -1,0 +1,5 @@
+{
+  "ticket_id": "INC-9901",
+  "description": "Database connection pool exhausted",
+  "trace_id": "TR-88192-XYZ"
+}

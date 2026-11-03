@@ -1,0 +1,9 @@
+Transaction successful!
+Updated account balance: 2500.0
+Transaction successful!
+Updated account balance: 2000.0
+Transaction successful!
+Updated account balance: 2250.0
+Type: deposit, Amount: 1000.0, Balance: 2500.0
+Type: withdraw, Amount: 500.0, Balance: 2000.0
+Type: deposit, Amount: 250.0, Balance: 2250.0

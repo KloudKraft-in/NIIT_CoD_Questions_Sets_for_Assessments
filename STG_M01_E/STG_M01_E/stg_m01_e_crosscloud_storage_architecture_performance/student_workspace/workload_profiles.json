@@ -1,0 +1,30 @@
+{
+    "workload_profiles": [
+        {
+            "workload_id": "WL-01",
+            "workload_type": "High-IOPS Transactional Database (MongoDB / Cassandra)",
+            "target_iops": 25000,
+            "latency_requirement": "< 1 ms sub-millisecond",
+            "primary_driver": "IOPS & Low Latency"
+        },
+        {
+            "workload_id": "WL-02",
+            "workload_type": "Web frontend system root volume",
+            "target_iops": 3000,
+            "latency_requirement": "Standard single-digit ms",
+            "primary_driver": "Balanced performance and cost"
+        },
+        {
+            "workload_id": "WL-03",
+            "workload_type": "Financial transaction streaming & telemetry log store",
+            "throughput_requirement": "800 MB/s sustained sequential write",
+            "primary_driver": "Throughput / Bandwidth"
+        },
+        {
+            "workload_id": "WL-04",
+            "workload_type": "Regulatory compliance 7-year audit logs",
+            "access_frequency": "Once per year / deep cold",
+            "primary_driver": "Lowest cost per GB, WORM immutability"
+        }
+    ]
+}

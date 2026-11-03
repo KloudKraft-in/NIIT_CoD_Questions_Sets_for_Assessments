@@ -1,0 +1,3 @@
+LOG 2023-01-01 00:00:00 [INFO] System: Boot
+LOG 2023-01-01 00:00:01 [ERROR] System: Crash
+STATS

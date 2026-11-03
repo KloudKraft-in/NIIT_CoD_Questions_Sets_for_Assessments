@@ -1,0 +1,32 @@
+4
+30
+new prod_8
+del prod_6
+new prod_17
+limit 5
+print prod_2
+print prod_10
+new prod_8
+print prod_10
+del prod_1
+new prod_0
+new prod_11
+new prod_1
+del prod_14
+new prod_12
+new prod_12
+del prod_2
+del prod_3
+print prod_0
+new prod_5
+new prod_10
+del prod_7
+new prod_7
+new prod_19
+print prod_4
+new prod_3
+new prod_4
+print prod_1
+new prod_0
+new prod_8
+new prod_7

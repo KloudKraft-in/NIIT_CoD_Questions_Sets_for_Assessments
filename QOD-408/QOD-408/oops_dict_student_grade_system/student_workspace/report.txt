@@ -1,0 +1,18 @@
+Running Tests for: Student Grade System
+
+PASS Visible Test Case 1 Passed: Register Alice (90.5) and verify info
+PASS Visible Test Case 2 Passed: Update Alice's grade to 95.0 and verify
+PASS Visible Test Case 3 Passed: Add Bob (85.0) and verify class average
+PASS Visible Test Case 4 Passed: Lookup non-existent student roll number
+PASS Visible Test Case 5 Passed: Remove student and check average change
+
+SCORE: 10/10.0 (Visible)
+Running Tests for: Student Grade System
+
+PASS Visible Test Case 1 Passed: Register Alice (90.5) and verify info
+PASS Visible Test Case 2 Passed: Update Alice's grade to 95.0 and verify
+PASS Visible Test Case 3 Passed: Add Bob (85.0) and verify class average
+PASS Visible Test Case 4 Passed: Lookup non-existent student roll number
+PASS Visible Test Case 5 Passed: Remove student and check average change
+
+SCORE: 10/10.0 (Visible)

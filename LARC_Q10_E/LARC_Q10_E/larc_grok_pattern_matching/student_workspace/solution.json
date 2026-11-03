@@ -1,0 +1,10 @@
+{
+    "question_id": "LARC_Q10_E",
+    "problem_code": "larc_grok_pattern_matching",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false
+    }
+}

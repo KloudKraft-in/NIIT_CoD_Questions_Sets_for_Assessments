@@ -1,0 +1,10 @@
+Running Tests for: Club Membership System
+
+PASS TC1 [Check names in blank system] (1/1)
+PASS TC2 [Register two members] (2/2)
+PASS TC3 [Lookup existing member M101] (2/2)
+PASS TC4 [Lookup missing member M103] (1/1)
+PASS TC5 [Remove member M101 and verify] (2/2)
+PASS TC6 [List only names after removal] (2/2)
+
+SCORE: 10/10 (Visible)

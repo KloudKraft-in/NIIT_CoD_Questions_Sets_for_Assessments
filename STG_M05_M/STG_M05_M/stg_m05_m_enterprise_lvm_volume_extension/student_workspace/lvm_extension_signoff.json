@@ -1,0 +1,16 @@
+{
+    "volume_group": "vg_enterprise",
+    "logical_volume": "lv_transactions",
+    "mount_point": "/opt/transactions",
+    "baseline_topology_captured": "TODO_YES_NO (YES | NO)",
+    "physical_volume_added": "TODO_DEVICE (e.g. /dev/sdc)",
+    "pv_creation_tool": "TODO_TOOL (e.g. pvcreate /dev/sdc)",
+    "vg_expansion_tool": "TODO_TOOL (e.g. vgextend vg_enterprise /dev/sdc)",
+    "lv_extension_amount_gb": "TODO_GB (e.g. 50 or +50G)",
+    "lv_extend_command": "TODO_CMD (e.g. lvextend -L +50G /dev/vg_enterprise/lv_transactions)",
+    "filesystem_expansion_type": "TODO_TYPE (ONLINE | OFFLINE)",
+    "emergency_vg_reserve_free_gb": "TODO_GB (e.g. 50)",
+    "continuous_io_errors": "TODO_YES_NO (NO)",
+    "change_control_ticket": "CHG-2026-STG-0992",
+    "execution_status": "TODO_STATUS (COMPLETED | FAILED)"
+}

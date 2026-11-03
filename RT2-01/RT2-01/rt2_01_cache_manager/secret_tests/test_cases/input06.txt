@@ -1,0 +1,201 @@
+200
+init 9
+put OD 63
+status HG
+status VU
+put AN 91
+get AN
+status HG
+put BQ 51
+get OD
+get VU
+get VU
+put VN 85
+put VU 84
+put RF 84
+get HG
+status HW
+get HG
+put HG 53
+get LP
+get LP
+get YJ
+put BQ 34
+put YJ 71
+put TL 45
+status RF
+get YJ
+put YJ 95
+status MI
+status MI
+status TL
+put RF 15
+get ZP
+get BG
+put VN 84
+status TL
+put BG 43
+status QG
+status VU
+get MI
+put AN 10
+status PB
+put QJ 33
+put HW 99
+status AN
+put TL 89
+put QJ 77
+put MR 22
+put MI 99
+status QG
+status LP
+status QJ
+get TL
+status BG
+put MI 10
+put MR 73
+status MR
+put OD 82
+put VU 98
+put TL 37
+status OE
+status MI
+status YJ
+get VU
+get OD
+get OD
+put TL 39
+get OE
+status OD
+get HW
+put PB 32
+status QJ
+status OE
+status MI
+put HW 62
+get LP
+put LP 53
+status LP
+status BG
+get HG
+get BQ
+put VU 14
+get VN
+status OD
+get BQ
+status PB
+get BG
+status TL
+put QG 65
+get LP
+put YJ 86
+get QG
+status HG
+get YJ
+status VN
+status MI
+put PB 98
+put VU 39
+status OE
+put TL 71
+get YJ
+status VU
+get TL
+status LP
+get VN
+put MR 28
+get HG
+status RO
+status RF
+status ZP
+get BQ
+status RF
+get YJ
+status BQ
+get QJ
+put TL 35
+put QJ 30
+get TL
+put MR 23
+put OD 55
+put QG 64
+put HW 21
+get OD
+put OE 13
+get BG
+status QJ
+put VU 54
+put BQ 18
+put HG 64
+get RO
+put TL 53
+status OD
+put RO 61
+get BG
+status HW
+status HG
+status ZP
+status PB
+put MR 56
+status HG
+status OD
+get LP
+get VN
+get TL
+put MI 56
+get HG
+get HG
+status MR
+status MR
+get BQ
+status ZP
+status TL
+get BG
+status HG
+get OD
+put MI 90
+status YJ
+status RO
+put HG 60
+put HW 94
+status OD
+get HW
+status VU
+get OE
+get YJ
+get PB
+put LP 49
+get RF
+status OD
+put VU 73
+get HG
+status QG
+put TL 18
+put OD 43
+get MR
+put HW 60
+get MR
+put RF 71
+get YJ
+get MR
+get LP
+get VN
+status HW
+get TL
+get MR
+put RO 65
+put HW 12
+status AN
+put AN 59
+put OD 69
+put QG 98
+status VN
+get BQ
+put BG 92
+status LP
+put AN 61
+status RO
+status AN
+put VN 26
+get OD
+status LP

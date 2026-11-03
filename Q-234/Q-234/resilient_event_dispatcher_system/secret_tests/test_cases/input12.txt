@@ -1,0 +1,2 @@
+SUBSCRIBE e12 log_event
+DISPATCH e12 {"message": "msg12"}

@@ -1,0 +1,1 @@
+{"events": [["e1", 1000, "a"], ["e2", 1010, "b"], ["e3", 1020, "c"]], "window_seconds": 5, "batch_size": 2}

@@ -1,0 +1,4 @@
+INIT 2 1
+CALL
+CALL
+CALL

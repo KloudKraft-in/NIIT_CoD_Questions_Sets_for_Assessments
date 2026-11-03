@@ -1,0 +1,11 @@
+Running Tests for: Patient Health Monitor
+
+PASS TC1 [__init__ creates empty placeholder] (2/2)
+PASS TC2 [Load health.csv and verify schema] (2/2)
+PASS TC3 [Drop NaN rows and return count] (4/4)
+PASS TC4 [Record count after cleaning matches] (3/3)
+PASS TC5 [Mean heart rate per patient as dict] (3/3)
+PASS TC6 [Patients with HR > 100 threshold] (3/3)
+PASS TC7 [Unique patient IDs with no duplicates] (3/3)
+
+SCORE: 20/20 (Visible)

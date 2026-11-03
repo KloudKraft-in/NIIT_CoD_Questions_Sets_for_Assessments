@@ -1,0 +1,6 @@
+{
+    "question_id": "GAIO_Q22_E",
+    "problem_code": "gaio_cloud_hallucination_audit",
+    "fake_tf_resources": [],
+    "fake_boto3_methods": []
+}

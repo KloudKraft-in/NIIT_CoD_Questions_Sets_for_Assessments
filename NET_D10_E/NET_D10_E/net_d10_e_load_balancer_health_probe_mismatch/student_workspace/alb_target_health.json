@@ -1,0 +1,22 @@
+{
+    "load_balancer": "app-alb-prod",
+    "target_group": "tg-checkout-microservice",
+    "health_check_configuration": {
+        "protocol": "HTTP",
+        "port": "traffic-port",
+        "path": "/healthz",
+        "matcher": {
+            "http_code": "200"
+        },
+        "interval_seconds": 30,
+        "timeout_seconds": 5,
+        "healthy_threshold_count": 3,
+        "unhealthy_threshold_count": 3
+    },
+    "targets": [
+        {"id": "i-01a88210f", "port": 8080, "health_state": "healthy", "description": "Target is healthy"},
+        {"id": "i-02b44919e", "port": 8080, "health_state": "healthy", "description": "Target is healthy"},
+        {"id": "i-03c99182a", "port": 8080, "health_state": "unhealthy", "reason": "Target.FailedHealthChecks", "description": "Health checks failed with these codes: [404]"},
+        {"id": "i-04d77321c", "port": 8080, "health_state": "unhealthy", "reason": "Target.FailedHealthChecks", "description": "Health checks failed with these codes: [404]"}
+    ]
+}

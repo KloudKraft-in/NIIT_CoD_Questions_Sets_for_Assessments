@@ -1,0 +1,2 @@
+REGISTER s8 true
+RESOLVE s8 x8

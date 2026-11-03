@@ -1,0 +1,6 @@
+$ traceroute -q 1 198.51.100.53 from London-Client
+ 1  gw-london.isp.net (195.66.224.1)  1.2 ms
+ 2  core-lon.transit.net (195.66.225.12)  3.4 ms
+ 3  transatlantic-subsea.transit.net (213.130.112.5)  72.1 ms
+ 4  pacific-subsea-01.transit.net (129.250.2.14)  240.5 ms
+ 5  edge-tokyo.anycast.net (198.51.100.53)  315.4 ms

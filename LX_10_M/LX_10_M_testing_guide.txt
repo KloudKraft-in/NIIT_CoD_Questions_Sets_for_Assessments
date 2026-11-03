@@ -1,0 +1,37 @@
+================================================================================
+LX_10_M: linux_security_ownership_local - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: Linux Security Audit & Log File Processing
+
+This guide details the exact steps a learner must perform for LX_10_M.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: OPEN TERMINAL
+- Open a terminal session on your Linux machine.
+
+STEP 2: CREATE AUDIT WORKSPACE (PASSES TC2 & TC3)
+- Create audit directories:
+  mkdir -p /tmp/sys_audit/reports /tmp/sys_audit/archives
+
+STEP 3: AUDIT ROOT FILESYSTEM USAGE (PASSES TC4)
+- Save root partition usage stats to /tmp/sys_audit/reports/root_disk_usage.txt:
+  df -h / > /tmp/sys_audit/reports/root_disk_usage.txt
+
+STEP 4: SEARCH LARGE LOG FILES IN /VAR/LOG (PASSES TC5)
+- Find .log files in /var/log > 50KB and save absolute paths:
+  find /var/log -maxdepth 1 -name "*.log" -type f -size +50k > /tmp/sys_audit/reports/var_log_files.txt
+
+STEP 5: AUDIT LISTENING TCP SOCKETS (PASSES TC6 & TC7)
+- Save active listening TCP ports report to /tmp/sys_audit/reports/listening_ports.txt:
+  ss -tuln | grep LISTEN > /tmp/sys_audit/reports/listening_ports.txt || netstat -tuln | grep LISTEN > /tmp/sys_audit/reports/listening_ports.txt
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY
+--------------------------------------------------------------------------------
+- Switch to the student workspace terminal.
+- Run local evaluation:
+  python3 student_workspace/run.py

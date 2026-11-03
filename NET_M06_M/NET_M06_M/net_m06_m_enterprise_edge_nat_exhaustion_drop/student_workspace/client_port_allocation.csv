@@ -1,0 +1,4 @@
+Application,Client_Count,Connections_Per_Client,Total_Sockets,Protocol
+Software_Update_Downloader,25000,2,50000,TCP
+Corporate_Email_Sync,25000,1,25000,TCP (Throttled/Dropped)
+Web_Browsing,15000,4,60000,TCP (Dropped)

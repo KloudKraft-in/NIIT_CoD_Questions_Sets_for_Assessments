@@ -1,0 +1,13 @@
+[2026-10-23 08:30:01] [INFO] Initiating persistent NFS client mount configuration workflow.
+[2026-10-23 08:30:05] [INFO] Target remote NFS export identified: 192.168.10.50:/srv/nfs/shared
+[2026-10-23 08:30:10] [CMD] Creating local mount point directory: mkdir -p /mnt/app_shared
+[2026-10-23 08:30:12] [CMD] Setting directory permissions: chmod 0755 /mnt/app_shared
+[2026-10-23 08:30:15] [VERIFY] Mount point attributes: path=/mnt/app_shared, owner=root:root, permissions=0755
+[2026-10-23 08:30:30] [CONFIG] Preparing persistent entry for /etc/fstab:
+[2026-10-23 08:30:30] [CONFIG] Entry: 192.168.10.50:/srv/nfs/shared /mnt/app_shared nfs defaults,_netdev,nofail 0 0
+[2026-10-23 08:30:35] [INFO] Applied network safety options '_netdev' and 'nofail' to avoid boot delays if network is degraded.
+[2026-10-23 08:31:00] [CMD] Executing mount command: mount -a
+[2026-10-23 08:31:05] [VERIFY] Inspecting /proc/mounts: 192.168.10.50:/srv/nfs/shared mounted on /mnt/app_shared type nfs4 (rw,relatime,vers=4.2).
+[2026-10-23 08:31:10] [TEST] Verifying active write access: touch /mnt/app_shared/.write_verification_test
+[2026-10-23 08:31:12] [INFO] Write verification test succeeded. Test file removed cleanly.
+[2026-10-23 08:31:15] [STATUS] Persistent NFS client mount verification completed: SUCCESS.

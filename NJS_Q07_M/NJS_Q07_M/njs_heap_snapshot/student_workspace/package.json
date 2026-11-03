@@ -1,0 +1,8 @@
+{
+  "name": "njs_heap_snapshot",
+  "version": "1.0.0",
+  "main": "diagnostics.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

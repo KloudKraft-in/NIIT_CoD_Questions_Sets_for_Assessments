@@ -1,0 +1,164 @@
+QL-606: PULSE RATES LIST TRACKER
+(Reformatted to match standard specification format, no CSV)
+
+================================================================================
+PROBLEM STATEMENT
+================================================================================
+
+You are required to implement a HealthMonitor class to track and analyze pulse rates 
+heart rates using nested list data structures. The system should support initialization 
+with default records, data cleaning, peak reading identification, and calculating health metrics.
+
+Design Format: 1 Class with 6 Independent Methods
+Difficulty Level: Medium
+Number of Test Cases: 6
+Total Marks: 20
+
+================================================================================
+CLASS SPECIFICATION
+================================================================================
+
+Class Name: HealthMonitor
+
+================================================================================
+METHOD DEFINITIONS
+================================================================================
+
+Method 1: __init__
+-----------
+def __init__(self):
+    """
+    Initialize the HealthMonitor with default storage records.
+    Set self.records to the following list:
+    [
+        ['P01', 'Mon', 72],
+        ['P02', 'Mon', None],
+        ['P01', 'Tue', 75],
+        ['P03', 'Mon', 105],
+        ['P04', 'Tue', 68],
+        ['P05', 'Mon', 80],
+        ['P06', 'Mon', None],
+        ['P01', 'Wed', 70],
+        ['P03', 'Tue', 110],
+        ['P04', 'Wed', 75],
+        ['P02', 'Tue', 85],
+        ['P05', 'Wed', 90]
+    ]
+    
+    Returns: None
+    """
+
+Method 2: clean_records
+-----------
+def clean_records(self) -> int:
+    """
+    Drop all records from self.records where the HeartRate is None.
+    Update the internal list in place.
+    
+    Returns:
+        int: Number of records removed from the list
+    """
+
+Method 3: find_highest_rate
+-----------
+def find_highest_rate(self) -> int:
+    """
+    Find the maximum heart rate value across all cleaned records.
+    
+    Returns:
+        int: The maximum heart rate (or 0 if self.records is None or empty)
+    """
+
+Method 4: patient_averages
+-----------
+def patient_averages(self) -> dict:
+    """
+    Calculate the mean HeartRate for each unique PatientID in the records.
+    
+    Returns:
+        dict: A dictionary mapping PatientID (str) to average heart rate (float, rounded to 2 decimal places)
+        Format: {'PatientID': float}
+    """
+
+Method 5: high_risk
+-----------
+def high_risk(self, threshold: int) -> list:
+    """
+    Identify unique PatientID values who have at least one reading strictly greater than the threshold.
+    
+    Parameters:
+        threshold (int): Heart rate threshold value
+    
+    Returns:
+        list: Sorted list of unique PatientIDs (strings) exceeding the threshold
+    """
+
+Method 6: count_high_risk
+-----------
+def count_high_risk(self, threshold: int) -> int:
+    """
+    Count the number of unique high-risk patients meeting the threshold criteria.
+    
+    Parameters:
+        threshold (int): Heart rate threshold value
+        
+    Returns:
+        int: Count of unique patients with a heart rate strictly greater than the threshold
+    """
+
+================================================================================
+TEST CASES
+================================================================================
+
+Total Marks: 20 marks
+
+TC1: Verify initial state (Sample)
+---
+Description: Check that self.records is correctly initialized with the 12 default records.
+Method: __init__()
+Expected Output: Default records list structure
+Marks: 0
+
+TC2: Verify removal of missing value records
+---
+Description: Remove records where HeartRate is None and return count of deleted records (2 records removed).
+Method: clean_records()
+Expected Output: 2
+Marks: 4
+
+TC3: Identify the highest recorded heart rate
+---
+Description: Find the peak heart rate across all records.
+Method: find_highest_rate()
+Expected Output: 110
+Marks: 4
+
+TC4: Calculate health averages for each patient
+---
+Description: Calculate mean HeartRate for each patient rounded to 2 decimal places.
+Method: patient_averages()
+Expected Output: {'P01': 72.33, 'P02': 85.00, 'P03': 107.50, 'P04': 71.50, 'P05': 85.00}
+Marks: 4
+
+TC5: Identify patients exceeding threshold
+---
+Description: Find patients with heart rate exceeding 100 BPM.
+Method: high_risk(100)
+Expected Output: ['P03']
+Marks: 4
+
+TC6: Count unique high-risk individuals
+---
+Description: Count unique patients exceeding 100 BPM.
+Method: count_high_risk(100)
+Expected Output: 1
+Marks: 4
+
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+1. Language: Python 3.x
+2. Data Structure: List (list of lists)
+3. Type hints required for all methods
+4. Return type specifications required

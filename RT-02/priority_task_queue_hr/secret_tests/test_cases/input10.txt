@@ -1,0 +1,6 @@
+5
+add_task a 1 []
+add_task b 1 ["z"]
+get_status a
+get_status b
+get_status z

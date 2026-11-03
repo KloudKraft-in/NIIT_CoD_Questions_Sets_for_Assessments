@@ -1,0 +1,2 @@
+REGISTER s13 true
+RESOLVE s13 x13

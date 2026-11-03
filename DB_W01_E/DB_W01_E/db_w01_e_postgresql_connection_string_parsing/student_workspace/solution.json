@@ -1,0 +1,12 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "DB_W01_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "db_w01_e_postgresql_connection_string_parsing",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    }
+}

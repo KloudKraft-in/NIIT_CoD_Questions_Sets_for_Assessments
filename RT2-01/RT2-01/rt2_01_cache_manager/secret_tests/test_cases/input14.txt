@@ -1,0 +1,1001 @@
+1000
+init 32
+get KE
+put OY 65
+put LZ 28
+get DP
+status MI
+status HK
+put GC 49
+status XB
+status XQ
+put GH 63
+get BU
+put PB 71
+get SZ
+get AP
+put SB 51
+get ZS
+put UW 89
+get EE
+get WE
+status SI
+put VA 27
+get ZS
+put FX 11
+get IV
+status TO
+put QH 54
+get BR
+put GJ 35
+status PB
+put HY 36
+get SI
+status PY
+put JV 46
+put TB 13
+put EA 35
+get TB
+status EY
+status HA
+status AY
+put JK 85
+put ZW 33
+get ZS
+status AY
+status UW
+get JV
+status RZ
+status ZD
+get HM
+put JK 93
+put EE 62
+put DP 83
+put ES 44
+put HC 85
+get SV
+put PY 59
+get KE
+get FX
+status FM
+put GJ 77
+status UX
+status KJ
+get VO
+put UX 52
+put BS 37
+get TQ
+put XP 33
+put TO 22
+status VU
+put PB 91
+put DR 55
+status XB
+status AP
+put FE 68
+put FM 24
+status XQ
+put DR 65
+status JK
+status IV
+put SV 51
+status ML
+put OL 72
+status EE
+get MJ
+put CG 19
+get MI
+status CA
+put CC 45
+get EA
+put TS 78
+put PR 66
+put EY 50
+put RF 26
+put RZ 54
+put TB 73
+status GQ
+put RZ 62
+get FA
+status PB
+status CA
+status FI
+put HK 58
+status LY
+status GH
+get HS
+put TB 34
+put TO 31
+status OL
+put DO 27
+get MS
+put TQ 41
+put LZ 72
+status SZ
+get CP
+put BL 39
+put BL 70
+status BL
+get PL
+get KJ
+put LY 22
+status VO
+put FE 34
+status FE
+get JV
+put EE 26
+put PB 88
+status WG
+status CY
+put FV 55
+status GC
+put WE 94
+get AP
+status OL
+put MS 84
+put BL 66
+get WG
+get OL
+status TQ
+put TO 81
+put VO 23
+put MJ 44
+put TB 77
+put AP 44
+put UW 74
+status SV
+status ZD
+get TQ
+put WG 84
+put UZ 84
+put SB 49
+status FV
+status AP
+status FE
+put MI 79
+status AY
+get LF
+put YZ 88
+get TB
+get BL
+put PB 21
+put VU 68
+put LD 50
+get XB
+put JI 86
+get CP
+put BS 43
+put UW 63
+status PR
+status ZC
+status DL
+put ET 14
+put ES 51
+put HA 85
+put CG 70
+get CP
+put VA 13
+get TS
+get LY
+get UX
+put GQ 28
+status BU
+get RF
+put BL 33
+get WE
+get SM
+put ZS 17
+get OL
+get GH
+put WG 12
+status VX
+status ML
+status KJ
+put ZD 95
+put LZ 82
+status ES
+get FX
+get CC
+status GH
+status UW
+put JI 97
+get JI
+status TB
+put VO 17
+put SI 93
+put HA 54
+status DR
+get DR
+get ML
+get DR
+get PY
+put EY 48
+get TS
+put ET 25
+put HC 77
+status LZ
+get MS
+status VU
+get LZ
+get EA
+status IV
+get DP
+get JI
+put PR 54
+status DR
+put PL 62
+put YZ 92
+put RZ 48
+put ZW 68
+get BR
+status SZ
+status AY
+put TQ 44
+status CP
+put CA 18
+status ZD
+get SM
+get XM
+status HC
+get MI
+put RZ 71
+get DL
+get LF
+get SM
+put SZ 73
+put HY 78
+status PB
+put NP 38
+put PY 13
+status TB
+status VX
+status RA
+get JI
+put FX 18
+status JV
+put ZS 61
+put FM 24
+get HS
+get HM
+get CC
+put FA 39
+status VO
+get PL
+status TB
+get CA
+status JK
+put SZ 96
+put ZD 82
+status UW
+put RZ 90
+put RA 76
+put PR 76
+get BU
+status IV
+put OY 38
+status LZ
+status CY
+get DR
+get EY
+get XB
+get EE
+put ZW 29
+put ET 52
+status PB
+put CG 81
+put KJ 73
+status SI
+status GH
+put PB 96
+put XM 23
+get AY
+put YL 83
+put FV 39
+get GC
+get ET
+put JK 96
+get LF
+status VO
+put DR 73
+status VU
+status FM
+get WV
+get XP
+status JI
+put DL 33
+get HS
+status HM
+status HY
+put ZC 51
+status HK
+put NP 60
+put IV 59
+get HM
+put JV 35
+get ML
+get GH
+put YL 38
+put CA 18
+get MJ
+put GC 38
+status TB
+get MJ
+status IV
+put ZS 90
+put UX 20
+put BU 60
+put HM 87
+put FA 96
+get HY
+status RA
+put WV 25
+status KJ
+get JI
+get DL
+get EY
+put TB 60
+put CA 56
+put CA 78
+put LY 35
+status HC
+status LZ
+put EA 14
+put ZW 87
+get HA
+put JK 61
+status GQ
+status DT
+get DO
+status SI
+get UJ
+put AY 81
+get YZ
+status HS
+put UW 71
+put MS 74
+put FX 78
+put LP 52
+put ZD 57
+status HM
+get SB
+status GC
+status UJ
+put XM 17
+get GH
+put CC 15
+status GQ
+status GC
+get QH
+put SB 34
+put DL 57
+get PL
+put BS 52
+put HS 30
+get DO
+put TB 51
+put ML 13
+put NP 25
+put JV 34
+put PL 59
+put RA 75
+put GC 74
+put TQ 59
+put GH 72
+status KJ
+put BU 83
+put KJ 40
+status CX
+status FE
+get VA
+put GJ 96
+put AP 76
+get HA
+status RA
+put TS 50
+put NP 25
+put ES 90
+get SI
+status DR
+get UW
+put ZC 58
+get FM
+put XQ 54
+get TO
+put GQ 79
+put CY 33
+put VO 29
+status HS
+get CA
+status ZD
+status SZ
+put CA 69
+put UZ 91
+get TB
+put BR 22
+status SM
+status MS
+get GJ
+get GC
+get PR
+get FA
+put RF 47
+put VX 26
+put ZW 91
+get TB
+put ZD 80
+status TO
+put XM 56
+put VO 49
+status OY
+put AY 69
+put TB 83
+put TB 74
+put SV 27
+put ZS 84
+status XB
+put ES 55
+put FI 90
+status FX
+put FM 77
+put SB 69
+put FA 97
+status MS
+status GH
+status GH
+status SB
+status GQ
+status SM
+put LF 71
+status RZ
+get HY
+put NP 27
+status EA
+status ET
+get RA
+put CP 69
+get VX
+put FV 93
+put SV 37
+put EE 85
+get UZ
+put WV 33
+put TS 60
+put CA 14
+get WV
+get LF
+status DT
+status DO
+put BL 43
+status NP
+status ET
+put ES 12
+put GQ 39
+put UZ 67
+put MI 23
+get LP
+put MJ 71
+status TO
+status GH
+status GH
+status CX
+get CP
+put DP 11
+get QO
+status ZS
+get UW
+status YL
+status FA
+put CX 88
+get SZ
+put UX 63
+get BR
+put CC 83
+get IV
+status EY
+put CC 47
+put CA 44
+put RA 42
+get LZ
+put XM 74
+put ZC 28
+get NP
+put XQ 44
+get IV
+status JV
+get XB
+get RZ
+get TB
+status DT
+status SZ
+get BL
+get YZ
+get XQ
+put JV 26
+get XB
+put MI 87
+status XM
+get PB
+status VU
+get EA
+put PB 30
+put OY 14
+get TB
+get LF
+put HY 36
+put BR 75
+put FI 95
+put ZD 69
+get HA
+put ZS 34
+put BL 94
+put JV 74
+status DO
+get PB
+put DO 22
+put GQ 66
+status TQ
+get EE
+get XQ
+status BR
+get VU
+status GH
+put CG 37
+put UW 83
+status HK
+status OY
+put MJ 72
+put FX 79
+status BR
+get YZ
+status FI
+put RF 28
+put UW 47
+get WG
+put YL 30
+status KE
+put FV 56
+status RZ
+status YZ
+put SI 34
+status GH
+put JK 93
+status UW
+get DT
+put HA 69
+get CA
+status JI
+put ZC 63
+status FV
+status XM
+get DL
+put TQ 14
+get FV
+get FI
+put PB 35
+put EA 36
+put LZ 86
+put UZ 38
+put OL 98
+put MJ 41
+status VO
+status TQ
+put VA 58
+status SI
+status SM
+status JK
+status CG
+put CA 16
+status QH
+put BU 43
+status FA
+status OL
+status UJ
+status JV
+get LP
+put ZW 77
+put BL 48
+get DR
+status OL
+get ZC
+status QH
+put VO 25
+put VO 71
+status HK
+put TS 80
+status VO
+get MS
+put PB 18
+get UX
+status JV
+status LZ
+get ZC
+put VX 83
+put LP 90
+put JI 29
+status TQ
+put UZ 41
+put RZ 27
+put PY 46
+get EE
+put ZD 23
+put FM 29
+put CP 58
+get ET
+get WG
+get SZ
+status RF
+put OL 54
+status PB
+put GQ 52
+get ML
+put XP 40
+status CA
+put KJ 64
+put VA 10
+status PY
+put KE 90
+status LY
+status DR
+put ZD 93
+put SM 79
+get WV
+get XQ
+get HA
+put FA 93
+status NP
+status ZC
+put MI 84
+get CY
+put LF 95
+put JK 90
+status FA
+put SI 53
+put DP 90
+get FE
+status DP
+status ES
+status DL
+put LY 47
+put JV 32
+put UX 44
+put HA 38
+put CA 71
+put VX 47
+status RA
+status MJ
+put GJ 83
+get UJ
+put DR 80
+put PB 98
+get LY
+status FM
+get GC
+status DL
+put BS 70
+get CP
+get UJ
+put SB 22
+put ZW 38
+put FI 16
+status HS
+put VO 61
+status SV
+get MJ
+status DO
+status RA
+get IV
+put BL 20
+put GC 76
+put CY 35
+status FE
+status UJ
+get WE
+get EY
+status SZ
+put FM 38
+status EA
+status PL
+status DO
+put SI 80
+put GQ 88
+get JV
+put WE 97
+put VA 84
+get XB
+get VX
+put UJ 32
+put DL 62
+put LF 77
+put PB 52
+status ES
+status VU
+get FE
+put LY 58
+put CC 43
+get RZ
+get VA
+status ZW
+put CX 19
+status LP
+put XM 63
+get XM
+put FM 57
+put GQ 32
+put DO 65
+get XM
+get FM
+status NP
+status KE
+get ZD
+put CA 40
+put DL 73
+get LZ
+get EA
+status TB
+put TO 14
+status ES
+get CY
+status MJ
+put FE 83
+put ML 92
+get ZC
+put RF 95
+put LY 15
+put EA 31
+put FM 13
+put PL 75
+get XP
+get VU
+status JI
+put BR 36
+get DT
+put BR 46
+put GQ 49
+status KE
+get XQ
+status BR
+status QO
+status RZ
+status HM
+status TO
+put KE 90
+put DO 29
+put PR 61
+status BU
+get ML
+put FI 10
+get FM
+put DR 47
+get SI
+put HK 25
+put PY 99
+get KJ
+status UX
+put BL 44
+status VA
+status FX
+get BS
+put DR 81
+status BR
+status LY
+put DP 95
+get CG
+get CC
+status PY
+get FV
+status SM
+get FM
+status LP
+put PY 25
+put GJ 83
+status VX
+put LP 33
+put ZS 54
+status SB
+get GC
+put ET 83
+put BL 81
+put GH 33
+get TB
+get ZW
+get HC
+get SB
+status XB
+status XP
+put KJ 33
+get GH
+status PB
+get CC
+status ES
+status ML
+put RA 90
+status UW
+status HS
+status ZC
+status TS
+get KE
+put VO 30
+put BR 51
+put GC 94
+get DL
+put TS 80
+get JV
+status DO
+put CY 45
+status XB
+get TO
+put UZ 58
+put EA 72
+get HC
+put FM 98
+status BU
+get TB
+put KE 17
+get GQ
+put PR 34
+put ZS 15
+status XM
+put RZ 71
+status FE
+put XP 78
+put SZ 11
+put JI 79
+get BR
+get QO
+get ML
+get ZS
+put WV 13
+status ML
+get KE
+get RA
+put LZ 70
+get CY
+status VA
+status RA
+put SZ 27
+put HM 49
+get MI
+get ZD
+put YL 63
+status JI
+put DL 72
+get LZ
+put GQ 96
+put KE 45
+get GC
+status FV
+put CX 92
+put BR 50
+status DP
+status GJ
+get MS
+status FM
+put FV 90
+get TS
+put NP 48
+status PB
+get AP
+get TB
+get TB
+status DT
+put DT 68
+put PR 62
+status RA
+put EE 48
+status HC
+status HC
+get AP
+get LF
+get HC
+get SI
+get WG
+status RA
+put CY 35
+get UW
+status VU
+status YZ
+get VO
+status VA
+get LP
+put ML 68
+get CY
+put HA 65
+put BL 65
+status TB
+put PB 73
+put WE 94
+status FM
+get XP
+status UZ
+put FV 68
+status ET
+get FX
+get MJ
+put RZ 40
+put DT 92
+get LY
+put BS 80
+status XP
+put SI 63
+put JI 53
+status CA
+put ML 92
+put TQ 78
+get OL
+get LY
+get TS
+put LY 34
+put LY 74
+put QH 31
+put PB 30
+get RF
+put TB 90
+put CG 59
+put ML 42
+put LZ 84
+put GH 53
+get GQ
+put PB 57
+status DP
+put ES 71
+put GH 16
+get ES
+status HA
+status VO
+status WE
+put KJ 37
+put KJ 10
+put ZD 12
+get GH
+get JK
+put EE 53
+get DL
+get BL
+put KE 53
+put LD 18
+put TQ 26
+put ML 13
+status HM
+put JV 63
+status FI
+get SM
+put RA 72
+put LP 82
+status ML
+status TO
+status HM
+get HC
+get PB
+status WG
+put CG 90
+get FA
+status TS
+get AY
+status PR
+status SM
+status YL
+put TB 36
+status BU
+get XB
+put IV 88
+get JI
+status CC
+put PY 76
+put ML 20
+get UZ
+get JK
+get CA
+status TO
+status JI
+put FX 42
+put GH 37
+put DL 37
+get GH
+status KE
+get TQ
+get PB
+status LD
+put FA 85
+status UJ
+put VX 73
+get DR

@@ -1,0 +1,2 @@
+The temperature for City_8 is 8
+The forecast for City_8 is Forecast_8

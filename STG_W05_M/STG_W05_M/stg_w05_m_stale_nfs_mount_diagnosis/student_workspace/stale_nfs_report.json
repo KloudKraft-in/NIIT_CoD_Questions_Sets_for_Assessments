@@ -1,0 +1,13 @@
+{
+    "affected_mount_point": "/mnt/netapp_shared",
+    "detected_error_code": "TODO_ERROR (e.g. ESTALE or Stale file handle)",
+    "locking_process_discovery_tool": "TODO_TOOL (e.g. fuser or lsof)",
+    "safe_unmount_command": "TODO_UMOUNT_CMD (e.g. umount -l /mnt/netapp_shared)",
+    "orphaned_kernel_states_avoided": "TODO_YES_NO (YES | NO)",
+    "netapp_vserver": "svm_netapp_prod",
+    "identified_root_cause_subnet": "TODO_SUBNET (e.g. 192.168.20.0/24 or 192.168.20.50)",
+    "netapp_remediation_rule": "TODO_RULE (e.g. vserver export-policy rule create -vserver svm_netapp_prod -policyname app_export_policy -clientmatch 192.168.20.0/24 -rorule sys -rwrule sys)",
+    "remount_command_executed": "TODO_MOUNT_CMD (e.g. mount -t nfs -o vers=4.1 svm_netapp_prod:/shared /mnt/netapp_shared)",
+    "read_write_verification": "TODO_YES_NO (YES | NO)",
+    "recovery_status": "TODO_STATUS (SUCCESS | FAILED)"
+}

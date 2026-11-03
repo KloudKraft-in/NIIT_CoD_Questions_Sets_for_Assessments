@@ -1,0 +1,115 @@
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+PASS TC2 [Complete task and verify [D] prefix]
+PASS TC3 [Get count of pending tasks]
+PASS TC4 [Complete task returns True and get count of done tasks]
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 10.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+PASS TC2 [Complete task and verify [D] prefix]
+PASS TC3 [Get count of pending tasks]
+PASS TC4 [Complete task returns True and get count of done tasks]
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 10.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+FAIL TC1 [Add task and verify [P] prefix]
+  Error Type: AttributeError
+  Details: 'TaskRegistry' object has no attribute 'tasks'
+FAIL TC2 [Complete task and verify [D] prefix]
+  Error Type: AttributeError
+  Details: 'TaskRegistry' object has no attribute 'tasks'
+FAIL TC3 [Get count of pending tasks]
+  Error Type: AttributeError
+  Details: 'TaskRegistry' object has no attribute 'tasks'
+FAIL TC4 [Complete task returns True and get count of done tasks]
+  Error Type: AttributeError
+  Details: 'TaskRegistry' object has no attribute 'tasks'
+FAIL TC5 [Delete task and verify removal]
+  Error Type: AttributeError
+  Details: 'TaskRegistry' object has no attribute 'tasks'
+
+SCORE: 0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+PASS TC2 [Complete task and verify [D] prefix]
+PASS TC3 [Get count of pending tasks]
+PASS TC4 [Complete task returns True and get count of done tasks]
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 10.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+FAIL TC1 [Add task and verify [P] prefix]
+  Expected: True (check condition satisfied)
+  Got: []
+FAIL TC2 [Complete task and verify [D] prefix]
+  Expected: True (check condition satisfied)
+  Got: []
+FAIL TC3 [Get count of pending tasks]
+  Expected: True (check condition satisfied)
+  Got: 0
+FAIL TC4 [Complete task returns True and get count of done tasks]
+  Expected: True (check condition satisfied)
+  Got: 0
+FAIL TC5 [Delete task and verify removal]
+  Expected: True (check condition satisfied)
+  Got: []
+
+SCORE: 0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+FAIL TC2 [Complete task and verify [D] prefix]
+  Expected: True (check condition satisfied)
+  Got: ['[P] Buy Milk']
+PASS TC3 [Get count of pending tasks]
+FAIL TC4 [Complete task returns True and get count of done tasks]
+  Expected: True (check condition satisfied)
+  Got: 0
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 6.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+FAIL TC2 [Complete task and verify [D] prefix]
+  Expected: True (check condition satisfied)
+  Got: ['[P] Buy Milk']
+PASS TC3 [Get count of pending tasks]
+FAIL TC4 [Complete task returns True and get count of done tasks]
+  Expected: True (check condition satisfied)
+  Got: 0
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 6.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+PASS TC1 [Add task and verify [P] prefix]
+PASS TC2 [Complete task and verify [D] prefix]
+PASS TC3 [Get count of pending tasks]
+PASS TC4 [Complete task returns True and get count of done tasks]
+PASS TC5 [Delete task and verify removal]
+
+SCORE: 10.0/10.0 (Visible)
+Running Tests for: Task Registry Manager
+
+FAIL TC1 [Add task and verify [P] prefix]
+  Expected: True (check condition satisfied)
+  Got: None
+FAIL TC2 [Complete task and verify [D] prefix]
+  Expected: True (check condition satisfied)
+  Got: None
+PASS TC3 [Get count of pending tasks]
+PASS TC4 [Complete task returns True and get count of done tasks]
+FAIL TC5 [Delete task and verify removal]
+  Expected: True (check condition satisfied)
+  Got: None
+
+SCORE: 4.0/10.0 (Visible)

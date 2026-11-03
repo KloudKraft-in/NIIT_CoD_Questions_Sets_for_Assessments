@@ -1,0 +1,2 @@
+REGISTER s15 true
+RESOLVE s15 x15

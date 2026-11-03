@@ -1,0 +1,5 @@
+INIT 2
+PUT 1 A
+PUT 2 B
+GET 1
+PUT 3 C

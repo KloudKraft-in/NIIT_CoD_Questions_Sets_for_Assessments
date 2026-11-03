@@ -1,0 +1,2 @@
+REGISTER s7 true
+RESOLVE s7 x7

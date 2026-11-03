@@ -1,0 +1,11 @@
+Welcome, user_IdrKj!
+Welcome, user_cYO8t!
+Welcome, user_AzoZO!
+Welcome, user_g1Bmj!
+Welcome, user_jjkrt!
+Failed login attempt for user_DPClW
+Welcome, user_x1BRz!
+Failed login attempt for user_Ybiyu
+Failed login attempt for user_bgoJy
+Welcome, user_Ybiyu!
+Login Attempts - Successful: 7 Failed: 3

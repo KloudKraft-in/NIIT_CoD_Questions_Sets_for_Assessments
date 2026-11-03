@@ -1,0 +1,2 @@
+# Network Troubleshooting manual evaluation requirements
+# (No third-party Python drivers required; standard library json/os/sys utilized)

@@ -1,0 +1,3 @@
+Total Size: 60
+Count .log: 2
+Summary: 60 bytes in root

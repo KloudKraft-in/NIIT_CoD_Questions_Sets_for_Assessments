@@ -1,0 +1,10 @@
+laptop created
+bag created
+LCD created
+laptop found
+Product keyboard cannot be created. Maximum 3 products allowed
+laptop deleted successfully
+chair created
+keyboard not found
+keyboard not found
+laptop not found

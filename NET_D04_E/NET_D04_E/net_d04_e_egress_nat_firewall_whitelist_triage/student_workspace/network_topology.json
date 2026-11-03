@@ -1,0 +1,18 @@
+{
+    "portal_endpoint": "https://procure.global.corp (198.51.100.50:443)",
+    "regional_gateways": {
+        "Americas": {
+            "internal_subnet": "10.100.0.0/16",
+            "egress_snat_ip": "203.0.113.10"
+        },
+        "APAC": {
+            "internal_subnet": "10.110.0.0/16",
+            "egress_snat_ip": "203.0.113.20"
+        },
+        "EMEA": {
+            "internal_subnet": "10.120.0.0/16",
+            "egress_snat_ip": "198.18.55.80",
+            "note": "Subnet provisioned during recent London datacentre migration"
+        }
+    }
+}

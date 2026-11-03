@@ -1,0 +1,3 @@
+SUBSCRIBE e1 log_event
+SUBSCRIBE e1 process_data
+DISPATCH e1 {"id": 1, "message": "hi"}

@@ -1,0 +1,12 @@
+{
+    "question_id": "LARC_Q08_E",
+    "problem_code": "larc_windows_powershell_logs",
+    "target_event_id": 0,
+    "log_name": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false
+    }
+}

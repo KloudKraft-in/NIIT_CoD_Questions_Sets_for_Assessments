@@ -1,0 +1,13 @@
+{
+    "candidate_prefix": "LOCAL_USER",
+    "assessment_start_time": "2026-07-01T10:40:22.854748+00:00",
+    "max_duration_minutes": 60,
+    "evaluation_type": "REAL_TIME_API",
+    "score": 0,
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

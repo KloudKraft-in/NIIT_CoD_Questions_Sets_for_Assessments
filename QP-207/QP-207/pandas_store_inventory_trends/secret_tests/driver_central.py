@@ -1,0 +1,275 @@
+import pandas as pd
+import os
+import sys
+import importlib.util
+from datetime import datetime
+import pytz
+
+def validate_method_exists(obj, method_name):
+    """Check if method exists and is callable."""
+    if not hasattr(obj, method_name):
+        return False, f"Method '{method_name}' not found in class. Please implement this method."
+    if not callable(getattr(obj, method_name)):
+        return False, f"'{method_name}' exists but is not callable. Make sure it's defined as a method."
+    return True, None
+
+def test_student_code(solution_path, vm_tag=None):
+    """Central server test runner with IST timestamp support."""
+    
+    # Setup paths
+    if vm_tag:
+        report_dir = f"/home/ubuntu/central_server/reports/pandas_store_inventory_trends/{vm_tag}"
+        os.makedirs(report_dir, exist_ok=True)
+        ist = pytz.timezone('Asia/Kolkata')
+        timestamp = datetime.now(ist).strftime("%Y%m%d_%H%M%S")
+        report_filename = f"{vm_tag}_{timestamp}.txt"
+        report_path = os.path.join(report_dir, report_filename)
+    else:
+        report_dir = os.path.join(os.path.dirname(__file__), "..", "student_workspace")
+        report_path = os.path.join(report_dir, "report.txt")
+        os.makedirs(report_dir, exist_ok=True)
+
+    # Clear previous report
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write("")
+
+    # Load the student's solution
+    spec = importlib.util.spec_from_file_location("solution", solution_path)
+    solution = importlib.util.module_from_spec(spec)
+    
+    try:
+        spec.loader.exec_module(solution)
+    except SyntaxError as e:
+        error_msg = f"SYNTAX ERROR: {str(e)}\nFix the syntax error in solution.py before running tests."
+        print(error_msg)
+        with open(report_path, "a", encoding="utf-8") as f:
+            f.write(error_msg + "\n")
+        return
+    except ImportError as e:
+        error_msg = f"IMPORT ERROR: {str(e)}\nMake sure pandas is imported correctly in solution.py"
+        print(error_msg)
+        with open(report_path, "a", encoding="utf-8") as f:
+            f.write(error_msg + "\n")
+        return
+    
+    print("Running Tests for: Store Inventory Trends (Central Server)\n")
+    report_lines = ["Running Tests for: Store Inventory Trends (Central Server)\n"]
+    
+    # Verify class exists
+    if not hasattr(solution, "InventoryTrends"):
+        error_msg = "ERROR: InventoryTrends class not found in solution.py"
+        print(error_msg)
+        report_lines.append(error_msg)
+        with open(report_path, "a", encoding="utf-8") as f:
+            f.write("\n".join(report_lines) + "\n")
+        return
+    
+    InventoryTrends = solution.InventoryTrends
+    
+    # Get the data path from central server location
+    store_csv = "/home/ubuntu/central_server/data/store_data.csv"
+    
+    # Test cases for central server (same as visible tests) - Each test case is independent with its own fresh instance
+    test_cases = [
+        {
+            "desc": "Check state before loading CSV",
+            "func": "initialize",
+            "setup": lambda: InventoryTrends(),
+            "call": lambda obj: obj.df,
+            "check": lambda result: result is None,
+            "expected_output": "df attribute should be None initially",
+            "marks": 2,
+            "is_hidden": False
+        },
+        {
+            "desc": "Load store_data.csv and check row count",
+            "func": "load_inventory",
+            "setup": lambda: InventoryTrends(),
+            "call": lambda obj: (obj.load_inventory(store_csv), len(obj.df)),
+            "check": lambda result: result[1] == 12,
+            "expected_output": "DataFrame should have 12 rows",
+            "marks": 2,
+            "is_hidden": False
+        },
+        {
+            "desc": "Add 'Valuation' column and check name",
+            "func": "calculate_valuation",
+            "setup": lambda: _setup_valuation_column(InventoryTrends, store_csv),
+            "call": lambda obj: "Valuation" in obj.df.columns,
+            "check": lambda result: result == True,
+            "expected_output": "Valuation column should exist in DataFrame",
+            "marks": 2,
+            "is_hidden": False
+        },
+        {
+            "desc": "Check total valuation sum",
+            "func": "calculate_valuation",
+            "setup": lambda: _setup_calculate_valuation(InventoryTrends, store_csv),
+            "call": lambda obj: obj.calculate_valuation(),
+            "check": lambda result: result == 13250.0,
+            "expected_output": "Total valuation should be 13250.0",
+            "marks": 4,
+            "is_hidden": False
+        },
+        {
+            "desc": "Category mean stock (Apparel category)",
+            "func": "category_mean_stock",
+            "setup": lambda: _setup_category_mean(InventoryTrends, store_csv),
+            "call": lambda obj: obj.category_mean_stock(),
+            "check": lambda result: isinstance(result, dict) and result.get("Apparel") == 46.25,
+            "expected_output": "Category mean dict with Apparel mean = 46.25",
+            "marks": 4,
+            "is_hidden": False
+        },
+        {
+            "desc": "Find items with StockLevel < 10",
+            "func": "get_reorder_list",
+            "setup": lambda: _setup_reorder_list(InventoryTrends, store_csv),
+            "call": lambda obj: obj.get_reorder_list(10),
+            "check": lambda result: sorted(result) == ['S03', 'S06', 'S10', 'S12'],
+            "expected_output": "ProductID list with StockLevel < 10: ['S03', 'S06', 'S10', 'S12']",
+            "marks": 3,
+            "is_hidden": False
+        },
+        {
+            "desc": "Check count of Reorder IDs list",
+            "func": "get_reorder_list",
+            "setup": lambda: _setup_reorder_count(InventoryTrends, store_csv),
+            "call": lambda obj: len(obj.get_reorder_list(10)),
+            "check": lambda result: result == 4,
+            "expected_output": "Reorder list should have 4 items",
+            "marks": 3,
+            "is_hidden": False
+        }
+    ]
+
+    total_score = 0
+    max_score = 0
+    visible_score = 0
+    visible_max = 0
+
+    for idx, case in enumerate(test_cases, 1):
+        marks = case.get("marks", 3)
+        is_hidden = case.get("is_hidden", False)
+        max_score += marks
+        if not is_hidden:
+            visible_max += marks
+        
+        try:
+            # Verify method exists (skip for initialization)
+            if case["func"] != "initialize":
+                method_exists, error_msg = validate_method_exists(InventoryTrends(), case["func"])
+                if not method_exists:
+                    msg = f"FAIL TC{idx} [{case['desc']}]: {error_msg}"
+                    print(msg)
+                    report_lines.append(msg)
+                    continue
+            
+            # Setup and execute test
+            obj = case["setup"]()
+            result = case["call"](obj)
+            passed = case["check"](result)
+            
+            if passed:
+                msg = f"PASS TC{idx} [{case['desc']}] ({marks}/{marks})"
+                total_score += marks
+                if not is_hidden:
+                    visible_score += marks
+            else:
+                msg = f"FAIL TC{idx} [{case['desc']}]\n"
+                msg += f"  Expected: {case['expected_output']}\n"
+                msg += f"  Got: {repr(result)}"
+            
+            print(msg)
+            report_lines.append(msg)
+        
+        except FileNotFoundError as e:
+            msg = f"FAIL TC{idx} [{case['desc']}]\n"
+            msg += f"  Error Type: File Not Found\n"
+            msg += f"  Details: {str(e)}\n"
+            msg += f"  Hint: Make sure store_data.csv exists in the data folder"
+            print(msg)
+            report_lines.append(msg)
+        
+        except AttributeError as e:
+            msg = f"FAIL TC{idx} [{case['desc']}]\n"
+            msg += f"  Error Type: Attribute Error\n"
+            msg += f"  Details: {str(e)}\n"
+            msg += f"  Hint: Check method implementation - ensure attribute is correctly initialized"
+            print(msg)
+            report_lines.append(msg)
+        
+        except TypeError as e:
+            msg = f"FAIL TC{idx} [{case['desc']}]\n"
+            msg += f"  Error Type: Type Error\n"
+            msg += f"  Details: {str(e)}\n"
+            msg += f"  Hint: Check method return types - calculate_valuation() should return float, category_mean_stock() should return dict, get_reorder_list() should return list"
+            print(msg)
+            report_lines.append(msg)
+        
+        except Exception as e:
+            msg = f"FAIL TC{idx} [{case['desc']}]\n"
+            msg += f"  Error Type: {type(e).__name__}\n"
+            msg += f"  Details: {str(e)}"
+            print(msg)
+            report_lines.append(msg)
+
+    # ============ FINAL SCORING ============
+    score_line = f"\nSCORE: {visible_score}/{visible_max} (Visible) | {total_score}/{max_score} (Total)"
+    if total_score == 0:
+        score_line += "\n⚠️ No tests passed. Make sure to implement all required methods with correct signatures."
+    
+    print(score_line)
+    report_lines.append(score_line)
+
+    with open(report_path, "a", encoding="utf-8") as f:
+        f.write("\n".join(report_lines) + "\n")
+
+
+def _setup_valuation_column(InventoryTrends, store_csv):
+    """Setup for valuation column test - Independent fresh instance."""
+    trends = InventoryTrends()
+    trends.load_inventory(store_csv)
+    trends.calculate_valuation()
+    return trends
+
+
+def _setup_calculate_valuation(InventoryTrends, store_csv):
+    """Setup for calculate valuation test - Independent fresh instance."""
+    trends = InventoryTrends()
+    trends.load_inventory(store_csv)
+    return trends
+
+
+def _setup_category_mean(InventoryTrends, store_csv):
+    """Setup for category mean test - Independent fresh instance."""
+    trends = InventoryTrends()
+    trends.load_inventory(store_csv)
+    return trends
+
+
+def _setup_reorder_list(InventoryTrends, store_csv):
+    """Setup for reorder list test - Independent fresh instance."""
+    trends = InventoryTrends()
+    trends.load_inventory(store_csv)
+    return trends
+
+
+def _setup_reorder_count(InventoryTrends, store_csv):
+    """Setup for reorder count test - Independent fresh instance."""
+    trends = InventoryTrends()
+    trends.load_inventory(store_csv)
+    return trends
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 2:
+        solution_path = sys.argv[1]
+        vm_tag = sys.argv[2]
+    elif len(sys.argv) > 1:
+        solution_path = sys.argv[1]
+        vm_tag = None
+    else:
+        solution_path = os.path.join(os.path.dirname(__file__), '..', 'student_workspace', 'solution.py')
+        vm_tag = None
+    test_student_code(solution_path, vm_tag)

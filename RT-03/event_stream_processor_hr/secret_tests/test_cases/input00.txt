@@ -1,0 +1,1 @@
+{"events": [["e1", 1000, "login"]], "event_types": ["login"], "batch_size": 1}

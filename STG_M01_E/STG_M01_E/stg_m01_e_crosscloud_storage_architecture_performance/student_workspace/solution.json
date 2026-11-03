@@ -1,0 +1,15 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_M01_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_m01_e_crosscloud_storage_architecture_performance",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    },
+    "score": 0,
+    "total_marks": 10
+}

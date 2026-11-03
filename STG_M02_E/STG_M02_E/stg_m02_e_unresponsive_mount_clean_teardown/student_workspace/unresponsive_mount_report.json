@@ -1,0 +1,12 @@
+{
+    "affected_mount_point": "/mnt/remote_nfs",
+    "hung_detection_command": "TODO_CMD (e.g. timeout 5s ls /mnt/remote_nfs)",
+    "detection_exit_code": "TODO_EXIT_CODE (e.g. 124)",
+    "mount_status": "TODO_STATUS (HUNG | RESPONSIVE)",
+    "process_kill_command": "TODO_FUSER_CMD (e.g. fuser -km /mnt/remote_nfs)",
+    "termination_signal": "TODO_SIGNAL (SIGKILL | 9)",
+    "lazy_unmount_command": "TODO_UMOUNT_CMD (e.g. umount -l /mnt/remote_nfs)",
+    "unmount_option_used": "TODO_OPTION (-l | --lazy)",
+    "proc_mounts_verification": "TODO_VERIFICATION (REMOVED | PRESENT)",
+    "storage_tools_responsive": "TODO_YES_NO (YES | NO)"
+}

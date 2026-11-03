@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["a.txt"]], "root/a.txt": [false, 123]}
+SUMMARY

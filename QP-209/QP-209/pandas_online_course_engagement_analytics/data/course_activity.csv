@@ -1,0 +1,9 @@
+student_id,course_id,watch_minutes,completed_modules,total_modules,last_active_days
+S01,C101,30,6,8,2
+S02,C101,45,2,8,10
+S03,C102,250,10,10,1
+S01,C102,40,5,10,5
+S04,C101,20,1,8,15
+S05,C103,95,7,9,3
+S02,C101,45,2,8,10
+S06,C103,115,8,9,0

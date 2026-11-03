@@ -1,0 +1,1 @@
+2026-08-10 10:00:00 [CRITICAL] [corr-9921, span-102] DB Connection pool exhaustion at PaymentService.java:98. Latency: 45 minutes.

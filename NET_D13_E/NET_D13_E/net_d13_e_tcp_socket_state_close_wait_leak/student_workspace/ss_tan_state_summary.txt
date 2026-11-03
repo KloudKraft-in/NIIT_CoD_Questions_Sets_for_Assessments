@@ -1,0 +1,15 @@
+=== TCP SOCKET STATE BREAKDOWN ===
+Total TCP Sockets: 16,420
+LISTEN:        8
+ESTABLISHED: 1,120
+TIME_WAIT:      80
+CLOSE_WAIT: 15,212
+FIN_WAIT1:       0
+FIN_WAIT2:       0
+SYN_SENT:        0
+
+Sample CLOSE_WAIT socket entries:
+tcp   CLOSE-WAIT 1      0 10.10.20.15:8080 10.10.30.45:51200 users:(("java",pid=4821,fd=102))
+tcp   CLOSE-WAIT 1      0 10.10.20.15:8080 10.10.30.45:51202 users:(("java",pid=4821,fd=103))
+tcp   CLOSE-WAIT 1      0 10.10.20.15:8080 10.10.30.45:51204 users:(("java",pid=4821,fd=104))
+... [15,200 additional identical CLOSE-WAIT sockets]

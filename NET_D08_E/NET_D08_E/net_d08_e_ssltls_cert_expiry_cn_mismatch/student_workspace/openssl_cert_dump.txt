@@ -1,0 +1,22 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4b:88:12:ef:90:33:ac
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = DigiCert Inc, CN = DigiCert Global G2 TLS RSA SHA256 2020 CA1
+        Validity
+            Not Before: Oct 31 00:00:00 2026 GMT
+            Not After : Oct 31 23:59:59 2027 GMT
+        Subject: C = US, ST = California, L = San Francisco, O = Acme Bank Corp, CN = acmebank.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Alternative Name: 
+                DNS:acmebank.com, DNS:www.acmebank.com

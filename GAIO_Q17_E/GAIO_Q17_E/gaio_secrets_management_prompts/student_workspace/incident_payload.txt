@@ -1,0 +1,2 @@
+AWS Credentials: AKIAIOSFODNN7EXAMPLE
+Database Connection: postgresql://admin:SecretPass123@db.internal:5432/prod_db

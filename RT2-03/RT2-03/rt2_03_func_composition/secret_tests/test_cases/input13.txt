@@ -1,0 +1,12 @@
+5
+add
+my_max
+my_max
+my_min
+splitter
+5
+3 9 8 7 5
+5 8
+9 7 9
+10 2
+1 4

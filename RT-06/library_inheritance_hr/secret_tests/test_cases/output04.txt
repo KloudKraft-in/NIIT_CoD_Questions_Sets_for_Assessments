@@ -1,0 +1,16 @@
+--- Item Information ---
+1984 by George Orwell (1949)
+Title: 1984
+Author: George Orwell
+Year: 1949
+Genre: Dystopian
+ISBN: 123
+
+Details:
+--- Item Information ---
+Brave New World by Aldous Huxley (1932)
+Title: Brave New World
+Author: Aldous Huxley
+Year: 1932
+Genre: Dystopian
+ISBN: 456

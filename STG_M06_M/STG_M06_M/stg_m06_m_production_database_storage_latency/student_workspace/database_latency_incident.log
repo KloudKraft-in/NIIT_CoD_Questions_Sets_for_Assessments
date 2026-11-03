@@ -1,0 +1,14 @@
+[2026-10-30 14:00:00 UTC] [SYSTEM] Monitoring started for database host db-payments-prod-01 (Volume: vol-09a8b7c6d5e4f3a21).
+[2026-10-30 14:05:00 UTC] [DYNATRACE] Normal transaction response time: 52 ms | Disk wait time: 2.1 ms | Queue depth: 0.8.
+[2026-10-30 14:15:00 UTC] [DYNATRACE_ALERT] High response time detected: 1,200 ms on db-payments-prod-01 (target: <100 ms).
+[2026-10-30 14:15:01 UTC] [CLOUDWATCH_METRIC] VolumeReadOps: 450 | VolumeWriteOps: 2550 | Total IOPS: 3000.
+[2026-10-30 14:15:01 UTC] [CLOUDWATCH_METRIC] VolumeTotalReadWriteTime: 12.0s | Average calculated per-IO latency: 4.0 ms.
+[2026-10-30 14:15:02 UTC] [CLOUDWATCH_ALARM] ALARM: VolumeQueueLength spiked to 32.5 (threshold: >5.0).
+[2026-10-30 14:15:05 UTC] [AWS_EBS] Provisioned IOPS limit reached: 3000/3000 IOPS (gp3 baseline). IOPS throttling detected: YES.
+[2026-10-30 14:30:00 UTC] [DYNATRACE_ALERT] Critical latency sustained: 1,400 ms | Disk wait time: 1,350 ms.
+[2026-10-30 14:30:01 UTC] [CLOUDWATCH_METRIC] VolumeReadOps: 500 | VolumeWriteOps: 2500 | Total IOPS: 3000 (100% saturation).
+[2026-10-30 14:30:01 UTC] [CLOUDWATCH_METRIC] VolumeTotalReadWriteTime: 14.5s | Average calculated per-IO latency: 4.8 ms.
+[2026-10-30 14:30:02 UTC] [CLOUDWATCH_ALARM] Peak CloudWatch VolumeQueueLength: 38.0. Requests queued due to EBS throughput/IOPS caps.
+[2026-10-30 14:45:00 UTC] [ROOT_CAUSE] Storage subsystem culpable: YES. GP3 provisioned IOPS capped at 3000, causing disk queue buildup.
+[2026-10-30 15:00:00 UTC] [REMEDIATION] Recommended action: Increase gp3 IOPS/throughput or upgrade to io2.
+[2026-10-30 15:00:05 UTC] [AWS_CLI] Command: aws ec2 modify-volume --volume-id vol-09a8b7c6d5e4f3a21 --iops 6000 --throughput 250

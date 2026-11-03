@@ -1,0 +1,4 @@
+REGISTER log false
+RESOLVE log l1
+RESOLVE log l2
+CHECK_IDENTITY l1 l2

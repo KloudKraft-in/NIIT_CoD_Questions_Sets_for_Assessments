@@ -1,0 +1,35 @@
+Running Tests for: Student Exam Advanced Operations Dictionary
+
+PASS Visible Test Case 1 Passed: Calculate average score for each student
+PASS Visible Test Case 2 Passed: Find student with highest average score
+PASS Visible Test Case 3 Passed: Calculate subject-wise averages
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Student Exam Advanced Operations Dictionary
+
+PASS Visible Test Case 1 Passed: Calculate average score for each student
+PASS Visible Test Case 2 Passed: Find student with highest average score
+PASS Visible Test Case 3 Passed: Calculate subject-wise averages
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Student Exam Advanced Operations Dictionary
+
+PASS Visible Test Case 1 Passed: Calculate average score for each student
+PASS Visible Test Case 2 Passed: Find student with highest average score
+PASS Visible Test Case 3 Passed: Calculate subject-wise averages
+
+SCORE: 20/20.0 (Visible)
+Running Tests for: Student Exam Advanced Operations Dictionary
+
+FAIL Visible Test Case 1 Failed: Calculate average score for each student | Reason: Output mismatch
+PASS Visible Test Case 2 Passed: Find student with highest average score
+PASS Visible Test Case 3 Passed: Calculate subject-wise averages
+
+SCORE: 13/20.0 (Visible)
+Running Tests for: Student Exam Advanced Operations Dictionary
+
+PASS Visible Test Case 1 Passed: Calculate average score for each student
+PASS Visible Test Case 2 Passed: Find student with highest average score
+PASS Visible Test Case 3 Passed: Calculate subject-wise averages
+
+SCORE: 20/20.0 (Visible)

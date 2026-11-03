@@ -1,0 +1,3 @@
+System.InvalidOperationException: Unable to resolve service for type 'IUserRepository' while attempting to activate 'DatabaseRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSite(Type serviceType)
+   at Company.Core.Services.DatabaseRepository.InitializeConnection() in Company.Core.dll

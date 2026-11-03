@@ -1,0 +1,3 @@
+Count: 17
+Total: 17000.0
+Top: E0

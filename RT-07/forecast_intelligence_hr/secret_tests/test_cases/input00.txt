@@ -1,0 +1,5 @@
+1
+NewYork,75,Sunny
+2
+NewYork,temperature
+NewYork,forecast

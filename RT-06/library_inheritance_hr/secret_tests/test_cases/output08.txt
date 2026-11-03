@@ -1,0 +1,7 @@
+--- Item Information ---
+Title_8 by Author_8 (2008)
+Title: Title_8
+Author: Author_8
+Year: 2008
+Genre: Genre
+ISBN: ISBN_8

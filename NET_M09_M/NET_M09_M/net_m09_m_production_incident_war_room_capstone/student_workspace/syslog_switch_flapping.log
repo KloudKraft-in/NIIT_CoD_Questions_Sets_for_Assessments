@@ -1,0 +1,4 @@
+16:30:00 SW-AGG-01 %LINK-3-UPDOWN: Interface TenGigabitEthernet1/1/1, changed state to down
+16:30:05 SW-AGG-01 %EC-5-L3U пове: Port-channel1 is now degraded (1/2 members active)
+16:30:12 SW-AGG-01 %LINK-3-UPDOWN: Interface TenGigabitEthernet1/1/1, changed state to up
+16:30:14 SW-AGG-01 %LINK-3-UPDOWN: Interface TenGigabitEthernet1/1/1, changed state to down (Link flapping: flapping threshold exceeded, port error-disabled)

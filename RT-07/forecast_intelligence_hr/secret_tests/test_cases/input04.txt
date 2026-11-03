@@ -1,0 +1,4 @@
+1
+Arctic,-50,ExtremeCold
+1
+Arctic,temperature

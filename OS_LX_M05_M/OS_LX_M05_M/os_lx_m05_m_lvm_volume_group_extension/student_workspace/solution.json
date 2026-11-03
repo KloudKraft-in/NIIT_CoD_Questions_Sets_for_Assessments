@@ -1,0 +1,15 @@
+{
+    "question_id": "OS_LX_M05_M",
+    "problem_code": "os_lx_m05_m_lvm_volume_group_extension",
+    "score": 20,
+    "total_marks": 20,
+    "results": {
+        "tc1": true,
+        "tc2": true,
+        "tc3": true,
+        "tc4": true,
+        "tc5": true,
+        "tc6": true,
+        "tc7": true
+    }
+}

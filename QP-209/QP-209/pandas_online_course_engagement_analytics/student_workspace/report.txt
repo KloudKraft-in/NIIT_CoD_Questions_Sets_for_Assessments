@@ -1,0 +1,9 @@
+Running Tests for: Course Engagement Analytics
+
+PASS TC1 [Completion % calculation] (4/4)
+PASS TC2 [Most engaged course] (4/4)
+PASS TC3 [Detect inactive students] (4/4)
+PASS TC4 [Duplicate record detection] (4/4)
+PASS TC5 [Student ranking] (4/4)
+
+SCORE: 20/20 (Visible)

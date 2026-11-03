@@ -1,0 +1,51 @@
+50
+init 8
+put AC 93
+status HR
+status IX
+get BO
+get BO
+status GF
+put ES 73
+get KY
+put ES 63
+get SU
+put ES 38
+put BO 84
+status IB
+put SY 14
+status ES
+put ES 88
+status LH
+put QR 75
+get QR
+status SY
+put IB 65
+status SU
+put XQ 21
+put IB 58
+put YR 81
+put QG 16
+get AZ
+status PY
+status PY
+put LH 21
+put BO 73
+status AC
+status PY
+get HR
+status QG
+status AC
+get TO
+put TY 86
+put XQ 67
+get KY
+get BO
+status GF
+get LH
+status IB
+put AC 33
+get AC
+put AC 51
+status XQ
+put LH 24

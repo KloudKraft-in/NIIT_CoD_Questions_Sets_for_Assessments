@@ -1,0 +1,22 @@
+--- Item Information ---
+Movie1 by Dir1 (2000)
+Title: Movie1
+Author: Dir1
+Year: 2000
+Duration: 90 minutes
+
+Details:
+--- Item Information ---
+Movie2 by Dir2 (2010)
+Title: Movie2
+Author: Dir2
+Year: 2010
+Duration: 120 minutes
+
+Details:
+--- Item Information ---
+Movie3 by Dir3 (2020)
+Title: Movie3
+Author: Dir3
+Year: 2020
+Duration: 150 minutes

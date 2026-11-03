@@ -1,0 +1,6 @@
+{
+    "question_id": "GAIO_Q09_E",
+    "problem_code": "gaio_persona_prompting",
+    "dba_persona_prompt": "TODO",
+    "security_persona_prompt": "TODO"
+}

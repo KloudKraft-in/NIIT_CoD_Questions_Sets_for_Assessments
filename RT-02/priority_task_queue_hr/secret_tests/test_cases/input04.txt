@@ -1,0 +1,9 @@
+8
+add_task a 1 []
+add_task b 1 []
+add_task c 1 ["a", "b"]
+is_ready c
+complete_task a
+is_ready c
+complete_task b
+is_ready c

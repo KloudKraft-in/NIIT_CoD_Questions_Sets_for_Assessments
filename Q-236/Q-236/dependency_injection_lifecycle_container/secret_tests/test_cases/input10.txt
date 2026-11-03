@@ -1,0 +1,2 @@
+REGISTER s10 true
+RESOLVE s10 x10

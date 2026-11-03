@@ -1,0 +1,9 @@
+=== SEV-1 MASTER INCIDENT CHRONOLOGY ===
+16:30:00 [ALERT] Core Switch SW-AGG-01 port-channel 1 entered degraded state (1 link down).
+16:31:15 [ALERT] Packet loss on internal backbone jumps to 35%. Inter-switch latency jumps from 0.5ms to 85ms.
+16:32:00 [SYSLOG] Database clients lose connectivity to primary DB VIP. Retries surge 500%.
+16:33:00 [ALERT] Application nodes log 'SocketTimeoutException' waiting for DB response.
+16:34:00 [TELEMETRY] Application nodes fail to close aborted client connections; CLOSE_WAIT count surges from 200 to 41,200.
+16:35:00 [ALB-LOG] Load balancer target group marks 8 of 10 nodes unhealthy due to connection refused on port 8080.
+16:35:30 [MONITOR] External users receive HTTP 502 Bad Gateway.
+16:36:00 [DNS-LOG] DNS failover triggered, but clients continue querying stale cached A record due to 3600s TTL.

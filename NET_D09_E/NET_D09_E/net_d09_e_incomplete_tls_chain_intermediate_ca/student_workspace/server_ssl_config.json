@@ -1,0 +1,6 @@
+{
+    "web_server": "nginx/1.22.0",
+    "vhost": "api.mobilepay.net",
+    "active_ssl_certificate_file": "/etc/ssl/certs/cert.pem",
+    "note": "File /etc/ssl/certs/cert.pem contains only the Depth 0 leaf certificate. Intermediate file /etc/ssl/certs/chain.pem was not concatenated into fullchain.pem."
+}

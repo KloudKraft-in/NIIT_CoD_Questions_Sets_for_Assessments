@@ -1,0 +1,8 @@
+[12:10:00] Target i-0a12f state: HEALTHY
+[12:10:15] Target i-0a12f health check timed out after 2000 ms
+[12:10:30] Target i-0a12f health check timed out after 2000 ms
+[12:10:45] Target i-0a12f state changed to: UNHEALTHY (Consecutive failure threshold 2 reached)
+[12:11:00] Target i-0a12f responded 200 OK in 120 ms
+[12:11:15] Target i-0a12f responded 200 OK in 110 ms
+[12:11:15] Target i-0a12f state changed to: HEALTHY (Consecutive success threshold 2 reached)
+[12:12:00] Target i-0a12f health check timed out after 2000 ms

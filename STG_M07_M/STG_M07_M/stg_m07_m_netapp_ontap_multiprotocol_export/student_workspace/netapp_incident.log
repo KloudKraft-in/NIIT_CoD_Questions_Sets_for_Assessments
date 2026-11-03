@@ -1,0 +1,16 @@
+[2026-10-28 09:30:00] [K8S_ALERT] Pods on worker cluster entering ContainerCreating/CrashLoopBackOff.
+[2026-10-28 09:30:05] [K8S_LOG] kubelet[4102]: mount.nfs: access denied by server while mounting svm_k8s:/vol_k8s_data on /var/lib/kubelet/pods/data.
+[2026-10-28 09:30:20] [DIAG] Verifying SVM volume junction path: volume show -vserver svm_k8s -volume vol_k8s_data -fields junction-path,state
+[2026-10-28 09:30:21] [DIAG] Junction path /vol_k8s_data is ACTIVE in SVM root namespace.
+[2026-10-28 09:31:00] [DIAG] Reviewing NetApp SVM export policy rules:
+[2026-10-28 09:31:01] [DIAG] Vserver: svm_k8s | Policy Name: k8s_policy | Rule Index: 1 | ClientMatch: 0.0.0.0/0 | Protocols: nfs3 | RO: none | RW: none | Superuser: none
+[2026-10-28 09:31:01] [DIAG] Vserver: svm_k8s | Policy Name: k8s_policy | Rule Index: 2 | ClientMatch: 10.10.10.0/24 | Protocols: nfs3,nfs4 | RO: sys | RW: sys | Superuser: none
+[2026-10-28 09:31:02] [DIAG] Comment: Kubernetes worker nodes subnet export rule
+[2026-10-28 09:31:15] [ALERT] Subnet mismatch detected: Worker nodes migrated to 10.10.20.0/24. Packets denied by export rule.
+[2026-10-28 09:31:30] [ALERT] Root squash restriction detected: 'superuser none' prevents kubelet daemon root volume initialization (requires superuser sys).
+[2026-10-28 09:32:00] [CMD] Executing ONTAP remediation rule modification:
+[2026-10-28 09:32:00] [CMD] vserver export-policy rule modify -vserver svm_k8s -policyname k8s_policy -ruleindex 2 -clientmatch 10.10.20.0/24 -rorule sys -rwrule sys -superuser sys
+[2026-10-28 09:32:05] [INFO] Export policy rule 2 modified successfully. Permitted protocols: nfs3,nfs4.
+[2026-10-28 09:33:00] [CMD] Testing client mount from worker node: mount -t nfs -o vers=4.1 svm_k8s:/vol_k8s_data /mnt/k8s_share
+[2026-10-28 09:33:05] [INFO] Client mount status: SUCCESS. Volume accessible, read/write verified.
+[2026-10-28 09:33:30] [GOVERNANCE] Defined automated policy gate in CI/CD pipeline to validate CIDR before applying changes.

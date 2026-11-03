@@ -1,0 +1,21 @@
+{
+    "question_id": "BCA_Q24_M",
+    "problem_code": "bca_integrated_workshop",
+    "root_cause": "TODO",
+    "mismatched_property": "TODO",
+    "leak_class": "TODO",
+    "leak_method": "TODO",
+    "outage_duration_minutes": 0,
+    "remediation": "TODO",
+    "score": 8,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false,
+        "tc5": false,
+        "tc6": true,
+        "tc7": true,
+        "tc8": false
+    }
+}

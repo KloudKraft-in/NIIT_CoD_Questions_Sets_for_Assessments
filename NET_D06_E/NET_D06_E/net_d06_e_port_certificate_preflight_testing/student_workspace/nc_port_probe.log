@@ -1,0 +1,2 @@
+$ nc -zv -w 5 logistics-edi.freight.com 8443
+Connection to logistics-edi.freight.com (198.51.100.77) 8443 port [tcp/*] succeeded!

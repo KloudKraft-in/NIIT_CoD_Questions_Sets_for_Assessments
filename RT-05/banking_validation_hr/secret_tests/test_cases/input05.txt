@@ -1,0 +1,8 @@
+7
+deposit
+1000
+withdraw
+500
+deposit
+250
+view_transaction_history

@@ -1,0 +1,7 @@
+{
+    "active_connections": 12450,
+    "http_502_rate_per_sec": 4210,
+    "http_504_rate_per_sec": 1850,
+    "healthy_host_count": 2,
+    "unhealthy_host_count": 8
+}

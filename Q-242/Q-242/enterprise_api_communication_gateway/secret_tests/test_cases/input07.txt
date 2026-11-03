@@ -1,0 +1,2 @@
+MOCK /u/5 500 {}
+USER_EMAIL 5

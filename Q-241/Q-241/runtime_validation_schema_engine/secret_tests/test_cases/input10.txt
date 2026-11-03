@@ -1,0 +1,1 @@
+VALIDATE {"a": "int", "b": "int"} {"a": 1}

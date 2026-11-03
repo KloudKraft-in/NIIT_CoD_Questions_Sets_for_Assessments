@@ -1,0 +1,3 @@
+Count: 2
+Total: 117000.0
+Top: E002

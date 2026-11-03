@@ -1,0 +1,2 @@
+google-cloud-compute==1.19.0
+google-auth==2.29.0

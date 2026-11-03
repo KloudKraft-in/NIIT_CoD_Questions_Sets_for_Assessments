@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["big1", "big2"]], "root/big1": [false, 1000000], "root/big2": [false, 2000000]}
+SIZE

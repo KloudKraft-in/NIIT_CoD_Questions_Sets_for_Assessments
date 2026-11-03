@@ -1,0 +1,5 @@
+4
+deposit
+100
+withdraw
+50

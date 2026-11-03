@@ -1,0 +1,7 @@
+--- Item Information ---
+Title_12 by Author_12 (20012)
+Title: Title_12
+Author: Author_12
+Year: 20012
+Genre: Genre
+ISBN: ISBN_12

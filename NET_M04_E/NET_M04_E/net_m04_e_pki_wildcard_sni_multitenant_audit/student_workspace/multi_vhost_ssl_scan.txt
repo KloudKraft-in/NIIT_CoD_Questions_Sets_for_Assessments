@@ -1,0 +1,24 @@
+=== TEST 1: openssl without SNI ===
+$ openssl s_client -connect 198.51.100.80:443
+CONNECTED(00000003)
+Certificate chain
+ 0 s:CN = default-fallback.enterprise.com
+   i:C = US, O = DigiCert Inc, CN = DigiCert Global G2 CA
+---
+Server certificate: subject=CN = default-fallback.enterprise.com
+
+=== TEST 2: openssl with SNI for app.enterprise.com ===
+$ openssl s_client -connect 198.51.100.80:443 -servername app.enterprise.com
+Certificate chain
+ 0 s:CN = *.enterprise.com
+   i:C = US, O = DigiCert Inc, CN = DigiCert Global G2 CA
+---
+Server certificate: subject=CN = *.enterprise.com, SAN: DNS:*.enterprise.com, DNS:enterprise.com
+
+=== TEST 3: openssl with SNI for tenant1.app.enterprise.com ===
+$ openssl s_client -connect 198.51.100.80:443 -servername tenant1.app.enterprise.com
+Certificate chain
+ 0 s:CN = *.enterprise.com
+   i:C = US, O = DigiCert Inc, CN = DigiCert Global G2 CA
+---
+Verification error: Hostname mismatch! *.enterprise.com does NOT cover two levels of subdomains (tenant1.app.enterprise.com).

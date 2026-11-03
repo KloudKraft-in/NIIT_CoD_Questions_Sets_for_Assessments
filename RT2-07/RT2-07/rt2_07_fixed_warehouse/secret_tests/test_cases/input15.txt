@@ -1,0 +1,24 @@
+3
+22
+new prod_15
+new prod_10
+new prod_6
+new prod_8
+print prod_12
+limit 8
+new prod_11
+new prod_5
+new prod_9
+new prod_18
+limit 6
+new prod_14
+new prod_11
+del prod_10
+new prod_14
+limit 8
+limit 5
+new prod_3
+new prod_0
+new prod_1
+del prod_15
+limit 6

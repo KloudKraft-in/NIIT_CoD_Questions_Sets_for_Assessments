@@ -1,0 +1,14 @@
+{
+    "question_id": "LARC_Q16_E",
+    "problem_code": "larc_log_metric_alerting",
+    "threshold_count": 0,
+    "window_seconds": 0,
+    "filter_condition": "TODO",
+    "score": 3,
+    "results": {
+        "tc1": true,
+        "tc2": false,
+        "tc3": false,
+        "tc4": false
+    }
+}

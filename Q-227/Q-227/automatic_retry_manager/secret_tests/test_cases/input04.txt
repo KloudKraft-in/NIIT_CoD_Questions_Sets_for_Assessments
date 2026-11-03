@@ -1,0 +1,2 @@
+SET_ENABLED true
+CALL 1 0

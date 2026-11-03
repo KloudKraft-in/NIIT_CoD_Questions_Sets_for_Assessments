@@ -1,0 +1,8 @@
+1
+6
+new desktop
+new car
+limit 2
+new car
+print car
+print truck

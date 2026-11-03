@@ -1,0 +1,7 @@
+--- Item Information ---
+Title_7 by Author_7 (2007)
+Title: Title_7
+Author: Author_7
+Year: 2007
+Genre: Genre
+ISBN: ISBN_7

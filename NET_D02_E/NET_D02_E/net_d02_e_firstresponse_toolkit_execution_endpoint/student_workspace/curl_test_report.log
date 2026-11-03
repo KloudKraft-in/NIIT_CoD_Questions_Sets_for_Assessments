@@ -1,0 +1,13 @@
+=== CURL -I EXECUTION LOG ===
+[Target 3: https://api.paygateway.com]
+HTTP/2 200 
+date: Sun, 01 Nov 2026 10:20:01 GMT
+content-type: application/json; charset=UTF-8
+server: cloudflare
+cf-ray: 8df21b0129-IAD
+
+[Target 4: http://hr.local]
+HTTP/1.1 200 OK
+Date: Sun, 01 Nov 2026 10:20:05 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Type: text/html; charset=UTF-8

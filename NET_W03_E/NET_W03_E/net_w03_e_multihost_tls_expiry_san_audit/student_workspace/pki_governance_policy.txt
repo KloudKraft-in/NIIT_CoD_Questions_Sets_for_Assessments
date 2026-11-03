@@ -1,0 +1,5 @@
+Enterprise PKI Policy Standards:
+1. Alert Thresholds: Warning at 30 days remaining; Critical Escalation at 14 days remaining.
+2. Expired certificates (days_remaining < 0) require immediate emergency replacement.
+3. Every certificate must contain the exact connecting FQDN in the X509v3 Subject Alternative Name (SAN) extension.
+4. Deprecate single-hostname certificates in favor of multi-SAN or wildcard where applicable.

@@ -1,0 +1,7 @@
+[CONTEXT] Initializing Sequence
+1
+101
+1
+101
+201
+[CONTEXT] Final Count: 5

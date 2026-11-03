@@ -1,0 +1,11 @@
+Failed login attempt for user_tKC3o
+Failed login attempt for unknown_user
+Welcome, user_EY6VR!
+Welcome, user_ibRwg!
+Failed login attempt for user_tKC3o
+Welcome, user_mBGMH!
+Welcome, user_D8Tzh!
+Welcome, user_tKC3o!
+Failed login attempt for unknown_user
+Welcome, user_5C86w!
+Login Attempts - Successful: 6 Failed: 4

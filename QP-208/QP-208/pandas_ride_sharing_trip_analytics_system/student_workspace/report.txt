@@ -1,0 +1,9 @@
+Running Tests for: Ride Sharing Trip Analytics System
+
+PASS TC1 [TC1: Calculate revenue per city] (4/4)
+PASS TC2 [TC2: Find highest earning driver] (4/4)
+PASS TC3 [TC3: Average distance per vehicle type] (4/4)
+PASS TC4 [TC4: Find peak demand hour] (4/4)
+PASS TC5 [TC5: Detect trips with surge pricing] (4/4)
+
+SCORE: 20/20 (Visible)

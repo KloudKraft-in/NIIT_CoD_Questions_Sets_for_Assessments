@@ -1,0 +1,2 @@
+MOCK /u/3 200 {"email": "a@b.com"}
+USER_EMAIL 3

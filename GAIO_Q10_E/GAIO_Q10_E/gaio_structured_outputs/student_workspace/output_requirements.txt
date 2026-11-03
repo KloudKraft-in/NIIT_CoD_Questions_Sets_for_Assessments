@@ -1,0 +1,3 @@
+Requirements for AI Output Formatting:
+1. JSON Output schema must require 'incident_id' and 'status' keys.
+2. Markdown table format option must be set to true for tabular reports.

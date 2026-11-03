@@ -1,0 +1,32 @@
+{
+    "tier_mappings": [
+        {
+            "workload_id": "WL-01",
+            "description": "MongoDB 25,000 sustained IOPS",
+            "aws_recommended_tier": "TODO_AWS (e.g. io2 or io2 Block Express)",
+            "azure_recommended_tier": "TODO_AZURE (e.g. Ultra Disk or Premium SSD v2)",
+            "gcp_recommended_tier": "TODO_GCP (e.g. pd-extreme)"
+        },
+        {
+            "workload_id": "WL-02",
+            "description": "Web frontend system root volume (3,000 IOPS)",
+            "aws_recommended_tier": "TODO_AWS (e.g. gp3)",
+            "azure_recommended_tier": "TODO_AZURE (e.g. Premium SSD)",
+            "gcp_recommended_tier": "TODO_GCP (e.g. pd-balanced)"
+        },
+        {
+            "workload_id": "WL-03",
+            "description": "High-throughput streaming logs (800 MB/s)",
+            "aws_recommended_tier": "TODO_AWS (e.g. io2 or st1)",
+            "azure_recommended_tier": "TODO_AZURE (e.g. Premium SSD v2)",
+            "gcp_recommended_tier": "TODO_GCP (e.g. pd-ssd)"
+        },
+        {
+            "workload_id": "WL-04",
+            "description": "Regulatory cold archives (7-year WORM retention)",
+            "aws_recommended_tier": "TODO_AWS (e.g. S3 Glacier Flexible or Glacier Deep Archive)",
+            "azure_recommended_tier": "TODO_AZURE (e.g. Azure Blob Archive)",
+            "gcp_recommended_tier": "TODO_GCP (e.g. Cloud Storage Archive)"
+        }
+    ]
+}

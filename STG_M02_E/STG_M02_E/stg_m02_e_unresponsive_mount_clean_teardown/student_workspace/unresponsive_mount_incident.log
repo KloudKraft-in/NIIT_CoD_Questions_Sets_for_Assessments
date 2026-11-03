@@ -1,0 +1,16 @@
+[2026-10-26 14:00:01] [ALERT] Remote NFS storage server 192.168.10.99 crashed. Mountpoint /mnt/remote_nfs unresponsive.
+[2026-10-26 14:00:15] [KERNEL] [NFS] nfs: server 192.168.10.99 not responding, still trying.
+[2026-10-26 14:01:00] [DIAG] Probing mount health with timeout: timeout 5s ls /mnt/remote_nfs
+[2026-10-26 14:01:05] [ALERT] Command timed out after 5 seconds. Exit code: 124. Mount status: HUNG.
+[2026-10-26 14:01:20] [DIAG] Inspecting locking processes in D-state: fuser -mv /mnt/remote_nfs
+[2026-10-26 14:01:21] [DIAG]                      USER        PID ACCESS COMMAND
+[2026-10-26 14:01:21] [DIAG] /mnt/remote_nfs:      appuser    6102 ..c.. data_sync_agent
+[2026-10-26 14:01:45] [CMD] Sending kill signal to processes accessing dead share: fuser -km -9 /mnt/remote_nfs
+[2026-10-26 14:01:46] [INFO] Process 6102 terminated with termination signal SIGKILL (9).
+[2026-10-26 14:02:10] [CMD] Standard unmount attempted: umount /mnt/remote_nfs -> failed (target is busy).
+[2026-10-26 14:02:30] [CMD] Executing safe lazy unmount: umount -l /mnt/remote_nfs (option: -l / --lazy)
+[2026-10-26 14:02:31] [INFO] Unresponsive filesystem /mnt/remote_nfs detached cleanly from namespace.
+[2026-10-26 14:03:00] [VERIFY] Inspecting /proc/mounts: /mnt/remote_nfs REMOVED.
+[2026-10-26 14:03:10] [TEST] Verifying storage CLI responsiveness: df -h
+[2026-10-26 14:03:11] [INFO] df -h returned immediately in 0.02s without hang. Storage tools responsive: YES.
+[2026-10-26 14:03:15] [STATUS] Unresponsive mount teardown workflow completed: SUCCESS.

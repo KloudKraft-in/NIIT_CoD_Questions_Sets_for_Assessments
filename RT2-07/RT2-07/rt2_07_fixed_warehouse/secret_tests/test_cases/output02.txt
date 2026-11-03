@@ -1,0 +1,6 @@
+desktop created
+Product car cannot be created. Maximum 1 products allowed
+limit updated to 2
+car created
+car found
+truck not found

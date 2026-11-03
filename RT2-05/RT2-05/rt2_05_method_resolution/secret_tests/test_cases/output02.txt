@@ -1,0 +1,6 @@
+Child fun2
+Parent2 fun2
+Parent1 fun2
+Child fun2
+Parent2 fun2
+Parent1 fun2

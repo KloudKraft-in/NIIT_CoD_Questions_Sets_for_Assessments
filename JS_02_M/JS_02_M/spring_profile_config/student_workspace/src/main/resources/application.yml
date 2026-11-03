@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config-parser-app
+db:
+  username: default_user
+  password: default_password
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+db:
+  username: dev_db_user
+  password: dev_super_secret_pw_123
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+db:
+  username: prod_db_user
+  password: prod_ultra_secure_pw_987!@#

@@ -1,0 +1,11 @@
+Running Tests for: Store Inventory Trends
+
+PASS TC1 [Check state before loading CSV] (2/2)
+PASS TC2 [Load store_data.csv and check row count] (2/2)
+PASS TC3 [Add 'Valuation' column and check name] (2/2)
+PASS TC4 [Check total valuation sum] (4/4)
+PASS TC5 [Category mean stock (Apparel category)] (4/4)
+PASS TC6 [Find items with StockLevel < 10] (3/3)
+PASS TC7 [Check count of Reorder IDs list] (3/3)
+
+SCORE: 20/20 (Visible)

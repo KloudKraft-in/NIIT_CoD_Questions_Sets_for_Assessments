@@ -1,0 +1,4 @@
+[2026-11-01 12:01:05] [i-03c99182a] "GET /healthz HTTP/1.1" 404 142 "-" "ELB-HealthChecker/2.0"
+[2026-11-01 12:01:05] [i-03c99182a] "GET /api/v1/health HTTP/1.1" 200 48 "-" "InternalMonitor"
+[2026-11-01 12:01:10] [i-04d77321c] "GET /healthz HTTP/1.1" 404 142 "-" "ELB-HealthChecker/2.0"
+[2026-11-01 12:01:10] [i-04d77321c] "GET /api/v1/health HTTP/1.1" 200 48 "-" "InternalMonitor"

@@ -1,0 +1,11 @@
+Welcome, user_jVyPp!
+Welcome, user_P71By!
+Welcome, user_s3HQ7!
+Failed login attempt for user_jVyPp
+Welcome, user_pi7Kp!
+Welcome, user_IilXy!
+Welcome, user_IilXy!
+Welcome, user_s3HQ7!
+Failed login attempt for unknown_user
+Welcome, user_qaRU4!
+Login Attempts - Successful: 8 Failed: 2

@@ -1,0 +1,11 @@
+IoT Sensor Audit Report - 2026-04-04 01:41:05
+========================================
+TC1: Passed (0 marks)
+TC2: Failed ('TrendAnalyzer' object has no attribute 'load_sensor_data') (0 marks)
+TC3: Failed ("None of ['Timestamp'] are in the columns") (0 marks)
+TC4: Failed ('TrendAnalyzer' object has no attribute 'add_moving_average') (0 marks)
+TC5: Failed ('TrendAnalyzer' object has no attribute 'get_anomalies') (0 marks)
+TC6: Failed ('TrendAnalyzer' object has no attribute 'get_sensor_stats') (0 marks)
+TC7: Failed ('TrendAnalyzer' object has no attribute 'identify_trend') (0 marks)
+========================================
+Final Score: 0/30

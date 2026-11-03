@@ -1,0 +1,23 @@
+[2026-10-22 14:10:01] [CLOUD_EVENT] Volume 'vol-09ab12cd34ef' (attached to instance as /dev/nvme1n1) resized: 100 GiB -> 250 GiB.
+[2026-10-22 14:10:05] [KERNEL] nvme nvme1: rescanned device nvme1n1, new size 524288000 sectors (250 GiB).
+[2026-10-22 14:11:00] [INSPECT] Command output: lsblk /dev/nvme1n1
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+nvme1n1     259:1    0  250G  0 disk 
+└─nvme1n1p1 259:2    0  100G  0 part /var/lib/pgsql
+[2026-10-22 14:11:15] [INSPECT] Command output: df -hT /var/lib/pgsql
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1 xfs   100G   78G   22G  78% /var/lib/pgsql
+[2026-10-22 14:11:30] [ALERT] Discrepancy detected: Block device /dev/nvme1n1 is 250 GB, but partition /dev/nvme1n1p1 and XFS filesystem remain at 100 GB. 150 GB unallocated.
+[2026-10-22 14:12:00] [STATUS] Active workload: PostgreSQL 16 active (running), PID 14022. Requirement: ZERO downtime / uninterrupted continuous I/O.
+[2026-10-22 14:13:20] [CMD] Extending partition table online: growpart /dev/nvme1n1 1
+CHANGED: partition=1 start=2048 old: size=209713152 end=209715200 new: size=524285952 end=524288000
+[2026-10-22 14:13:25] [KERNEL] Partition table GPT re-read successfully. /dev/nvme1n1p1 size updated to 250G.
+[2026-10-22 14:14:10] [CMD] Online XFS filesystem expansion: xfs_growfs /var/lib/pgsql
+meta-data=/dev/nvme1n1p1         isize=512    agcount=4, agsize=6553536 blks
+data     =                       bsize=4096   blocks=26214144, imaxpct=25
+data blocks changed from 26214144 to 65535744
+[2026-10-22 14:15:00] [VERIFY] Command output: df -hT /var/lib/pgsql
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1 xfs   250G   78G  172G  32% /var/lib/pgsql
+[2026-10-22 14:15:30] [VERIFY] Database I/O health check: 10,000 continuous write transactions verified during resize. Database I/O interrupted: NO.
+[2026-10-22 14:15:45] [INFO] Cloud block volume expansion and XFS online growth completed: SUCCESS.

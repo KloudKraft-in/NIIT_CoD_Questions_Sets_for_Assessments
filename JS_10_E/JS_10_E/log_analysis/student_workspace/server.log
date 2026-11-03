@@ -1,0 +1,6 @@
+
+[ERROR] java.lang.NullPointerException: Cannot invoke "String.length()" because "name" is null
+[INFO] Loading Application context...
+[ERROR] org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService'
+[ERROR] java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver not found
+[ERROR] java.lang.NullPointerException: Null elements inside collection

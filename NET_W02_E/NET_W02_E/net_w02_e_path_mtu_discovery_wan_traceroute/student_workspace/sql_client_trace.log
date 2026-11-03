@@ -1,0 +1,4 @@
+[14:02:10] Client sending SELECT * FROM transactions LIMIT 5 (Payload 240 bytes) -> SUCCESS (18ms)
+[14:02:15] Client sending SELECT * FROM transactions LIMIT 5000 (Payload 45000 bytes) -> TCP segment size 1460 bytes
+[14:02:15] Outbound TCP segment (Len 1460, DF=1) dropped at Hop 4 (ipsec-tunnel-edge.carrier.net). ICMP type 3 code 4 filtered by intermediate security policy.
+[14:02:45] [ERROR] Client query timed out after 30000ms waiting for database response.

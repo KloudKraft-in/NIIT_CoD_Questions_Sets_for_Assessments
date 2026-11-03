@@ -1,0 +1,6 @@
+5
+add_task a 5 []
+add_task b 15 []
+add_task c 10 []
+add_task d 15 []
+get_ready_tasks

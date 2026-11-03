@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["a.txt", "b.py", "c.txt"]], "root/a.txt": [false, 0], "root/b.py": [false, 0], "root/c.txt": [false, 0]}
+COUNT .txt

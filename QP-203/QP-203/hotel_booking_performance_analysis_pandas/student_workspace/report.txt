@@ -1,0 +1,12 @@
+🧪 Running Tests for: Hotel Booking Performance Analysis
+
+✅ Visible Test Case 1 Passed: Create structured booking DataFrame
+✅ Visible Test Case 2 Passed: Compute monthly revenue per hotel
+✅ Visible Test Case 3 Passed: Add cancellation flag column
+✅ Visible Test Case 4 Passed: Identify guests with frequent no-shows
+✅ Visible Test Case 5 Passed: Hotel-wise status summary
+🔒 Hidden Test Case 6 Passed: Clean records with null/invalid status
+🔒 Hidden Test Case 7 Passed: Handle guests with only booked stays
+🔒 Hidden Test Case 8 Passed: Hotel with only one type of status
+
+🎯 SCORE: 12.5/12.5 (Visible) | Total: 20 (Visible: 12.5 + Hidden: 7.5)

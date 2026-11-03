@@ -1,0 +1,13 @@
+{
+    "firewall_model": "Enterprise-Edge-FW-X9",
+    "nat_mode": "Dynamic Port Address Translation (PAT)",
+    "public_ip_pool": ["203.0.113.5"],
+    "max_translations_per_ip": 65535,
+    "active_nat_translations": 65530,
+    "nat_table_utilization_pct": 99.99,
+    "tcp_translation_timeout_seconds": 7200,
+    "udp_translation_timeout_seconds": 300,
+    "conntrack_table_limit": 65536,
+    "conntrack_table_current": 65536,
+    "memory_utilization_pct": 98.4
+}

@@ -1,0 +1,16 @@
+$ dig api.payment-partner.com +stats
+
+; <<>> DiG 9.18.1-1ubuntu1.3-Ubuntu <<>> api.payment-partner.com +stats
+;; global options: +cmd
+;; connection timed out; no servers could be reached after 5000 ms from 10.96.0.15#53
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48912
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; ANSWER SECTION:
+api.payment-partner.com. 300 IN A 198.51.100.88
+
+;; Query time: 5012 msec
+;; SERVER: 10.96.0.10#53(10.96.0.10) (UDP)
+;; WHEN: Sun Nov 01 12:40:12 UTC 2026
+;; MSG SIZE  rcvd: 71

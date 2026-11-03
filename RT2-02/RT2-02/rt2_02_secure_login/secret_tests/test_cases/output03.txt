@@ -1,0 +1,11 @@
+Welcome, user_CV3tO!
+Failed login attempt for unknown_user
+Welcome, user_mtl0h!
+Failed login attempt for unknown_user
+Welcome, user_0Qm5E!
+Welcome, user_xzzOx!
+Welcome, user_MXheW!
+Welcome, user_5wUcV!
+Welcome, user_x1swP!
+Welcome, user_ti7LF!
+Login Attempts - Successful: 8 Failed: 2

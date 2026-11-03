@@ -1,0 +1,1 @@
+QUERY FROM products WHERE price < 100 BUILD

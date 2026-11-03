@@ -1,0 +1,5 @@
+Ticket ID: INC-88291
+Severity: CRITICAL P1
+Impacted Service: payment-gateway microservice
+Reporter: NOC Operations Desk
+Description: The payment-gateway microservice began timing out at 09:14 UTC following a database connection pool exhaustion event. Database CPU spiked to 98% due to unindexed queries on the transactions table.

@@ -1,0 +1,7 @@
+[CONTEXT] Initializing Sequence
+10
+15
+20
+10
+15
+[CONTEXT] Final Count: 5

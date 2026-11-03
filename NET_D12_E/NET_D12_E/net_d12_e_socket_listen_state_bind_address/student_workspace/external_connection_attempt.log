@@ -1,0 +1,2 @@
+$ nc -zv 10.10.20.15 8080
+nc: connect to 10.10.20.15 port 8080 (tcp) failed: Connection refused

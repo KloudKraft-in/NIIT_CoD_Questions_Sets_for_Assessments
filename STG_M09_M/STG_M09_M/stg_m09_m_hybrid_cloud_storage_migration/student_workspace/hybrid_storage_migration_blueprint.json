@@ -1,0 +1,44 @@
+{
+    "migration_project": "500TB Hybrid Storage Cloud Modernization",
+    "block_san_targets": {
+        "aws": "TODO_AWS (e.g. EBS io2 / gp3)",
+        "azure": "TODO_AZURE (e.g. Premium SSD v2 / Ultra Disk)",
+        "gcp": "TODO_GCP (e.g. Hyperdisk Extreme / Persistent Disk Balanced)"
+    },
+    "file_nas_targets": {
+        "aws": "TODO_AWS (e.g. FSx for NetApp ONTAP / EFS)",
+        "azure": "TODO_AZURE (e.g. Azure NetApp Files / Azure Files)",
+        "gcp": "TODO_GCP (e.g. Cloud NetApp Volumes / Filestore)"
+    },
+    "archive_targets": {
+        "aws": "TODO_AWS (e.g. S3 Glacier Flexible Archive / Deep Archive)",
+        "azure": "TODO_AZURE (e.g. Azure Blob Archive with Immutable Storage)",
+        "gcp": "TODO_GCP (e.g. Cloud Storage Archive with Bucket Lock)"
+    },
+    "lifecycle_transition_rules": {
+        "hot_tier_retention_days": "TODO_DAYS (e.g. 30 days)",
+        "cool_tier_transition_days": "TODO_DAYS (e.g. 90 days)",
+        "archive_tier_transition_days": "TODO_DAYS (e.g. 365 days)",
+        "immutability_worm_retention_years": "TODO_YEARS (e.g. 7 years)"
+    },
+    "rpo_rto_slas": {
+        "tier_1_mission_critical_db": {
+            "rpo": "TODO_RPO (e.g. < 15 minutes)",
+            "rto": "TODO_RTO (e.g. < 1 hour)"
+        },
+        "tier_2_file_shares": {
+            "rpo": "TODO_RPO (e.g. < 4 hours)",
+            "rto": "TODO_RTO (e.g. < 8 hours)"
+        },
+        "tier_3_compliance_archive": {
+            "rpo": "TODO_RPO (e.g. 24 hours)",
+            "rto": "TODO_RTO (e.g. 48 hours)"
+        }
+    },
+    "cutover_delta_sync_strategy": {
+        "initial_bulk_sync_tool": "TODO_SYNC_TOOL (e.g. AWS DataSync / Azure Storage Mover / Storage Transfer Service)",
+        "continuous_delta_replication": "TODO_DELTA (e.g. hourly scheduled incremental delta sync)",
+        "final_cutover_window": "TODO_CUTOVER (e.g. 2-hour maintenance window with read-only freeze and DNS switchover)"
+    },
+    "hybrid_monitoring_tool": "TODO_MONITORING (e.g. Azure Arc-enabled storage services and central dashboard)"
+}

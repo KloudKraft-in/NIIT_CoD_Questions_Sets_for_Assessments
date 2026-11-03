@@ -1,0 +1,6 @@
+5
+add_task t1 10 []
+add_task t2 5 ["t1"]
+is_ready t2
+complete_task t1
+is_ready t2

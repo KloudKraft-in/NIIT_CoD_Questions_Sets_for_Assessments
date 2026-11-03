@@ -1,0 +1,2 @@
+MOCK_FS {"root": [true, ["temp"]], "root/temp": [true, ["data.log"]], "root/temp/data.log": [false, 1024]}
+SIZE

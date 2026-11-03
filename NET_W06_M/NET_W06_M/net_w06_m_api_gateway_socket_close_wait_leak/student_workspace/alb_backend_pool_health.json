@@ -1,0 +1,7 @@
+{
+    "target_group": "tg-api-gateway",
+    "unhealthy_event_count": 84,
+    "last_error": "Target.FailedHealthChecks (Timeout after 5000ms attempting TCP connect)",
+    "active_targets_healthy": 1,
+    "active_targets_unhealthy": 3
+}

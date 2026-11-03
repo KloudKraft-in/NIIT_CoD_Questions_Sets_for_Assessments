@@ -1,0 +1,2 @@
+The temperature for City_7 is 7
+The forecast for City_7 is Forecast_7

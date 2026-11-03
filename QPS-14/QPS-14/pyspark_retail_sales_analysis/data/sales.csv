@@ -1,0 +1,21 @@
+transaction_id,product_name,product_category,quantity,unit_price
+T001,Rice,Grocery,100,40
+T002,Shampoo,Personal Care,50,120
+T003,Notebook,Stationery,200,30
+T004,Toothpaste,Personal Care,60,90
+T005,Soap,Personal Care,80,35
+T006,Pencil,Stationery,300,5
+T007,Bread,Grocery,150,25
+T008,Milk,Grocery,100,50
+T009,Juice,Beverages,90,60
+T010,Pen,Stationery,250,10
+T011,Butter,Grocery,70,55
+T012,Cola,Beverages,110,45
+T013,Eraser,Stationery,180,3
+T014,Conditioner,Personal Care,40,150
+T015,Chips,Snacks,120,20
+T016,Chocolate,Snacks,130,25
+T017,Sugar,Grocery,90,38
+T018,Marker,Stationery,140,15
+T019,Noodles,Snacks,100,30
+T020,Sanitizer,Personal Care,70,100

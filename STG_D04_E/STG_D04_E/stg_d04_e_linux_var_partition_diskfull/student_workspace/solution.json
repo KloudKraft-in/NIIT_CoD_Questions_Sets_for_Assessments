@@ -1,0 +1,14 @@
+{
+    "email": "candidate@email.com",
+    "question_id": "STG_D04_E",
+    "labskraft_username": "candidate-user",
+    "problem_code": "stg_d04_e_linux_var_partition_diskfull",
+    "exam_code": "1123",
+    "results": {
+        "tc1": false,
+        "tc2": false,
+        "tc3": false
+    },
+    "score": 0,
+    "total_marks": 10
+}

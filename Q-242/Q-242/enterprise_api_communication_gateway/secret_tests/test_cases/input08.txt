@@ -1,0 +1,2 @@
+MOCK /err 500 {"msg": "fail"}
+FETCH /err

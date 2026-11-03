@@ -1,0 +1,20 @@
+{
+    "target_volume": "/data",
+    "large_files": [
+        {
+            "file_path": "TODO_FILE_PATH_1",
+            "size_mb": "TODO_SIZE_MB",
+            "last_modified": "TODO_TIMESTAMP"
+        },
+        {
+            "file_path": "TODO_FILE_PATH_2",
+            "size_mb": "TODO_SIZE_MB",
+            "last_modified": "TODO_TIMESTAMP"
+        },
+        {
+            "file_path": "TODO_FILE_PATH_3",
+            "size_mb": "TODO_SIZE_MB",
+            "last_modified": "TODO_TIMESTAMP"
+        }
+    ]
+}

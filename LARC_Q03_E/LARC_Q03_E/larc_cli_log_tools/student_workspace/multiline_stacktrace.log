@@ -1,0 +1,2 @@
+2026-08-10 11:05:12 [FATAL] org.hibernate.exception.JDBCConnectionException: Cannot open connection
+    at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)

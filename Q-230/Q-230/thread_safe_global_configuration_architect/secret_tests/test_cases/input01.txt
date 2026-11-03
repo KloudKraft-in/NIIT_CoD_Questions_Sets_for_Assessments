@@ -1,0 +1,3 @@
+LOAD {"api": "v1", "port": 8080}
+GET api
+GET port

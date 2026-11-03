@@ -1,0 +1,38 @@
+================================================================================
+AWS_Q24: ec2_ebs_windows - STUDENT IMPLEMENTATION & TESTING GUIDE
+================================================================================
+
+🎯 GOAL: AWS EC2 (Windows DB Server) & Advanced Storage Management
+
+This guide details the exact steps a learner must perform for AWS_Q24.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP IMPLEMENTATION
+--------------------------------------------------------------------------------
+
+STEP 1: AWS CONSOLE LOGIN
+- Log into AWS Console.
+- Ensure you are in the eu-west-2 Region.
+
+STEP 2: CREATE EC2 INSTANCE (PASSES TC1)
+- Navigate to EC2 -> "Launch Instance".
+- Name: `<your-labskraft-username>-<your-exam-code>` (e.g. `labs-kraft-demo106-niit-team`).
+- Select Windows Server AMI.
+- Select t2.micro Instance Type.
+
+STEP 3: CREATE EBS VOLUME (PASSES TC2)
+- Go to Volumes -> "Create volume".
+- Size: 20 GB, Type: io2, IOPS: 500.
+
+STEP 4: ATTACH & MOUNT EBS VOLUME (PASSES TC3)
+- Attach the volume to the instance.
+- RDP into the instance.
+- Open Disk Management, initialize disk.
+- Format as NTFS, assign drive letter F:.
+
+--------------------------------------------------------------------------------
+HOW TO VERIFY LOCALLY
+--------------------------------------------------------------------------------
+$env:NIIT_START_TIME="2026-05-18T10:00:00Z"
+cd C:\Users\nandi\Downloads\git_repo_QC-20260610T061029Z-3-001\git_repo_QC\DevOps_Auto_Evaluation\AWS_Q24_E\AWS_Q24_E\ec2_ebs_windows\student_workspace
+python run.py "labs-kraft-demo106"

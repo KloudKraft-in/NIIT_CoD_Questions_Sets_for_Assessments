@@ -1,0 +1,28 @@
+{
+    "prioritized_queue": [
+        {
+            "alert_id": "ALT-01",
+            "failure_domain": "TODO_DOMAIN (Capacity | Saturation | Connectivity | Data Protection)",
+            "priority": "TODO_PRIORITY (P1 | P2 | P3 | P4)",
+            "runbook_name": "TODO_RUNBOOK (e.g. SOP-DISK-FULL-01)"
+        },
+        {
+            "alert_id": "ALT-02",
+            "failure_domain": "TODO_DOMAIN",
+            "priority": "TODO_PRIORITY",
+            "runbook_name": "TODO_RUNBOOK (e.g. SOP-STORAGE-LATENCY-02)"
+        },
+        {
+            "alert_id": "ALT-03",
+            "failure_domain": "TODO_DOMAIN",
+            "priority": "TODO_PRIORITY",
+            "runbook_name": "TODO_RUNBOOK (e.g. SOP-NFS-STALE-MOUNT-03)"
+        },
+        {
+            "alert_id": "ALT-04",
+            "failure_domain": "TODO_DOMAIN",
+            "priority": "TODO_PRIORITY",
+            "runbook_name": "TODO_RUNBOOK (e.g. SOP-BACKUP-FAILURE-04)"
+        }
+    ]
+}

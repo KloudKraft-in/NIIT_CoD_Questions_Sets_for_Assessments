@@ -1,0 +1,6 @@
+2
+London,15,Rainy
+Paris,18,Cloudy
+2
+London,temperature
+Paris,forecast

@@ -1,0 +1,5 @@
+Rule_ID,Source_IP_Range,Destination_IP,Port,Action,Description
+101,203.0.113.10/32,198.51.100.50,443,ALLOW,Permit Americas Regional NAT Egress
+102,203.0.113.20/32,198.51.100.50,443,ALLOW,Permit APAC Regional NAT Egress
+103,198.51.100.0/24,198.51.100.50,443,ALLOW,Permit Internal Management Subnet
+999,0.0.0.0/0,198.51.100.50,ANY,DENY,Default Ingress Drop

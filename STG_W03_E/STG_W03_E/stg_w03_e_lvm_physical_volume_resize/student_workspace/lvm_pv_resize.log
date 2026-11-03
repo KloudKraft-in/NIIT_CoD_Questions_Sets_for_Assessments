@@ -1,0 +1,31 @@
+[2026-10-25 11:00:01] [CLOUD_EVENT] Hypervisor storage expansion event: physical disk /dev/sdb expanded: 50 GiB -> 100 GiB.
+[2026-10-25 11:00:05] [KERNEL] sd 2:0:1:0: [sdb] 209715200 512-byte logical blocks: (107 GB/100 GiB)
+[2026-10-25 11:01:00] [INSPECT] Initial LVM volume layout:
+[2026-10-25 11:01:00] [INSPECT] PV: /dev/sdb (VG: vg_data, Size: <50.00 GiB, Free: 0)
+[2026-10-25 11:01:00] [INSPECT] VG: vg_data (PVs: 1, LVs: 1, Size: <50.00 GiB, Free: 0)
+[2026-10-25 11:01:00] [INSPECT] LV: /dev/vg_data/lv_app (Size: <50.00 GiB, Mount: /data)
+[2026-10-25 11:01:15] [INSPECT] Mount inspection: df -hT /data
+Filesystem                    Type  Size  Used Avail Use% Mounted on
+/dev/mapper/vg_data-lv_app    ext4   50G   38G   10G  80% /data
+[2026-10-25 11:01:30] [ALERT] Storage pool exhaustion warning: /data at 80% utilization. Physical disk has 50 GiB unallocated.
+[2026-10-25 11:02:10] [CMD] Updating Physical Volume metadata: pvresize /dev/sdb
+Physical volume "/dev/sdb" changed
+1 physical volume(s) resized or updated / 0 physical volume(s) not resized
+[2026-10-25 11:02:15] [VERIFY] PV resized capacity: 100.00 GiB (/dev/sdb).
+[2026-10-25 11:02:30] [CMD] Verifying Volume Group free extents: vgs vg_data
+VG      #PV #LV #SN Attr   VSize    VFree  
+vg_data   1   1   0 wz--n- <100.00g <50.00g
+[2026-10-25 11:02:35] [VERIFY] Volume Group free extents updated: YES (<50.00 GiB free).
+[2026-10-25 11:03:10] [CMD] Extending Logical Volume online: lvextend -l +100%FREE /dev/vg_data/lv_app
+Size of logical volume vg_data/lv_app changed from <50.00 GiB (12800 extents) to <100.00 GiB (25600 extents).
+Logical volume vg_data/lv_app successfully resized.
+[2026-10-25 11:03:40] [CMD] Growing EXT4 filesystem online without unmounting: resize2fs /dev/vg_data/lv_app
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/vg_data/lv_app is mounted on /data; on-line resizing required
+old_desc_blocks = 7, new_desc_blocks = 13
+The filesystem on /dev/vg_data/lv_app is now 26214400 (4k) blocks long.
+[2026-10-25 11:04:10] [VERIFY] Final filesystem inspection: df -hT /data
+Filesystem                    Type  Size  Used Avail Use% Mounted on
+/dev/mapper/vg_data-lv_app    ext4  100G   38G   59G  40% /data
+[2026-10-25 11:04:20] [VERIFY] Data loss experienced during online growth: NO. Service uptime: 100%.
+[2026-10-25 11:04:30] [STATUS] LVM physical volume resize and online extension: SUCCESS.
